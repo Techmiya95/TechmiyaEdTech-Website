@@ -38,7 +38,7 @@ const Index = () => {
       role: "Software Developer at HCL",
       content: "Tech Miya transformed my career. The hands-on approach and real-world projects prepared me for my dream job.",
       rating: 5,
-      avatar: ""
+      avatar: "/adil.jpg"
     },
     {
       name: "Ganavi R",
