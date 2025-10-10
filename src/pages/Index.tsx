@@ -96,58 +96,83 @@ const Index = () => {
 
       {/* Right Side - TAP ACADEMY Content */}
       <div className="text-center lg:text-left">
-        <Badge variant="secondary" className="mb-4 bg-yellow-400 text-blue-900 hover:bg-yellow-500">
-          #1 Coding Institute
-        </Badge>
-        <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-          <span className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-         TECHMIYA ED-TECH
-          </span>
-        </h1>
-        <div className="space-y-4 mb-8">
-          <p className="text-xl lg:text-2xl font-medium flex items-center">
-            <span className="mr-2">🎮</span> Tech for People
-          </p>
-          <p className="text-xl lg:text-2xl font-medium flex items-center">
-            <span className="mr-2">✨</span> Simplify Employment
-          </p>
-          <p className="text-lg text-blue-100 mb-6">
-                <strong>India's No.1 Software Training Institute</strong> in{" "}
-                <span className="text-yellow-300 font-semibold">
-                  Machine Learning, AI, GenAI, Agentic AI, and MCP.
+              <Badge
+                variant="secondary"
+                className="mb-6 bg-yellow-400 text-blue-900 text-xl font-extrabold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300"
+              >
+                INDIA’S NO. 1 SOFTWARE & AI TRAINING INSTITUTE
+              </Badge>
+
+              <h1 className="text-3xl lg:text-5xl font-extrabold mb-6 leading-tight">
+                <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent drop-shadow-md">
+                  TECHMIYA ED-TECH
                 </span>
+              </h1>
+
+              <div className="space-y-5 mb-10">
+                {/* <p className="text-2xl lg:text-3xl font-semibold flex items-center justify-center lg:justify-start text-white">
+                  <span className="mr-3 text-3xl">🎯</span> Empowering the Next
+                  Generation of Innovators
+                </p> */}
+                <p className="text-xl lg:text-2xl font-medium flex items-center justify-center lg:justify-start text-blue-100">
+                  <span className="mr-3">🚀</span> Bridging Technology and
+                  Employment
                 </p>
-                <p className="text-lg text-blue-100 mb-8">
-                We also undertake{" "}
-                <strong>Corporate Trainings</strong> and{" "}
-                <strong>Engineering College Workshops</strong>, all conducted by
-                expert IT trainers and IIT graduates.
+
+                <p className="text-4xl text-yellow-300 font-bold leading-relaxed">
+                  India’s No. 1 Training in{" "}
+                  <span className="text-white font-extrabold underline decoration-yellow-400 underline-offset-4 animate-pulse">
+                    Machine Learning, AI, GenAI,{" "}
+                    <span className="text-yellow-400 animate-glow">
+                      Agentic AI
+                    </span>
+                    , and MCP
+                  </span>
+                </p>
+
+                <p className="text-lg text-blue-100 leading-relaxed">
+                  We also conduct{" "}
+                  <strong className="text-yellow-300">
+                    Corporate Trainings
+                  </strong>{" "}
+                  and{" "}
+                  <strong className="text-yellow-300">
+                    Engineering College Workshops
+                  </strong>{" "}
+                  led by expert IT trainers and IIT graduates.
+                </p>
+              </div>
+
+              <p className="text-lg text-blue-100 mb-10 font-medium">
+                Trusted by over{" "}
+                <span className="font-bold text-yellow-300 text-2xl">
+                  5,000+
+                </span>{" "}
+                students across India
               </p>
-        </div>
-        <p className="text-lg text-blue-100 mb-8">
-          Trusted by over <span className="font-bold text-yellow-300">5,000+</span> students across India
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <Link to="/register">
-            <Button size="lg" className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-semibold px-8 py-4 text-lg">
-              Attend Free Demo Class
-            </Button>
-          </Link>
-          <Link to="/placement">
-<Button
-  size="lg"
-  variant="outline"
-  className="border-white text-blue-900 hover:bg-white hover:text-blue-900 px-8 py-4 text-lg"
->
 
-
-              Explore Placement Opportunity
-            </Button>
-          </Link>
+              <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+                <Link to="/register">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-10 py-5 text-xl rounded-2xl shadow-md transition-transform hover:scale-105"
+                  >
+                    Attend Free Demo Class
+                  </Button>
+                </Link>
+                <Link to="/placement">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-blue-900 px-10 py-5 text-xl font-semibold rounded-2xl transition-transform hover:scale-105"
+                  >
+                    Explore Placement Opportunities
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
  {/* Company Marquee */}
 <div className="relative bg-white/10 py-6">

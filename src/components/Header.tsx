@@ -25,7 +25,7 @@ export const Header = () => {
           {/* Logo */}
        <Link to="/" className="flex items-center space-x-2">
   <img src="logo.jpeg" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
-  <span className="text-xl font-bold text-gray-900">Techmiya Ed-tech </span>
+  <span className="text-xl font-bold text-gray-900">Techmiya Ed-Tech </span>
 </Link>
 
           {/* Desktop Navigation */}
