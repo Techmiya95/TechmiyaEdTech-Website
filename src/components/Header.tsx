@@ -20,8 +20,8 @@ export const Header = () => {
 
   return (
     <header className="bg-white/95 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
        <Link to="/" className="flex items-center space-x-2">
   <img src="logo.jpeg" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
@@ -34,7 +34,7 @@ export const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`px-4 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${
                   isActive(item.path)
                     ? "text-purple-600 bg-purple-50"
                     : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
@@ -45,8 +45,13 @@ export const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex">
+          {/* CTA Buttons */}
+          <div className="hidden md:flex gap-4">
+            <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
+                Login
+              </Button>
+            </a>
             <Link to="/register">
               <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
                 Register Now
@@ -83,10 +88,15 @@ export const Header = () => {
                   {item.name}
                 </Link>
               ))}
+              <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer" className="block w-full mt-4">
+                <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
+                  Login
+                </Button>
+              </a>
               <Link
                 to="/register"
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full mt-4"
+                className="block w-full mt-2"
               >
                 <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
                   Register Now

@@ -160,15 +160,24 @@ const Index = () => {
                     Attend Free Demo Class
                   </Button>
                 </Link>
-                <Link to="/placement">
+
+                {/* <Link to="/workshop-register">
                   <Button
                     size="lg"
-                    variant="outline"
-                    className="border-2 border-yellow-300 text-yellow-300 hover:bg-yellow-300 hover:text-blue-900 px-10 py-5 text-xl font-semibold rounded-2xl transition-transform hover:scale-105"
+                    className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-10 py-5 text-xl rounded-2xl shadow-md transition-transform hover:scale-105"
                   >
-                    Explore Placement Opportunities
+                    Register For Webinar
                   </Button>
-                </Link>
+                </Link> */}
+
+                <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-10 py-5 text-xl rounded-2xl shadow-md transition-transform hover:scale-105"
+                  >
+                    Get Access to LMS
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -197,7 +206,7 @@ const Index = () => {
           <span className="text-sm text-white">Infosys</span>
         </div>
         <div className="flex items-center space-x-2">
-          <img src="https://logo.clearbit.com/tcs.com" alt="TCS" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Orcc8T6aZ8yvyRGyAFe8PzVp0QjW38NeWg&s" alt="TCS" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
           <span className="text-sm text-white">TCS</span>
         </div>
         <div className="flex items-center space-x-2">

@@ -6,7 +6,8 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {  Routes, Route } from "react-router-dom";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { HashRouter as BrowserRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import WorkshopRegister from "./pages/WorkshopRegister";
 
 import Index from "./pages/Index";
 import Courses from "./pages/Courses";
@@ -33,8 +34,9 @@ const App = () => (
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/register" element={<Register />} />
               <Route path="/contact" element={<Contact />} />
-               <Route path="/conditions" element={<TermsAndConditions />} />
+              <Route path="/conditions" element={<TermsAndConditions />} />
               <Route path="*" element={<NotFound />} />
+              <Route path="/workshop-register" element={<WorkshopRegister />} />
             </Routes>
           </main>
           <Footer />
