@@ -11,7 +11,7 @@ const Reviews = () => {
       course: "Full Stack Development",
       rating: 5,
       content: "Techmiya completely transformed my career. I went from having no programming experience to landing a job at Google in just 8 months. The instructors are incredibly knowledgeable and the hands-on approach really helped me understand complex concepts. The career support team was amazing too - they helped me prepare for interviews and even connected me with recruiters.",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=100",
+      avatar: "./adil.jpg",
       date: "December 2024",
       
     },
@@ -33,7 +33,7 @@ const Reviews = () => {
       course: "Full Stack Development",
       rating: 5,
       content: "From zero to hero in just 6 months! Tech Miya's Full Stack program is incredibly comprehensive. The way they structure the learning path makes complex topics easy to understand. The portfolio projects I built during the course were instrumental in landing my job at Amazon. Highly recommend to anyone looking to break into tech!",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100",
+      avatar: "./mudasir.jpeg",
       date: "October 2024",
 
     },
@@ -44,7 +44,7 @@ const Reviews = () => {
       course: "Java Programming",
       rating: 5,
       content: "Best decision I ever made! The Java course at Tech Miya is thorough and practical. The instructors have real industry experience and they share valuable insights beyond just coding. The mock interviews and technical preparation sessions were extremely helpful for my job search.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100",
+      avatar: "/joel.jpg",
       date: "September 2023",
     },
     {
@@ -60,7 +60,7 @@ const Reviews = () => {
     },
     {
       id: 6,
-      name: "Sana",
+      name: "Aftab Alam",
       role: "Mobile App Developer at Uber",
       course: "Mobile App Development",
       rating: 5,
@@ -70,7 +70,7 @@ const Reviews = () => {
     },
     {
       id: 7,
-      name: "Ganavi",
+      name: "Ganesh",
       role: "Software Engineer at Techmiya",
       course: "Full Stack Development",
       rating: 5,

@@ -49,7 +49,7 @@ export const Header = () => {
           <div className="hidden md:flex gap-4">
             <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
               <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
-                Login
+                Access LMS
               </Button>
             </a>
             <Link to="/register">
@@ -90,7 +90,7 @@ export const Header = () => {
               ))}
               <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer" className="block w-full mt-4">
                 <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
-                  Login
+                  Access LMS
                 </Button>
               </a>
               <Link
