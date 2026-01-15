@@ -23,10 +23,10 @@ export const Header = () => {
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-       <Link to="/" className="flex items-center space-x-2">
-  <img src="logo.jpeg" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
-  <span className="text-xl font-bold text-gray-900">Techmiya Ed-Tech </span>
-</Link>
+          <Link to="/" className="flex items-center space-x-2">
+            <img src="techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
+            <span className="text-xl font-bold text-amber-500">Techmiya Ed-Tech </span>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
@@ -34,11 +34,10 @@ export const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-4 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${
-                  isActive(item.path)
-                    ? "text-purple-600 bg-purple-50"
-                    : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
-                }`}
+                className={`px-4 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${isActive(item.path)
+                  ? "text-purple-600 bg-purple-50"
+                  : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
+                  }`}
               >
                 {item.name}
               </Link>
@@ -79,11 +78,10 @@ export const Header = () => {
                   key={item.name}
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
-                    isActive(item.path)
-                      ? "text-purple-600 bg-purple-50"
-                      : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
-                  }`}
+                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
+                    ? "text-purple-600 bg-purple-50"
+                    : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
+                    }`}
                 >
                   {item.name}
                 </Link>

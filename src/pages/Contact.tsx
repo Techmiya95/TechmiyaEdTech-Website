@@ -23,60 +23,60 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
- 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
 
-  if (!formData.name || !formData.email || !formData.message) {
-    toast({
-      title: "Validation Error",
-      description: "Please fill in all required fields.",
-      variant: "destructive",
-    });
-    setIsSubmitting(false);
-    return;
-  }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  const emailParams = {
-  name: formData.name,
-  email: formData.email,
-  phone: formData.phone,
-  subject: formData.subject,
-  message: formData.message,
-  time: new Date().toLocaleString(),
-};
+    if (!formData.name || !formData.email || !formData.message) {
+      toast({
+        title: "Validation Error",
+        description: "Please fill in all required fields.",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    const emailParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message,
+      time: new Date().toLocaleString(),
+    };
 
 
-  try {
-    await emailjs.send(
-      "service_4ew07pp",     // replace with actual service ID
-      "template_0fjvnl8",    // replace with actual template ID
-      emailParams,
-      "fvK7lDFpyfz-0msvO"      // replace with your public API key
-    );
-    toast({
-      title: "Message Sent Successfully! ✉️",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-    });
+    try {
+      await emailjs.send(
+        "service_4ew07pp",     // replace with actual service ID
+        "template_0fjvnl8",    // replace with actual template ID
+        emailParams,
+        "fvK7lDFpyfz-0msvO"      // replace with your public API key
+      );
+      toast({
+        title: "Message Sent Successfully! ✉️",
+        description: "Thank you for contacting us. We'll get back to you within 24 hours.",
+      });
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-  } catch (error) {
-    toast({
-      title: "Failed to Send Message",
-      description: "Something went wrong. Please try again.",
-      variant: "destructive",
-    });
-  } finally {
-    setIsSubmitting(false);
-  }
-};
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      toast({
+        title: "Failed to Send Message",
+        description: "Something went wrong. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header Section */}
@@ -86,7 +86,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             Contact Us
           </h1>
           <p className="text-xl lg:text-2xl max-w-3xl mx-auto">
-            Have questions about our courses or need guidance on your career path? 
+            Have questions about our courses or need guidance on your career path?
             We're here to help you every step of the way.
           </p>
         </div>
@@ -104,8 +104,8 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <CardTitle>Email Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-2">info.@techmiyaedtech.com</p>
-               
+                <p className="text-gray-600 mb-2">hr@techmiyaedtech.com</p>
+
               </CardContent>
             </Card>
 
@@ -117,8 +117,8 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <CardTitle>Call Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-2">+91-6361987951</p>
-                <p className="text-gray-600">+91-7338631971</p>
+                <p className="text-gray-600 mb-2">+91-6363760275</p>
+                <p className="text-gray-600">+91-6361987951</p>
               </CardContent>
             </Card>
 
@@ -130,8 +130,8 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <CardTitle>Visit Us</CardTitle>
               </CardHeader>
               <CardContent>
-                
-                <p className="text-gray-600">Techmiya Solutions, 28th Main Rd, Jayanagar 9th Block, Near Jayadeva metro station, Bengaluru, Karnataka 560069</p>
+
+                <p className="text-gray-600">Techmiya Ed-Tech, 28th Main Rd, Jayanagar 9th Block, Near Jayadeva metro station, Bengaluru, Karnataka 560069</p>
               </CardContent>
             </Card>
           </div>
@@ -258,7 +258,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </div>
                   <div className="flex justify-between">
                     <span>Sunday</span>
-                    <span className="font-semibold">Closed</span>
+                    <span className="font-semibold">10:00 AM - 1:00 PM</span>
                   </div>
                 </CardContent>
               </Card>
@@ -286,7 +286,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                     <span className="text-xl">✉️</span>
                     <span>Send an email</span>
                   </a>
-                 
+
                 </CardContent>
               </Card>
             </div>
@@ -313,8 +313,8 @@ const handleSubmit = async (e: React.FormEvent) => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  You can enroll by clicking the "Register Now" button, filling out our demo 
-                  registration form, or contacting us directly. We'll schedule a consultation 
+                  You can enroll by clicking the "Register Now" button, filling out our demo
+                  registration form, or contacting us directly. We'll schedule a consultation
                   to help you choose the right course.
                 </p>
               </CardContent>
@@ -326,8 +326,8 @@ const handleSubmit = async (e: React.FormEvent) => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Yes! We have a dedicated placement team that provides resume building, 
-                  interview preparation, and direct connections with our 50+ industry partners. 
+                  Yes! We have a dedicated placement team that provides resume building,
+                  interview preparation, and direct connections with our 50+ industry partners.
                   Our job placement rate is 95%.
                 </p>
               </CardContent>
@@ -339,8 +339,8 @@ const handleSubmit = async (e: React.FormEvent) => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  We offer flexible timings including weekday batches, weekend batches, and 
-                  online sessions. Classes are typically 2-3 hours long with both morning 
+                  We offer flexible timings including weekday batches, weekend batches, and
+                  online sessions. Classes are typically 2-3 hours long with both morning
                   and evening slots available.
                 </p>
               </CardContent>
@@ -352,8 +352,8 @@ const handleSubmit = async (e: React.FormEvent) => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  Yes, we provide industry-recognized certificates upon successful completion 
-                  of courses. We also help you prepare for external certifications like AWS, 
+                  Yes, we provide industry-recognized certificates upon successful completion
+                  of courses. We also help you prepare for external certifications like AWS,
                   Google Cloud, and Oracle certifications.
                 </p>
               </CardContent>

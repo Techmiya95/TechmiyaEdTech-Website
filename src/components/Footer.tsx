@@ -10,20 +10,20 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-                 <img src="logo.jpeg" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
-               
+                <img src="techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
+
               </div>
-              <span className="text-xl font-bold">Techmiya Edtech</span>
+              <span className="text-xl font-bold text-amber-500">Techmiya Edtech</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Transforming learning with cutting-edge technology education. 
+              Transforming learning with cutting-edge technology education.
               Empowering students to build successful careers in tech.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 Facebook
               </a>
-              <a href="https://www.youtube.com/@TechMiyaProjects" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.youtube.com/channel/UCqyZlCLdyDFjyM3VFDea4rw" className="text-gray-300 hover:text-white transition-colors">
                 Youtube
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -72,9 +72,9 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2 text-gray-300">
               <p>📧hr@techmiyaedtech.com</p>
-              <p>📞 +91 6363760275</p> 
+              <p>📞 +91 6363760275</p>
               <p>📞 +91 6361987951</p>
-              
+
               <p>📍 Techmiya Ed-Tech, 28th Main Rd, S & C Cross A Road, Jayanagar 9th Block, Bengaluru, Karnataka 560069</p>
             </div>
           </div>
