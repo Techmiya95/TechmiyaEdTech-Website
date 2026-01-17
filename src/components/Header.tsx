@@ -35,8 +35,8 @@ export const Header = () => {
                 key={item.name}
                 to={item.path}
                 className={`px-4 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${isActive(item.path)
-                  ? "text-purple-600 bg-purple-50"
-                  : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
+                  ? "text-amber-600 bg-amber-50"
+                  : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                   }`}
               >
                 {item.name}
@@ -79,8 +79,8 @@ export const Header = () => {
                   to={item.path}
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
-                    ? "text-purple-600 bg-purple-50"
-                    : "text-gray-700 hover:text-purple-600 hover:bg-gray-50"
+                    ? "text-amber-600 bg-amber-50"
+                    : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                     }`}
                 >
                   {item.name}

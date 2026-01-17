@@ -94,6 +94,10 @@ export default {
         pulse: {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.05)' }
+        },
+        oscillate: {
+          '0%, 100%': { transform: 'translateX(-10%)' },
+          '50%': { transform: 'translateX(10%)' }
         }
       },
       animation: {
@@ -103,7 +107,8 @@ export default {
         orbit: 'orbit 8s linear infinite',
         marquee: 'marquee 30s linear infinite',
         marquee2: 'marquee2 30s linear infinite',
-        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+        pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        oscillate: 'oscillate 3s ease-in-out infinite'
       },
       // Additional customizations
       spacing: {

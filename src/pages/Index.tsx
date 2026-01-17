@@ -65,7 +65,17 @@ const Index = () => {
       <section className="relative bg-background text-white overflow-hidden">
         <div className="absolute inset-0 bg-blue-800/100"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 lg:pt-20 lg:pb-32">
+          {/* Top Tagline - Full Width */}
+          <div className="flex justify-center mb-12 w-full">
+            <div className="flex w-full items-center justify-center px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
+              <span className="mr-4 text-2xl animate-pulse">🚀</span>
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase whitespace-nowrap drop-shadow-sm">
+                "Learn What College Doesn't Teach You"
+              </p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Side - Rotating Tech Logos */}
             <div className="relative h-64 w-64 mx-auto lg:mx-0">
@@ -96,17 +106,20 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right Side - TAP ACADEMY Content */}
+            {/* Right Side -  Content */}
             <div className="text-center lg:text-left">
+
+
               <Badge
                 variant="secondary"
                 className="mb-6 bg-yellow-400 text-blue-900 text-xl font-extrabold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300"
               >
-                INDIA’S NO. 1 SOFTWARE & AI TRAINING INSTITUTE
+                INDIA’S NO. 1 SOFTWARE, HARDWARE & AI TRAINING INSTITUTE
               </Badge>
 
+
               <h1 className="text-3xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                <span className="bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 bg-clip-text text-transparent drop-shadow-md">
+                <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
                   TECHMIYA ED-TECH
                 </span>
               </h1>
@@ -117,12 +130,12 @@ const Index = () => {
                   Generation of Innovators
                 </p> */}
                 <p className="text-xl lg:text-2xl font-medium flex items-center justify-center lg:justify-start text-blue-100">
-                  <span className="mr-3">🚀</span> Bridging Technology and
+                  <span className="mr-3"></span> Bridging Technology and
                   Employment
                 </p>
 
                 <p className="text-4xl text-yellow-300 font-bold leading-relaxed">
-                  India’s No. 1 Training in{" "}
+                  Expertise in{" "}
                   <span className="text-white font-extrabold underline decoration-yellow-400 underline-offset-4 animate-pulse">
                     Machine Learning, AI, GenAI,{" "}
                     <span className="text-yellow-400 animate-glow">
@@ -192,8 +205,8 @@ const Index = () => {
             <div className="flex overflow-hidden space-x-12">
               <div className="flex space-x-12 animate-marquee whitespace-nowrap items-center">
                 <div className="flex items-center space-x-2">
-                  <img src="https://www.vectorkhazana.com/assets/images/products/google_ico.jpg" alt="Google" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Google</span>
+                  <img src="https://www.vectorkhazana.com/assets/images/products/google_ico.jpg" alt="Google" className="h-8 mix-blend-multiply" />
+                  <span className="text-sm text-blue-900 font-medium">Google</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <img src="https://pngimg.com/d/amazon_PNG13.png" alt="Amazon" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
@@ -341,7 +354,7 @@ const Index = () => {
                     <span className="font-semibold">{course.duration}</span>
                   </div>
                   <Link to="/courses">
-                    <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
+                    <Button className="w-full bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-white font-bold">
                       Learn More
                     </Button>
                   </Link>

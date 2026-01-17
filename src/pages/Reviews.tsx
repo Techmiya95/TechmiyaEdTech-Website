@@ -13,7 +13,7 @@ const Reviews = () => {
       content: "Techmiya completely transformed my career. I went from having no programming experience to landing a job at Google in just 8 months. The instructors are incredibly knowledgeable and the hands-on approach really helped me understand complex concepts. The career support team was amazing too - they helped me prepare for interviews and even connected me with recruiters.",
       avatar: "./adil.jpg",
       date: "December 2024",
-      
+
     },
     {
       id: 2,
@@ -24,7 +24,7 @@ const Reviews = () => {
       content: "The Data Science program at Tech Miya is outstanding. The curriculum is up-to-date with industry standards and the projects we worked on were directly applicable to real-world scenarios. What I loved most was the personalized attention from instructors and the collaborative learning environment. The job placement assistance was exceptional.",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100",
       date: "November 2023",
-      
+
     },
     {
       id: 3,
@@ -85,7 +85,7 @@ const Reviews = () => {
       course: "Digital Marketing",
       rating: 5,
       content: "The hands-on approach to learning data science at Tech Miya is unmatched. Working with real datasets and solving actual business problems prepared me perfectly for my role at Tesla. The instructors are industry experts who provide valuable mentorship beyond just technical skills.",
-      avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100",
+      avatar: "./kashif.jpg",
       date: "May 2023",
 
     },
@@ -94,7 +94,7 @@ const Reviews = () => {
   const stats = [
     { label: "Total Reviews", value: "2,500+" },
     { label: "Average Rating", value: "4.9/5" },
-    { label: "Job Placement Rate", value: "95%" },
+    { label: "Job Placement Rate", value: "85%" },
     { label: "Salary Increase", value: "300%" },
   ];
 
@@ -107,7 +107,7 @@ const Reviews = () => {
             Student Reviews
           </h1>
           <p className="text-xl lg:text-2xl max-w-3xl mx-auto">
-            Real stories from our graduates who have successfully transformed 
+            Real stories from our graduates who have successfully transformed
             their careers with Tech Miya.
           </p>
         </div>
@@ -160,24 +160,24 @@ const Reviews = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-1 mt-4">
                     {[...Array(review.rating)].map((_, i) => (
                       <span key={i} className="text-yellow-400 text-lg">⭐</span>
                     ))}
                   </div>
                 </CardHeader>
-                
+
                 <CardContent>
                   <p className="text-gray-600 italic mb-6">"{review.content}"</p>
-                  
+
                   <div className="grid grid-cols-2 gap-4 p-4 bg-gray-50 rounded-lg">
                     <div>
-                      
-                      
+
+
                     </div>
                     <div>
-   
+
                     </div>
                   </div>
                 </CardContent>
