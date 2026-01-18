@@ -13,7 +13,7 @@ export const Header = () => {
     { name: "Home", path: "/" },
     { name: "Courses", path: "/courses" },
     { name: "Reviews", path: "/reviews" },
-    { name: "Psychometric Test", path: "/psychometric-test" },
+    { name: "Psychometric Test", path: "https://pt.techmiyaedtech.com/" },
     { name: "Contact", path: "/contact" },
     { name: "Blog", path: "https://blogs.techmiyaedtech.com/" },
     { name: "Jobs", path: "https://jobs.techmiyaedtech.com/" }
