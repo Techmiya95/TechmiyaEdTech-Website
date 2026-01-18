@@ -15,7 +15,7 @@ export const Header = () => {
     { name: "Reviews", path: "/reviews" },
     { name: "Psychometric Test", path: "/psychometric-test" },
     { name: "Contact", path: "/contact" },
-    { name: "Blog", path: "/blog" },
+    { name: "Blog", path: "https://blogs.techmiyaedtech.com/" },
     { name: "Jobs", path: "/jobs" }
   ];
 
@@ -34,16 +34,28 @@ export const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`px-4 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${isActive(item.path)
-                  ? "text-amber-600 bg-amber-50"
-                  : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                  }`}
-              >
-                {item.name}
-              </Link>
+              item.path.startsWith("http") ? (
+                <a
+                  key={item.name}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 rounded-lg text-base font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`px-4 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${isActive(item.path)
+                    ? "text-amber-600 bg-amber-50"
+                    : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                    }`}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -77,17 +89,30 @@ export const Header = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
               {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
-                    ? "text-amber-600 bg-amber-50"
-                    : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                    }`}
-                >
-                  {item.name}
-                </Link>
+                item.path.startsWith("http") ? (
+                  <a
+                    key={item.name}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block px-3 py-2 rounded-md text-base font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
+                      ? "text-amber-600 bg-amber-50"
+                      : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                      }`}
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
               <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer" className="block w-full mt-4">
                 <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
