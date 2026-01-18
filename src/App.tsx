@@ -17,6 +17,13 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import TermsAndConditions from "./pages/terms";
 import PsychometricTest from "./pages/PsychometricTest";
+import Blog from "./pages/Blog";
+import MachineLearningIntro from "./pages/MachineLearningIntro";
+import Jobs from "./pages/Jobs";
+import JobDetails from "./pages/JobDetails";
+import PsychometricGeneric from "./pages/psychometric/PsychometricGeneric";
+import PsychometricEngineering from "./pages/psychometric/PsychometricEngineering";
+import PsychometricManagement from "./pages/psychometric/PsychometricManagement";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +46,13 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
               <Route path="/workshop-register" element={<WorkshopRegister />} />
               <Route path="/psychometric-test" element={<PsychometricTest />} />
+              <Route path="/psychometric-test/generic" element={<PsychometricGeneric />} />
+              <Route path="/psychometric-test/engineering" element={<PsychometricEngineering />} />
+              <Route path="/psychometric-test/management" element={<PsychometricManagement />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/machine-learning-introduction" element={<MachineLearningIntro />} />
+              <Route path="/jobs" element={<Jobs />} />
+              <Route path="/jobs/:jobId" element={<JobDetails />} />
             </Routes>
           </main>
           <Footer />

@@ -28,7 +28,7 @@ const Courses = () => {
     },
     {
       id: 3,
-      title: "Java Programming",
+      title: "Java Programming Mastery",
       description: "Complete Java development from basics to enterprise applications. Learn Spring Boot, Hibernate, and microservices.",
       duration: "5 months",
       level: "Beginner to Advanced",
@@ -48,7 +48,7 @@ const Courses = () => {
     },
     {
       id: 5,
-      title: "Cloud Computing (AWS)",
+      title: "Cloud Computing",
       description: "Master Amazon Web Services cloud platform. Learn deployment, scaling, and cloud architecture.",
       duration: "3 months",
       level: "Beginner to Advanced",
@@ -78,7 +78,7 @@ const Courses = () => {
     },
     {
       id: 8,
-      title: "Android Development (Kotlin, Flutter & Swift)",
+      title: "Android Development",
       description: "Develop mobile apps for Android and iOS using Kotlin, Flutter, and Swift. Learn native and cross-platform development.",
       duration: "5 months",
       level: "Beginner to Advanced",
@@ -99,7 +99,7 @@ const Courses = () => {
     {
       id: 10,
       title: "MLOps",
-      description: "Bridge machine learning and operations. Deploy, monitor, and manage ML models in production.",
+      description: "Bridge machine learning and operations. Deploy, monitor, and manage ML models in production and also basic of GenAI and LLMOps",
       duration: "4 months",
       level: "Beginner to Advanced",
       image: "https://www.atomcamp.com/wp-content/uploads/2024/04/image-10-1024x495.png",
@@ -118,7 +118,7 @@ const Courses = () => {
     },
     {
       id: 12,
-      title: "Embedded Systems & IoT",
+      title: "Embedded & IoT",
       description: "Learn microcontroller programming, IoT protocols, and real-time data integration with cloud services.",
       duration: "4 months",
       level: "Beginner to Advanced",
@@ -139,7 +139,7 @@ const Courses = () => {
     {
       id: 14,
       title: "Automation Testing",
-      description: "QA Engineering with Selenium",
+      description: "QA Engineering with Selenium and JUnit, Load Runner and Trello",
       duration: "3 months",
       level: "Beginner to Advanced",
       image: "https://executeautomationtest.wordpress.com/wp-content/uploads/2017/11/automation-testing.png",

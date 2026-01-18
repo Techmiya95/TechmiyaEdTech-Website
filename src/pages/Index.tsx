@@ -69,7 +69,7 @@ const Index = () => {
           {/* Top Tagline - Full Width */}
           <div className="flex justify-center mb-12 w-full">
             <div className="flex w-full items-center justify-center px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
-              <span className="mr-4 text-2xl animate-pulse">🚀</span>
+              <span className="mr-4 text-2xl animate-pulse"></span>
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase whitespace-nowrap drop-shadow-sm">
                 "Learn What College Doesn't Teach You"
               </p>

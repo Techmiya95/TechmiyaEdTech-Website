@@ -15,6 +15,8 @@ export const Header = () => {
     { name: "Reviews", path: "/reviews" },
     { name: "Psychometric Test", path: "/psychometric-test" },
     { name: "Contact", path: "/contact" },
+    { name: "Blog", path: "/blog" },
+    { name: "Jobs", path: "/jobs" }
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -54,7 +56,7 @@ export const Header = () => {
             </a>
             <Link to="/register">
               <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                Register Now
+                Enquire Now
               </Button>
             </Link>
           </div>
