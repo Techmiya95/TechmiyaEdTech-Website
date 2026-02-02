@@ -32,6 +32,7 @@ import Hackathons from "./pages/services/Hackathons";
 import FDPSDP from "./pages/services/FDPSDP";
 import Internships from "./pages/services/Internships";
 import Mentorship from "./pages/services/Mentorship";
+import SocialSidebar from "./components/SocialSidebar";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +44,7 @@ const App = () => (
       <BrowserRouter>
         <div className="min-h-screen flex flex-col">
           <Header />
+          <SocialSidebar />
           <main className="flex-1">
             <Routes>
               <Route path="/" element={<Index />} />
