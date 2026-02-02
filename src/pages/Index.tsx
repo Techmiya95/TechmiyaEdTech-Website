@@ -338,6 +338,87 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Why Choose Techmiya Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Why Choose Techmiya EdTech for IT Training in Bangalore?
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Techmiya EdTech is the leading IT training institute in Jayanagar, Bangalore, offering comprehensive courses in Python, Java, JavaScript, Data Science, Machine Learning, and Artificial Intelligence. Our industry-expert trainers and hands-on curriculum ensure you gain the practical skills employers demand.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">100% Placement Assistance</h3>
+              <p className="text-gray-700 mb-4">
+                We provide dedicated placement support to help you land your dream job in top IT companies. Our placement cell works closely with leading recruiters from Google, Amazon, Microsoft, TCS, Infosys, Wipro, and more. We offer resume building, mock interviews, and direct job referrals to ensure your success.
+              </p>
+              <ul className="text-gray-600 space-y-2">
+                <li className="flex items-center"><span className="text-green-500 mr-2">✓</span> Resume optimization and LinkedIn profile building</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✓</span> Mock interviews with industry professionals</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✓</span> Direct referrals to partner companies</li>
+              </ul>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-2xl">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Upskilling for Working Professionals</h3>
+              <p className="text-gray-700 mb-4">
+                Whether you are a fresher looking to start your IT career or an experienced professional wanting to upskill, our flexible batch timings and weekend classes accommodate your schedule. Learn Python programming, R for data analysis, advanced JavaScript frameworks, and cloud technologies to stay ahead in your career.
+              </p>
+              <ul className="text-gray-600 space-y-2">
+                <li className="flex items-center"><span className="text-green-500 mr-2">✓</span> Weekend and evening batches available</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✓</span> Self-paced learning with LMS access</li>
+                <li className="flex items-center"><span className="text-green-500 mr-2">✓</span> Industry-recognized certifications</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold mb-4 text-center">Our Course Offerings</h3>
+            <p className="text-blue-100 text-center mb-6">
+              We offer comprehensive training in the most in-demand technologies for software development and data careers.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">Python</p>
+                <p className="text-sm text-blue-200">Programming</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">Java</p>
+                <p className="text-sm text-blue-200">Development</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">JavaScript</p>
+                <p className="text-sm text-blue-200">Full Stack</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">R Programming</p>
+                <p className="text-sm text-blue-200">Analytics</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">Data Science</p>
+                <p className="text-sm text-blue-200">ML & AI</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">AWS DevOps</p>
+                <p className="text-sm text-blue-200">Cloud</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">React & Node</p>
+                <p className="text-sm text-blue-200">Web Dev</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">SQL & MongoDB</p>
+                <p className="text-sm text-blue-200">Databases</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Courses */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
