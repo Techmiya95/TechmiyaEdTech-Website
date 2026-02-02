@@ -3,8 +3,24 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SEOHead } from "@/components/SEOHead";
 
 const Courses = () => {
+  const coursesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "IT Training Courses at Techmiya EdTech",
+    "description": "Comprehensive IT training courses in Generative AI, Machine Learning, Full Stack Development, Data Science, Cloud Computing, DevOps, and more.",
+    "numberOfItems": 14,
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Full Stack Development" },
+      { "@type": "ListItem", "position": 2, "name": "Data Science & Analytics" },
+      { "@type": "ListItem", "position": 3, "name": "Generative AI" },
+      { "@type": "ListItem", "position": 4, "name": "Machine Learning & MLOps" },
+      { "@type": "ListItem", "position": 5, "name": "Cloud Computing & DevOps" }
+    ]
+  };
+
   const courses = [
     {
       id: 1,
@@ -152,6 +168,13 @@ const Courses = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead
+        title="IT Training Courses - Full Stack, Data Science, AI, DevOps"
+        description="Explore 14+ IT courses: Full Stack Development, Data Science, Generative AI, Machine Learning, Cloud Computing, DevOps, Cybersecurity. Expert training in Jayanagar, Bangalore with job placement."
+        keywords="IT courses Bangalore, Full Stack Development course, Data Science training, Generative AI course, Machine Learning classes, AWS DevOps training, Python programming, Java course, Cybersecurity training, coding bootcamp Jayanagar"
+        canonicalUrl="/courses"
+        structuredData={coursesSchema}
+      />
       {/* Header Section */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

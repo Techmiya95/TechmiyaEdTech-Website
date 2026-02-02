@@ -5,8 +5,21 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { CallBackCTA } from "@/components/CallBackCTA";
 import { CTAPopup } from "@/components/CTAPopup";
+import { SEOHead } from "@/components/SEOHead";
 
 const Index = () => {
+  const homepageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Techmiya EdTech - Best IT Training Institute in Jayanagar, Bangalore",
+    "description": "Premier IT Training Institute offering Generative AI, Machine Learning, Data Science, Python, AWS, DevOps courses in Jayanagar, Bangalore.",
+    "url": "https://techmiyaedtech.com/",
+    "mainEntity": {
+      "@type": "EducationalOrganization",
+      "name": "Techmiya EdTech"
+    }
+  };
+
   const featuredCourses = [
     {
       id: 1,
@@ -60,6 +73,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Best IT Training Institute in Jayanagar, Bangalore"
+        description="Techmiya EdTech - Premier IT Training Institute offering Generative AI, Machine Learning, Data Science, Python, AWS, DevOps, Cloud Computing courses. Transform your career with industry-ready skills in Jayanagar, Bangalore."
+        keywords="Best IT training institute Bangalore, Generative AI courses, Machine Learning training Jayanagar, Data Science Python AWS DevOps, Software training Bangalore, AI ML courses, Full Stack Development, coding bootcamp Bangalore"
+        canonicalUrl="/"
+        structuredData={homepageSchema}
+      />
       {/* Hero Section */}
       {/* Hero Section - Replaced with TAP ACADEMY version */}
       <section className="relative bg-background text-white overflow-hidden">

@@ -7,8 +7,30 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import emailjs from "emailjs-com";
+import { SEOHead } from "@/components/SEOHead";
 
 const Contact = () => {
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Techmiya EdTech",
+    "description": "Get in touch with Techmiya EdTech for IT training inquiries, course information, and career guidance.",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "name": "Techmiya EdTech",
+      "telephone": "+91-6363760275",
+      "email": "hr@techmiyaedtech.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "28th Main Rd, Jayanagar 9th Block",
+        "addressLocality": "Bangalore",
+        "addressRegion": "Karnataka",
+        "postalCode": "560069",
+        "addressCountry": "IN"
+      }
+    }
+  };
+
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -79,6 +101,13 @@ const Contact = () => {
   };
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead
+        title="Contact Us - Get in Touch for IT Training"
+        description="Contact Techmiya EdTech in Jayanagar, Bangalore for IT course inquiries, demo class booking, career guidance, and placement assistance. Call +91-6363760275 or email us."
+        keywords="contact Techmiya, IT training inquiry Bangalore, demo class booking, career counseling, placement assistance, Jayanagar IT institute contact"
+        canonicalUrl="/contact"
+        structuredData={contactSchema}
+      />
       {/* Header Section */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

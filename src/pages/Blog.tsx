@@ -1,5 +1,6 @@
 
 import { BlogCard } from "@/components/BlogCard";
+import { SEOHead } from "@/components/SEOHead";
 import {
     Pagination,
     PaginationContent,
@@ -33,6 +34,12 @@ const Blog = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <SEOHead
+                title="Tech Blog - AI, Machine Learning & Software Development Insights"
+                description="Read expert articles on Generative AI, Machine Learning, Data Science, Python programming, career advice, and software development tutorials from Techmiya EdTech."
+                keywords="tech blog, Machine Learning tutorials, AI articles, programming tips, career development, software engineering blog, Python tutorials, Data Science insights, IT industry news"
+                canonicalUrl="/blog"
+            />
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">

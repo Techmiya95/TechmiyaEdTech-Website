@@ -1,8 +1,22 @@
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { SEOHead } from "@/components/SEOHead";
 
 const Reviews = () => {
+  const reviewsSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Techmiya EdTech",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2500",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
   const reviews = [
     {
       id: 1,
@@ -100,6 +114,13 @@ const Reviews = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEOHead
+        title="Student Reviews & Success Stories"
+        description="Read 2,500+ authentic reviews from Techmiya EdTech students. 4.9/5 rating, 85% job placement rate. Success stories from Google, Microsoft, Amazon, and top tech companies."
+        keywords="Techmiya reviews, IT training reviews Bangalore, student testimonials, success stories, job placement reviews, coding bootcamp reviews, tech training feedback"
+        canonicalUrl="/reviews"
+        structuredData={reviewsSchema}
+      />
       {/* Header Section */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

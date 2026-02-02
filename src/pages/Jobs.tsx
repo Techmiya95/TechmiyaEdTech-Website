@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { JobCard } from "@/components/JobCard";
 import { jobs } from "@/data/jobs";
+import { SEOHead } from "@/components/SEOHead";
 import {
     Pagination,
     PaginationContent,
@@ -35,6 +36,12 @@ const Jobs = () => {
 
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+            <SEOHead
+                title="IT Jobs & Career Opportunities in Bangalore"
+                description="Find IT jobs and career opportunities at Techmiya EdTech. Software developer, data scientist, ML engineer, and more positions available in Bangalore."
+                keywords="IT jobs Bangalore, software developer jobs, tech careers, data scientist positions, ML engineer jobs, fresher IT jobs, tech job openings Jayanagar"
+                canonicalUrl="/jobs"
+            />
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
