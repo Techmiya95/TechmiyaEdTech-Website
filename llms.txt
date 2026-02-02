@@ -1,0 +1,49 @@
+# Techmiya EdTech
+
+> Best IT Training Institute in Jayanagar, Bangalore
+
+## About
+
+Techmiya EdTech is a premier IT training institute located in Jayanagar, Bangalore, Karnataka, India. We offer comprehensive courses in cutting-edge technologies including Generative AI, Machine Learning, Data Science, Python, AWS, DevOps, Cloud Computing, Full Stack Development, Hardware & Networking.
+
+## Our Courses
+
+### Generative AI & LLM
+Comprehensive training in Generative AI, Large Language Models, ChatGPT, and AI applications.
+
+### Machine Learning & Deep Learning
+In-depth Machine Learning and Deep Learning courses with hands-on projects using TensorFlow, PyTorch, and scikit-learn.
+
+### Data Science & Analytics
+Complete Data Science training including Python, SQL, Big Data technologies, and visualization tools.
+
+### Cloud Computing & DevOps
+AWS, Azure, GCP certification training and DevOps practices including Docker, Kubernetes, and CI/CD.
+
+### Full Stack Development
+Web and software development training with modern frameworks including React, Node.js, Python, and Java.
+
+### Hardware & Networking
+Computer hardware, networking, and cybersecurity courses for IT infrastructure professionals.
+
+## Contact Information
+
+- **Address**: 28th Main Rd, Jayanagar 9th Block, Bangalore, Karnataka 560069, India
+- **Phone**: +91-6363760275
+- **Email**: hr@techmiyaedtech.com
+- **Website**: https://techmiyaedtech.com
+
+## Key Pages
+
+- [Home](https://techmiyaedtech.com/)
+- [Courses](https://techmiyaedtech.com/courses)
+- [Reviews](https://techmiyaedtech.com/reviews)
+- [Contact](https://techmiyaedtech.com/contact)
+- [Blog](https://techmiyaedtech.com/blog)
+- [Jobs](https://techmiyaedtech.com/jobs)
+
+## Social & Resources
+
+- [Instagram](https://instagram.com/techmiya_edtech)
+- [YouTube](https://youtube.com/channel/UCqyZlCLdyDFjyM3VFDea4rw)
+- [Sitemap](https://techmiyaedtech.com/sitemap.xml)
