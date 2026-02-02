@@ -544,62 +544,62 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            <Link to="/services/corporate-training" className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">🏢</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Corporate Training</h3>
               <p className="text-gray-600 text-sm">Industry-focused upskilling programs for professionals.</p>
-            </div>
-            <div className="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            </Link>
+            <Link to="/services/csr-programs" className="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">CSR Programs</h3>
               <p className="text-gray-600 text-sm">Skill development initiatives aligned with CSR goals.</p>
-            </div>
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            </Link>
+            <Link to="/services/partnerships" className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">🔗</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Partnerships Building</h3>
               <p className="text-gray-600 text-sm">Strategic collaborations with academia & industry.</p>
-            </div>
-            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            </Link>
+            <Link to="/services/campus-drives" className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">🎓</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Campus Drives</h3>
               <p className="text-gray-600 text-sm">Placement drives & recruitment readiness programs.</p>
-            </div>
-            <div className="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            </Link>
+            <Link to="/services/hackathons" className="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">💻</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Hackathons</h3>
               <p className="text-gray-600 text-sm">Innovation-driven coding & problem-solving events.</p>
-            </div>
-            <div className="bg-gradient-to-br from-cyan-50 to-sky-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            </Link>
+            <Link to="/services/fdp-sdp" className="bg-gradient-to-br from-cyan-50 to-sky-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">📚</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">FDP & SDP</h3>
               <p className="text-gray-600 text-sm">Faculty & Skill Development Programs.</p>
-            </div>
-            <div className="bg-gradient-to-br from-yellow-50 to-lime-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            </Link>
+            <Link to="/services/internships" className="bg-gradient-to-br from-yellow-50 to-lime-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">🚀</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Internships & Live Projects</h3>
               <p className="text-gray-600 text-sm">Hands-on industry exposure through real-world projects.</p>
-            </div>
-            <div className="bg-gradient-to-br from-indigo-50 to-violet-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+            </Link>
+            <Link to="/services/mentorship" className="bg-gradient-to-br from-indigo-50 to-violet-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">👨‍💼</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 mb-2">Industry Mentorship</h3>
               <p className="text-gray-600 text-sm">One-on-one mentorship from experienced industry experts.</p>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -654,7 +654,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* CTA Section */}
       {/* CTA Section */}
@@ -662,7 +662,7 @@ const Index = () => {
 
       {/* Popout CTA */}
       <CTAPopup />
-    </div>
+    </div >
   );
 };
 

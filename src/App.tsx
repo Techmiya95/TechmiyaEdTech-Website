@@ -24,6 +24,14 @@ import JobDetails from "./pages/JobDetails";
 import PsychometricGeneric from "./pages/psychometric/PsychometricGeneric";
 import PsychometricEngineering from "./pages/psychometric/PsychometricEngineering";
 import PsychometricManagement from "./pages/psychometric/PsychometricManagement";
+import CorporateTraining from "./pages/services/CorporateTraining";
+import CSRPrograms from "./pages/services/CSRPrograms";
+import Partnerships from "./pages/services/Partnerships";
+import CampusDrives from "./pages/services/CampusDrives";
+import Hackathons from "./pages/services/Hackathons";
+import FDPSDP from "./pages/services/FDPSDP";
+import Internships from "./pages/services/Internships";
+import Mentorship from "./pages/services/Mentorship";
 
 const queryClient = new QueryClient();
 
@@ -53,6 +61,15 @@ const App = () => (
               <Route path="/blog/machine-learning-introduction" element={<MachineLearningIntro />} />
               <Route path="/jobs" element={<Jobs />} />
               <Route path="/jobs/:jobId" element={<JobDetails />} />
+              {/* Service Pages */}
+              <Route path="/services/corporate-training" element={<CorporateTraining />} />
+              <Route path="/services/csr-programs" element={<CSRPrograms />} />
+              <Route path="/services/partnerships" element={<Partnerships />} />
+              <Route path="/services/campus-drives" element={<CampusDrives />} />
+              <Route path="/services/hackathons" element={<Hackathons />} />
+              <Route path="/services/fdp-sdp" element={<FDPSDP />} />
+              <Route path="/services/internships" element={<Internships />} />
+              <Route path="/services/mentorship" element={<Mentorship />} />
             </Routes>
           </main>
           <Footer />
