@@ -26,6 +26,10 @@ Crawl-delay: 2
 # Sitemap location
 Sitemap: https://techmiyaedtech.com/sitemap.xml
 
+# LLMs.txt for AI crawlers
+# See: https://llmstxt.org/
+LLMsTxt: https://techmiyaedtech.com/llms.txt
+
 # Disallow admin and private paths (if any)
 Disallow: /api/
 Disallow: /_next/
