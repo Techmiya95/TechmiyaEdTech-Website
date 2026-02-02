@@ -142,6 +142,9 @@ const Index = () => {
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
                   TECHMIYA ED-TECH
                 </span>
+                <span className="block text-xl lg:text-2xl text-white font-bold mt-2">
+                  Best IT Training Institute in Jayanagar, Bangalore
+                </span>
               </h1>
 
               <div className="space-y-5 mb-10">
@@ -395,8 +398,16 @@ const Index = () => {
                 <p className="text-sm text-blue-200">Full Stack</p>
               </div>
               <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">R Programming</p>
-                <p className="text-sm text-blue-200">Analytics</p>
+                <p className="font-semibold">GenAI & LLM</p>
+                <p className="text-sm text-blue-200">AI/ML</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">Agentic AI</p>
+                <p className="text-sm text-blue-200">Autonomous</p>
+              </div>
+              <div className="bg-white/10 p-4 rounded-lg">
+                <p className="font-semibold">MCP</p>
+                <p className="text-sm text-blue-200">AI Protocol</p>
               </div>
               <div className="bg-white/10 p-4 rounded-lg">
                 <p className="font-semibold">Data Science</p>
@@ -407,12 +418,12 @@ const Index = () => {
                 <p className="text-sm text-blue-200">Cloud</p>
               </div>
               <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">React & Node</p>
-                <p className="text-sm text-blue-200">Web Dev</p>
+                <p className="font-semibold">Embedded IoT</p>
+                <p className="text-sm text-blue-200">Hardware</p>
               </div>
               <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">SQL & MongoDB</p>
-                <p className="text-sm text-blue-200">Databases</p>
+                <p className="font-semibold">Android</p>
+                <p className="text-sm text-blue-200">Mobile Dev</p>
               </div>
             </div>
           </div>
@@ -517,6 +528,130 @@ const Index = () => {
                 Read More Reviews
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Our Services
+            </h2>
+            <p className="text-xl text-gray-600">
+              Comprehensive solutions for students, professionals, and organizations
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🏢</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Corporate Training</h3>
+              <p className="text-gray-600 text-sm">Industry-focused upskilling programs for professionals.</p>
+            </div>
+            <div className="bg-gradient-to-br from-green-50 to-teal-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🤝</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">CSR Programs</h3>
+              <p className="text-gray-600 text-sm">Skill development initiatives aligned with CSR goals.</p>
+            </div>
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🔗</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Partnerships Building</h3>
+              <p className="text-gray-600 text-sm">Strategic collaborations with academia & industry.</p>
+            </div>
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🎓</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Campus Drives</h3>
+              <p className="text-gray-600 text-sm">Placement drives & recruitment readiness programs.</p>
+            </div>
+            <div className="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">💻</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Hackathons</h3>
+              <p className="text-gray-600 text-sm">Innovation-driven coding & problem-solving events.</p>
+            </div>
+            <div className="bg-gradient-to-br from-cyan-50 to-sky-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">📚</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">FDP & SDP</h3>
+              <p className="text-gray-600 text-sm">Faculty & Skill Development Programs.</p>
+            </div>
+            <div className="bg-gradient-to-br from-yellow-50 to-lime-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🚀</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Internships & Live Projects</h3>
+              <p className="text-gray-600 text-sm">Hands-on industry exposure through real-world projects.</p>
+            </div>
+            <div className="bg-gradient-to-br from-indigo-50 to-violet-50 p-6 rounded-2xl hover:shadow-lg transition-shadow">
+              <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">👨‍💼</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Industry Mentorship</h3>
+              <p className="text-gray-600 text-sm">One-on-one mentorship from experienced industry experts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600">
+              Everything you need to know about our IT training programs in Jayanagar, Bangalore
+            </p>
+          </div>
+          <div className="space-y-4">
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Who can enroll in Techmiya EdTech programs?</h3>
+              <p className="text-gray-600">Our programs are designed for students, fresh graduates, working professionals, and career switchers who want to build or upgrade skills in GenAI, ML, DL, Robotics, and related technologies.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Do I need prior technical experience?</h3>
+              <p className="text-gray-600">No prior experience is required for beginner-level courses. We offer structured learning paths from basic to advanced levels to suit all learners.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Do you provide certificates and career support?</h3>
+              <p className="text-gray-600">Yes, we provide course completion certificates along with career guidance, resume support, and interview preparation to help learners succeed professionally.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">What training modes do you offer?</h3>
+              <p className="text-gray-600">We offer online, offline, and hybrid training modes to provide flexible learning options for students and working professionals.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Are the courses project-based?</h3>
+              <p className="text-gray-600">Yes, all our programs include hands-on projects, case studies, and practical assignments to ensure real-world learning experience.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Do you provide placement or career assistance?</h3>
+              <p className="text-gray-600">We provide career guidance, resume building, and interview preparation support to help learners prepare for job opportunities at top IT companies.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">What is the duration of the courses?</h3>
+              <p className="text-gray-600">Course duration varies depending on the program, typically ranging from a few weeks to several months based on the skill level and complexity.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Will I receive a course completion certificate?</h3>
+              <p className="text-gray-600">Yes, learners receive an industry-recognized course completion certificate after successfully completing the program.</p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-sm">
+              <h3 className="text-lg font-bold text-gray-900 mb-2">How can I enroll or get more information?</h3>
+              <p className="text-gray-600">You can enroll through our website or contact our support team at +91-6363760275 for counseling and detailed course information.</p>
+            </div>
           </div>
         </div>
       </section>
