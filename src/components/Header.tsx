@@ -9,15 +9,16 @@ const TopBar = () => {
   return (
     <>
       {/* First Row - Job Guarantee Message */}
+      {/* First Row - Job Guarantee Message */}
       <div className="bg-blue-800 text-white">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center items-center py-2.5 text-base">
-            <div className="flex items-center gap-2 font-semibold">
-              <span className="text-yellow-200">✨</span>
+        <div className="max-w-9xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="flex justify-center items-center py-2 text-xs sm:text-base">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 font-semibold text-center leading-tight">
+              <span className="text-yellow-200 hidden sm:inline">✨</span>
               <span>We do offer 100% Job Guarantee Programs and Courses</span>
+              <span className="sm:hidden text-yellow-200 text-[10px]">(Any degree/Gap/Non-IT)</span>
               <span className="hidden sm:inline text-yellow-200">(Irrespective of any degree/Year Gap/Non-IT)</span>
-              <span className="sm:hidden text-yellow-200">(Any degree/Gap/Non-IT)</span>
-              <span className="text-yellow-200">✨</span>
+              <span className="text-yellow-200 hidden sm:inline">✨</span>
             </div>
           </div>
         </div>
@@ -25,10 +26,10 @@ const TopBar = () => {
 
       {/* Second Row - Branch Contact Details */}
       <div className="bg-gray-900 text-white">
-        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center items-center py-2 text-sm overflow-x-auto">
-            <div className="flex items-center gap-4 md:gap-6 whitespace-nowrap">
-              <span className="flex items-center gap-1 text-amber-400">
+        <div className="max-w-9xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div className="flex justify-center items-center py-2 text-[11px] sm:text-sm">
+            <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-center">
+              <span className="flex items-center gap-1 text-amber-400 w-full sm:w-auto justify-center mb-1 sm:mb-0">
                 <MapPin className="w-3 h-3" />
                 <span className="font-semibold">Branches:</span>
               </span>
@@ -36,17 +37,20 @@ const TopBar = () => {
                 <Phone className="w-3 h-3" />
                 <span>Jayanagar: +91-6363760275</span>
               </a>
+              <span className="hidden sm:inline text-gray-600">|</span>
               <a href="tel:+919206798097" className="flex items-center gap-1 hover:text-amber-400 transition-colors">
                 <Phone className="w-3 h-3" />
                 <span>RR Nagar: +91-9206798097</span>
               </a>
+              <span className="hidden sm:inline text-gray-600">|</span>
               <a href="tel:+919591745792" className="flex items-center gap-1 hover:text-amber-400 transition-colors">
                 <Phone className="w-3 h-3" />
                 <span>Vijaynagar: +91-9591745792</span>
               </a>
+              <span className="hidden sm:inline text-gray-600">|</span>
               <a href="tel:+919591745792" className="flex items-center gap-1 hover:text-amber-400 transition-colors">
                 <Phone className="w-3 h-3" />
-                <span>Davengere: +91-9591745792</span>
+                <span>Davangere: +91-9591745792</span>
               </a>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { CallBackCTA } from "@/components/CallBackCTA";
 import { CTAPopup } from "@/components/CTAPopup";
 import { SEOHead } from "@/components/SEOHead";
+import CollegeVsIndustrySection from "@/components/CollegeVsIndustrySection";
 
 const Index = () => {
   const homepageSchema = {
@@ -90,7 +91,7 @@ const Index = () => {
           <div className="flex justify-center mb-12 w-full">
             <div className="flex w-full items-center justify-center px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
               <span className="mr-4 text-2xl animate-pulse"></span>
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase whitespace-nowrap drop-shadow-sm">
+              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase text-center drop-shadow-sm leading-tight">
                 "Learn What College Doesn't Teach You"
               </p>
             </div>
@@ -462,6 +463,8 @@ const Index = () => {
               </ul>
             </div>
           </div>
+
+          <CollegeVsIndustrySection />
 
           <div className="bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 text-white p-8 sm:p-16 rounded-3xl shadow-2xl relative overflow-hidden my-20">
             <h3 className="text-3xl md:text-5xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-yellow-400">
