@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, Linkedin } from "lucide-react";
+import { Instagram, Facebook, Youtube, Linkedin, MessageCircle, Phone } from "lucide-react";
 
 const SocialSidebar = () => {
     const socials = [
@@ -22,6 +22,27 @@ const SocialSidebar = () => {
                     <social.icon className="w-5 h-5" />
                 </a>
             ))}
+
+            {/* Gap */}
+            <div className="h-6"></div>
+
+            {/* Contact Buttons */}
+            <a
+                href="https://wa.me/916363760275"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="w-12 h-12 flex items-center justify-center rounded-l-full transition-all duration-300 hover:w-14 hover:shadow-lg"
+            >
+                <img src="/Logo-WhatsApp.png" alt="WhatsApp" className="w-12 h-12 object-contain" />
+            </a>
+            <a
+                href="tel:+916363760275"
+                aria-label="Call Us"
+                className="w-12 h-12 bg-yellow-500 text-black flex items-center justify-center rounded-l-full transition-all duration-300 hover:w-14 hover:shadow-lg shadow-md"
+            >
+                <Phone className="w-6 h-6" />
+            </a>
         </div>
     );
 };
