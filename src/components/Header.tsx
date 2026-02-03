@@ -90,7 +90,7 @@ export const Header = () => {
   const isServiceActive = serviceItems.some(item => location.pathname === item.path);
 
   return (
-    <div className="sticky top-0 z-50">
+    <div className="md:sticky md:top-0 z-50">
       <TopBar />
       <header className="bg-white/95 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
