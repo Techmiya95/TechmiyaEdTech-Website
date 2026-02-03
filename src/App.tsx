@@ -11,6 +11,7 @@ import WorkshopRegister from "./pages/WorkshopRegister";
 
 import Index from "./pages/Index";
 import Courses from "./pages/Courses";
+import ScrollToTop from "./components/ScrollToTop";
 import CourseDetail from "./pages/CourseDetail";
 import Reviews from "./pages/Reviews";
 import Register from "./pages/Register";
@@ -44,6 +45,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Header />
           <SocialSidebar />
