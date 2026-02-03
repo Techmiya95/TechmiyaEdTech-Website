@@ -33,6 +33,7 @@ import FDPSDP from "./pages/services/FDPSDP";
 import Internships from "./pages/services/Internships";
 import Mentorship from "./pages/services/Mentorship";
 import SocialSidebar from "./components/SocialSidebar";
+import { StickyFooterBar } from "./components/StickyFooterBar";
 
 const queryClient = new QueryClient();
 
@@ -75,7 +76,7 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
-
+          <StickyFooterBar />
         </div>
       </BrowserRouter>
     </TooltipProvider>

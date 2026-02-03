@@ -300,13 +300,13 @@ const Index = () => {
       </section>
 
       {/* Training Types Section */}
-      <section className="py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              We Offer <span className="text-amber-400">3 Types</span> of Training
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              We Offer <span className="text-amber-500">3 Types</span> of Training
             </h2>
-            <p className="text-xl text-blue-200">
+            <p className="text-xl text-gray-600">
               Choose the learning mode that fits your schedule and preference
             </p>
           </div>
