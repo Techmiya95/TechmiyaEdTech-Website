@@ -299,6 +299,90 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Training Types Section */}
+      <section className="py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
+              We Offer <span className="text-amber-400">3 Types</span> of Training
+            </h2>
+            <p className="text-xl text-blue-200">
+              Choose the learning mode that fits your schedule and preference
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* On Premise Classroom Training */}
+            <Card className="bg-gradient-to-br from-amber-500 to-orange-600 border-0 overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl">
+              <CardHeader className="pb-4">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-4xl">🏫</span>
+                </div>
+                <CardTitle className="text-2xl font-bold text-white text-center">
+                  On Premise Classroom Training
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-white/90 mb-4">
+                  Traditional face-to-face learning experience in our state-of-the-art classrooms with expert instructors.
+                </p>
+                <ul className="text-left text-white/80 space-y-2 text-sm">
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Direct interaction with trainers</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Hands-on lab sessions</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Peer learning & networking</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Real-time doubt resolution</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Instructor Led Live Online Class */}
+            <Card className="bg-gradient-to-br from-blue-500 to-cyan-600 border-0 overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl">
+              <CardHeader className="pb-4">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-4xl">💻</span>
+                </div>
+                <CardTitle className="text-2xl font-bold text-white text-center">
+                  Instructor Led Live Online Class on LMS
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-white/90 mb-4">
+                  Live interactive sessions with our expert trainers through our advanced Learning Management System.
+                </p>
+                <ul className="text-left text-white/80 space-y-2 text-sm">
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Live interactive sessions</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Access recorded sessions</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Learn from anywhere</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Real-time Q&A support</li>
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Self Paced Training */}
+            <Card className="bg-gradient-to-br from-purple-500 to-pink-600 border-0 overflow-hidden hover:scale-105 transition-transform duration-300 shadow-xl">
+              <CardHeader className="pb-4">
+                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                  <span className="text-4xl">🎯</span>
+                </div>
+                <CardTitle className="text-2xl font-bold text-white text-center">
+                  Self Paced Training
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-white/90 mb-4">
+                  Learn at your own pace with our comprehensive pre-recorded courses and rich learning resources.
+                </p>
+                <ul className="text-left text-white/80 space-y-2 text-sm">
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Learn anytime, anywhere</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Lifetime access to content</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Progress at your own speed</li>
+                  <li className="flex items-center"><span className="text-white mr-2">✓</span> Practice exercises included</li>
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Mission Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
