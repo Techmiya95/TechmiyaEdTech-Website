@@ -23,6 +23,12 @@ const CSRPrograms = () => {
                 "Contribute to India's digital skill development mission",
                 "Potential talent pipeline from trained candidates"
             ]}
+            images={[
+                "/csr1.jpeg",
+                "/csr2.jpeg",
+                "/csr3.jpeg",
+                "/csr4.jpeg"
+            ]}
         />
     );
 };

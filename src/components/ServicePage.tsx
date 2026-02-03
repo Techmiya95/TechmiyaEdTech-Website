@@ -9,9 +9,11 @@ interface ServicePageProps {
     features: string[];
     benefits: string[];
     icon: string;
+    images?: string[];
+    youtubeVideoId?: string;
 }
 
-export const ServicePage = ({ title, subtitle, description, features, benefits, icon }: ServicePageProps) => {
+export const ServicePage = ({ title, subtitle, description, features, benefits, icon, images, youtubeVideoId }: ServicePageProps) => {
     return (
         <div className="min-h-screen">
             <SEOHead
@@ -89,6 +91,47 @@ export const ServicePage = ({ title, subtitle, description, features, benefits, 
                     </div>
                 </div>
             </section>
+
+            {/* Image Gallery */}
+            {images && images.length > 0 && (
+                <section className="py-12 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Gallery</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {images.map((image, index) => (
+                                <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 aspect-video">
+                                    <img
+                                        src={image}
+                                        alt={`${title} image ${index + 1}`}
+                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* Featured Video */}
+            {youtubeVideoId && (
+                <section className="py-12 bg-gray-50">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Video</h2>
+                        <div className="flex justify-center">
+                            <div className="relative w-full max-w-[300px] aspect-[9/16] rounded-3xl overflow-hidden shadow-xl border-[6px] border-gray-900 bg-black hover:scale-105 transition-transform duration-300">
+                                <iframe
+                                    className="w-full h-full"
+                                    src={`https://www.youtube.com/embed/${youtubeVideoId}`}
+                                    title="Featured Service Video"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                ></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            )}
 
             {/* Back to Home */}
             <section className="py-8 bg-gray-50">

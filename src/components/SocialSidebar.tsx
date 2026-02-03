@@ -34,7 +34,7 @@ const SocialSidebar = () => {
                 aria-label="WhatsApp"
                 className="w-12 h-12 flex items-center justify-center rounded-l-full transition-all duration-300 hover:w-14 hover:shadow-lg"
             >
-                <img src="/Logo-WhatsApp.png" alt="WhatsApp" className="w-12 h-12 object-contain" />
+                <img src="/whatsapp-icon.png" alt="WhatsApp" className="w-12 h-12 object-contain" />
             </a>
             <a
                 href="tel:+916363760275"

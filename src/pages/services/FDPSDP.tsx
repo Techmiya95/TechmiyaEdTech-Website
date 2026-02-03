@@ -23,6 +23,13 @@ const FDPSDP = () => {
                 "Research and publication opportunities",
                 "Professional development and career growth"
             ]}
+            images={[
+                "/fdp1.jpeg",
+                "/fdp2.jpeg",
+                "/fdp3.jpeg",
+                "/fdp4.jpeg"
+            ]}
+            youtubeVideoId="Ae9nZngtk-g"
         />
     );
 };
