@@ -9,10 +9,10 @@ const TopBar = () => {
   return (
     <>
       {/* First Row - Job Guarantee Message */}
-      <div className="bg-gradient-to-r from-amber-600 via-orange-500 to-amber-600 text-white">
+      <div className="bg-blue-800 text-white">
         <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center items-center py-2.5 text-base">
-            <div className="flex items-center gap-2 font-semibold animate-pulse">
+            <div className="flex items-center gap-2 font-semibold">
               <span className="text-yellow-200">✨</span>
               <span>We do offer 100% Job Guarantee Programs and Courses</span>
               <span className="hidden sm:inline text-yellow-200">(Irrespective of any degree/Year Gap/Non-IT)</span>

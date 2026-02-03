@@ -11,6 +11,7 @@ import WorkshopRegister from "./pages/WorkshopRegister";
 
 import Index from "./pages/Index";
 import Courses from "./pages/Courses";
+import CourseDetail from "./pages/CourseDetail";
 import Reviews from "./pages/Reviews";
 import Register from "./pages/Register";
 import Contact from "./pages/Contact";
@@ -73,6 +74,7 @@ const App = () => (
               <Route path="/services/fdp-sdp" element={<FDPSDP />} />
               <Route path="/services/internships" element={<Internships />} />
               <Route path="/services/mentorship" element={<Mentorship />} />
+              <Route path="/courses/:courseSlug" element={<CourseDetail />} />
             </Routes>
           </main>
           <Footer />

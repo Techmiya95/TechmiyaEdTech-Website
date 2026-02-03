@@ -463,52 +463,48 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold mb-4 text-center">Our Course Offerings</h3>
-            <p className="text-blue-100 text-center mb-6">
+          <div className="bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 text-white p-8 sm:p-16 rounded-3xl shadow-2xl relative overflow-hidden my-20">
+            <h3 className="text-3xl md:text-5xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-yellow-400">
+              Our Course Offerings
+            </h3>
+            <p className="text-blue-100 text-center mb-12 max-w-3xl mx-auto text-lg">
               We offer comprehensive training in the most in-demand technologies for software development and data careers.
             </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">Python</p>
-                <p className="text-sm text-blue-200">Programming</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">Java</p>
-                <p className="text-sm text-blue-200">Development</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">JavaScript</p>
-                <p className="text-sm text-blue-200">Full Stack</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">GenAI & LLM</p>
-                <p className="text-sm text-blue-200">AI/ML</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">Agentic AI</p>
-                <p className="text-sm text-blue-200">Autonomous</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">MCP</p>
-                <p className="text-sm text-blue-200">AI Protocol</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">Data Science</p>
-                <p className="text-sm text-blue-200">ML & AI</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">AWS DevOps</p>
-                <p className="text-sm text-blue-200">Cloud</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">Embedded IoT</p>
-                <p className="text-sm text-blue-200">Hardware</p>
-              </div>
-              <div className="bg-white/10 p-4 rounded-lg">
-                <p className="font-semibold">Android</p>
-                <p className="text-sm text-blue-200">Mobile Dev</p>
-              </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 relative z-10">
+              {[
+                { title: "Python", subtitle: "Programming", slug: "data-science-analytics", icon: "🐍" },
+                { title: "Java", subtitle: "Development", slug: "java-programming", icon: "☕" },
+                { title: "JavaScript", subtitle: "Full Stack", slug: "full-stack-development", icon: "⚡" },
+                { title: "GenAI & LLM", subtitle: "AI/ML", slug: "generative-ai", icon: "🤖" },
+                { title: "Agentic AI", subtitle: "Autonomous", slug: "generative-ai", icon: "🧠" },
+                { title: "MCP", subtitle: "AI Protocol", slug: "generative-ai", icon: "🔗" },
+                { title: "Data Science", subtitle: "ML & AI", slug: "data-science-analytics", icon: "📊" },
+                { title: "AWS DevOps", subtitle: "Cloud", slug: "cloud-computing", icon: "☁️" },
+                { title: "Embedded IoT", subtitle: "Hardware", slug: "embedded-iot", icon: "📡" },
+                { title: "Android", subtitle: "Mobile Dev", slug: "android-development", icon: "📱" }
+              ].map((item, index) => (
+                <div key={index} className="group relative bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/10 hover:border-amber-400/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:bg-white/15 flex flex-col justify-between h-full">
+                  <Link to={`/courses/${item.slug}`} className="block">
+                    <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
+                    <div className="font-bold text-xl mb-1 text-white group-hover:text-amber-300 transition-colors">{item.title}</div>
+                    <div className="text-sm text-blue-200 font-medium tracking-wider uppercase mb-4">{item.subtitle}</div>
+                  </Link>
+
+                  <div className="mt-auto pt-4 border-t border-white/10 space-y-3">
+                    <Link to={`/courses/${item.slug}`}>
+                      <Button variant="secondary" className="w-full bg-white/10 hover:bg-white/20 text-white border-none text-xs h-8">
+                        View Syllabus
+                      </Button>
+                    </Link>
+                    <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer" className="block">
+                      <Button className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs h-9 shadow-lg">
+                        View Course
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
