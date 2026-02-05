@@ -22,7 +22,7 @@ const PrivacyPolicy: React.FC = () => {
                 <section className="mb-6">
                     <h2 className="text-xl font-semibold mb-2">1. Introduction</h2>
                     <p>
-                        Welcome to Techmiya Edtech. We respect your privacy and are committed into protecting your personal data.
+                        Welcome to Techmiya Edtech. We respect your privacy and are committed to protecting your personal data.
                         This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website
                         and use our services.
                     </p>
@@ -75,9 +75,20 @@ const PrivacyPolicy: React.FC = () => {
                     </p>
                 </section>
 
-                {/* Section 6: Third-Party Disclosure */}
+                {/* Section 6: WhatsApp Business & Meta Platform Data Usage */}
                 <section className="mb-6">
-                    <h2 className="text-xl font-semibold mb-2">6. Third-Party Disclosure</h2>
+                    <h2 className="text-xl font-semibold mb-2">6. WhatsApp Business & Meta Platform Data Usage</h2>
+                    <p className="mb-2">
+                        Techmiya Edtech uses the WhatsApp Business Cloud API provided by Meta Platforms, Inc. to communicate with users for notifications, customer support, course updates, and service-related messages.
+                    </p>
+                    <p>
+                        We collect and process WhatsApp phone numbers and message-related metadata strictly for communication purposes. We do not sell, rent, or share WhatsApp user data with third parties. All data is processed in accordance with Meta Platform Policies and applicable data protection laws.
+                    </p>
+                </section>
+
+                {/* Section 7: Third-Party Disclosure */}
+                <section className="mb-6">
+                    <h2 className="text-xl font-semibold mb-2">7. Third-Party Disclosure</h2>
                     <p>
                         We do not sell, trade, or transfer your personally identifiable information to outside parties unless we provide you with advance notice.
                         This does not include website hosting partners and other parties who assist us in operating our website, conducting our business,
@@ -85,9 +96,9 @@ const PrivacyPolicy: React.FC = () => {
                     </p>
                 </section>
 
-                {/* Section 7: User Data Deletion Instructions */}
+                {/* Section 8: User Data Deletion Instructions */}
                 <section className="mb-6">
-                    <h2 className="text-xl font-semibold mb-2">7. User Data Deletion Instructions</h2>
+                    <h2 className="text-xl font-semibold mb-2">8. User Data Deletion Instructions</h2>
                     <p>
                         Users can request deletion of their data by emailing us at{" "}
                         <a href="mailto:techmiya.md@gmail.com" className="text-blue-600 underline">
@@ -98,9 +109,9 @@ const PrivacyPolicy: React.FC = () => {
                     </p>
                 </section>
 
-                {/* Section 8: Contact Us */}
+                {/* Section 9: Contact Us */}
                 <section>
-                    <h2 className="text-xl font-semibold mb-2">8. Contact Us</h2>
+                    <h2 className="text-xl font-semibold mb-2">9. Contact Us</h2>
                     <p>
                         If you have any questions about this Privacy Policy, please contact us at:
                     </p>
