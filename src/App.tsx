@@ -19,6 +19,7 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import TermsAndConditions from "./pages/terms";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import DataDeletion from "./pages/DataDeletion";
 import PsychometricTest from "./pages/PsychometricTest";
 import Blog from "./pages/Blog";
 import MachineLearningIntro from "./pages/MachineLearningIntro";
@@ -59,6 +60,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/conditions" element={<TermsAndConditions />} />
               <Route path="/privacy.html" element={<PrivacyPolicy />} />
+              <Route path="/data-deletion.html" element={<DataDeletion />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/workshop-register" element={<WorkshopRegister />} />
               <Route path="/psychometric-test" element={<PsychometricTest />} />
