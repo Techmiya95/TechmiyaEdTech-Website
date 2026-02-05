@@ -18,6 +18,7 @@ import Register from "./pages/Register";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import TermsAndConditions from "./pages/terms";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 import PsychometricTest from "./pages/PsychometricTest";
 import Blog from "./pages/Blog";
 import MachineLearningIntro from "./pages/MachineLearningIntro";
@@ -57,6 +58,7 @@ const App = () => (
               <Route path="/register" element={<Register />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/conditions" element={<TermsAndConditions />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/workshop-register" element={<WorkshopRegister />} />
               <Route path="/psychometric-test" element={<PsychometricTest />} />
