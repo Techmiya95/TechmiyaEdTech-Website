@@ -85,9 +85,22 @@ const PrivacyPolicy: React.FC = () => {
                     </p>
                 </section>
 
-                {/* Section 7: Contact Us */}
+                {/* Section 7: User Data Deletion Instructions */}
+                <section className="mb-6">
+                    <h2 className="text-xl font-semibold mb-2">7. User Data Deletion Instructions</h2>
+                    <p>
+                        Users can request deletion of their data by emailing us at{" "}
+                        <a href="mailto:techmiya.md@gmail.com" className="text-blue-600 underline">
+                            techmiya.md@gmail.com
+                        </a>{" "}
+                        with subject: "Data Deletion Request – n8n-auto".
+                        We will delete the data within 7 working days.
+                    </p>
+                </section>
+
+                {/* Section 8: Contact Us */}
                 <section>
-                    <h2 className="text-xl font-semibold mb-2">7. Contact Us</h2>
+                    <h2 className="text-xl font-semibold mb-2">8. Contact Us</h2>
                     <p>
                         If you have any questions about this Privacy Policy, please contact us at:
                     </p>
