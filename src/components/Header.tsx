@@ -68,6 +68,7 @@ export const Header = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Courses", path: "/courses" },
+    {name: "Tutorials", path: "https://tutorials.techmiyaedtech.com/"},
     { name: "Reviews", path: "/reviews" },
     { name: "Psychometric Test", path: "https://pt.techmiyaedtech.com/" },
     { name: "Contact", path: "/contact" },
