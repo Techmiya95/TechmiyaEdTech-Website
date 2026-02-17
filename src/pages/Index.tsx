@@ -8,6 +8,7 @@ import { CTAPopup } from "@/components/CTAPopup";
 import { SEOHead } from "@/components/SEOHead";
 import CollegeVsIndustrySection from "@/components/CollegeVsIndustrySection";
 import YouTubeShortsSection from "@/components/YouTubeShortsSection";
+import InstagramReelsSection from "@/components/InstagramReelsSection";
 
 const Index = () => {
   const homepageSchema = {
@@ -617,6 +618,8 @@ const Index = () => {
       </section>
 
       <YouTubeShortsSection />
+
+      <InstagramReelsSection />
 
       {/* Our Services Section */}
       <section className="py-20 bg-white">

@@ -8,7 +8,6 @@ import {
 
 const YouTubeShortsSection = () => {
     const videoIds = [
-        "Ae9nZngtk-g", // Original
         "RSMuY1HTfLk",
         "IfIij0h-6-c",
         "smeXvOaFTg0",
