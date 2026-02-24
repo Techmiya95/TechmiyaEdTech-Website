@@ -38,6 +38,7 @@ import Internships from "./pages/services/Internships";
 import Mentorship from "./pages/services/Mentorship";
 import SocialSidebar from "./components/SocialSidebar";
 import { StickyFooterBar } from "./components/StickyFooterBar";
+import ThankYou from "./pages/ThankYou";
 
 const queryClient = new QueryClient();
 
@@ -61,6 +62,7 @@ const App = () => (
               <Route path="/conditions" element={<TermsAndConditions />} />
               <Route path="/privacy.html" element={<PrivacyPolicy />} />
               <Route path="/data-deletion.html" element={<DataDeletion />} />
+              <Route path="/thankyou" element={<ThankYou />} />
               <Route path="*" element={<NotFound />} />
               <Route path="/workshop-register" element={<WorkshopRegister />} />
               <Route path="/psychometric-test" element={<PsychometricTest />} />
