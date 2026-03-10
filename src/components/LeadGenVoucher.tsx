@@ -12,7 +12,7 @@ const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbykmeMEtrucKe
 // Generate a unique voucher code
 const generateVoucherCode = (): string => {
     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    let code = "TECH20-";
+    let code = "TECH1K-";
     for (let i = 0; i < 6; i++) {
         code += chars.charAt(Math.floor(Math.random() * chars.length));
     }
@@ -66,18 +66,18 @@ export const LeadGenVoucher = () => {
                     course,
                     voucherCode: code,
                     timestamp: new Date().toISOString(),
-                    source: "Lead Gen - 20% Course Voucher",
+                    source: "Lead Gen - Flat Rs1000 OFF Course Voucher",
                 }),
             });
 
             setVoucherCode(code);
             setShowVoucher(true);
-            toast.success("🎉 Your 20% OFF voucher has been generated!");
+            toast.success("🎉 Your Flat ₹1000 OFF voucher has been generated!");
         } catch {
             // Best-effort — still show voucher even if sheets fails
             setVoucherCode(code);
             setShowVoucher(true);
-            toast.success("🎉 Your 20% OFF voucher has been generated!");
+            toast.success("🎉 Your Flat ₹1000 OFF voucher has been generated!");
         } finally {
             setIsSubmitting(false);
         }
@@ -142,10 +142,10 @@ export const LeadGenVoucher = () => {
         ctx.font = "bold 28px 'Inter', sans-serif";
         ctx.fillText("✨ COURSE VOUCHER ✨", width / 2, 90);
 
-        // Big "20% OFF" text
+        // Big "FLAT ₹1000 OFF" text
         ctx.fillStyle = "#ffffff";
-        ctx.font = "900 80px 'Inter', sans-serif";
-        ctx.fillText("20% OFF", width / 2, 190);
+        ctx.font = "900 64px 'Inter', sans-serif";
+        ctx.fillText("FLAT \u20B91000 OFF", width / 2, 190);
 
         // Subtitle
         ctx.fillStyle = "#e2e8f0";
@@ -193,7 +193,7 @@ export const LeadGenVoucher = () => {
 
         // Download
         const link = document.createElement("a");
-        link.download = `Techmiya_20OFF_Voucher_${voucherCode}.png`;
+        link.download = `Techmiya_Flat1000OFF_Voucher_${voucherCode}.png`;
         link.href = canvas.toDataURL("image/png");
         link.click();
 
@@ -233,10 +233,10 @@ export const LeadGenVoucher = () => {
                             </div>
 
                             <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
-                                Get <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-amber-500 animate-pulse">20% OFF</span> on Any Course!
+                                Get <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-amber-500 animate-pulse">Flat ₹1000 OFF</span> on Any Course!
                             </h2>
                             <p className="text-xl text-blue-100/90 leading-relaxed max-w-lg">
-                                Download your exclusive course brochure & get a <strong className="text-yellow-300">20% discount voucher</strong> instantly. Start your tech career with Techmiya EdTech at unbeatable prices!
+                                Download your exclusive course brochure & get a <strong className="text-yellow-300">Flat ₹1000 OFF voucher</strong> instantly. Start your tech career with Techmiya EdTech at unbeatable prices!
                             </p>
 
                             <div className="grid grid-cols-2 gap-4 pt-4">
@@ -270,7 +270,7 @@ export const LeadGenVoucher = () => {
                                         </div>
                                     </div>
                                     <CardTitle className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
-                                        Get Your 20% OFF Voucher
+                                        Get Your Flat ₹1000 OFF Voucher
                                     </CardTitle>
                                     <CardDescription>
                                         Fill in your details to receive your <strong>exclusive discount</strong> and course brochure!
@@ -357,7 +357,7 @@ export const LeadGenVoucher = () => {
                                             ) : (
                                                 <Gift className="w-5 h-5 mr-2" />
                                             )}
-                                            {isSubmitting ? "Generating Voucher..." : "Get 20% OFF Voucher 🎫"}
+                                            {isSubmitting ? "Generating Voucher..." : "Get Flat ₹1000 OFF Voucher 🎫"}
                                         </Button>
 
                                         <p className="text-xs text-center text-gray-500 mt-2">
@@ -385,7 +385,7 @@ export const LeadGenVoucher = () => {
                             🎉 Your Voucher is Ready!
                         </h2>
                         <p className="text-lg text-blue-200">
-                            Congratulations <strong className="text-yellow-300">{name}</strong>! Here's your exclusive 20% OFF voucher.
+                            Congratulations <strong className="text-yellow-300">{name}</strong>! Here's your exclusive Flat ₹1000 OFF voucher.
                         </p>
 
                         {/* Voucher Card */}
@@ -399,7 +399,7 @@ export const LeadGenVoucher = () => {
                                 <p className="text-amber-400 font-bold text-xl">✨ COURSE VOUCHER ✨</p>
 
                                 <div className="py-4">
-                                    <span className="text-7xl md:text-8xl font-black text-white drop-shadow-lg">20% OFF</span>
+                                    <span className="text-5xl md:text-7xl font-black text-white drop-shadow-lg">FLAT ₹1000 OFF</span>
                                 </div>
 
                                 <p className="text-gray-300 text-base">on any Techmiya EdTech course enrollment</p>
@@ -469,7 +469,7 @@ export const LeadGenVoucher = () => {
                                 <li>Copy or download your voucher code above</li>
                                 <li>Contact us at <strong className="text-yellow-300">+91-6363760275</strong> or visit our center</li>
                                 <li>Share your voucher code during enrollment</li>
-                                <li>Enjoy <strong className="text-yellow-300">20% OFF</strong> on your course fee! 🎉</li>
+                                <li>Enjoy <strong className="text-yellow-300">Flat ₹1000 OFF</strong> on your course fee! 🎉</li>
                             </ol>
                         </div>
 
