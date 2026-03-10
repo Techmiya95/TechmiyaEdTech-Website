@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { CallBackCTA } from "@/components/CallBackCTA";
 import { CTAPopup } from "@/components/CTAPopup";
+import { LeadGenVoucher } from "@/components/LeadGenVoucher";
 import { SEOHead } from "@/components/SEOHead";
 import CollegeVsIndustrySection from "@/components/CollegeVsIndustrySection";
 import YouTubeShortsSection from "@/components/YouTubeShortsSection";
@@ -745,7 +746,9 @@ const Index = () => {
         </div>
       </section >
 
-      {/* CTA Section */}
+      {/* Lead Generation - 20% Course Voucher */}
+      <LeadGenVoucher />
+
       {/* CTA Section */}
       <CallBackCTA />
 

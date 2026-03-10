@@ -63,17 +63,22 @@ const TopBar = () => {
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isJobsOpen, setIsJobsOpen] = useState(false);
   const location = useLocation();
 
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Courses", path: "/courses" },
-    {name: "Tutorials", path: "https://tutorials.techmiyaedtech.com/"},
+    { name: "Tutorials", path: "https://tutorials.techmiyaedtech.com/" },
     { name: "Reviews", path: "/reviews" },
     { name: "Psychometric Test", path: "https://pt.techmiyaedtech.com/" },
     { name: "Contact", path: "/contact" },
     { name: "Blog", path: "https://blogs.techmiyaedtech.com/" },
-    { name: "Jobs", path: "https://jobs.techmiyaedtech.com/" }
+  ];
+
+  const jobItems = [
+    { name: "🏢 On Campus", path: "https://oncampus.jobs.techmiyaedtech.com/" },
+    { name: "🌐 Off Campus", path: "https://offcampus.jobs.techmiyaedtech.com/" },
   ];
 
   const serviceItems = [
@@ -175,6 +180,36 @@ export const Header = () => {
                   </Link>
                 )
               ))}
+
+              {/* Jobs Dropdown */}
+              <div
+                className="relative"
+                onMouseEnter={() => setIsJobsOpen(true)}
+                onMouseLeave={() => setIsJobsOpen(false)}
+              >
+                <button
+                  className={`px-3 py-2 rounded-lg text-base font-semibold transition-all duration-200 flex items-center gap-1 text-gray-700 hover:text-amber-600 hover:bg-gray-50`}
+                >
+                  Jobs
+                  <ChevronDown className={`w-4 h-4 transition-transform ${isJobsOpen ? 'rotate-180' : ''}`} />
+                </button>
+
+                {isJobsOpen && (
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                    {jobItems.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="block px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             </nav>
 
             {/* CTA Buttons */}
@@ -266,6 +301,25 @@ export const Header = () => {
                     </Link>
                   )
                 ))}
+
+                {/* Mobile Jobs Section */}
+                <div className="px-3 py-2">
+                  <p className="text-sm font-bold text-gray-900 mb-2">Jobs</p>
+                  <div className="pl-2 space-y-1 border-l-2 border-amber-200">
+                    {jobItems.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setIsMenuOpen(false)}
+                        className="block px-2 py-1.5 rounded text-sm font-medium transition-colors text-gray-600 hover:text-amber-600"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
                 <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer" className="block w-full mt-4">
                   <Button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
                     Access LMS
