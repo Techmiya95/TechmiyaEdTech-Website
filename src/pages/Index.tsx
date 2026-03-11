@@ -89,9 +89,9 @@ const Index = () => {
       <section className="relative bg-background text-white overflow-hidden">
         <div className="absolute inset-0 bg-blue-800/100"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-24 lg:pt-20 lg:pb-32">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 lg:pt-10 lg:pb-32">
           {/* Top Tagline - Full Width */}
-          <div className="flex justify-center mb-12 w-full">
+          <div className="flex justify-center mb-6 w-full">
             <div className="flex w-full items-center justify-center px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
               <span className="mr-4 text-2xl animate-pulse"></span>
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase text-center drop-shadow-sm leading-tight">
@@ -124,8 +124,8 @@ const Index = () => {
 
               {/* Center Logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center shadow-xl">
-                  <span className="text-white text-xl font-bold">TE</span>
+                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-xl overflow-hidden">
+                  <img src="/edtech-logo.png" alt="Techmiya EdTech Logo" className="w-16 h-16 object-contain" />
                 </div>
               </div>
             </div>
@@ -145,9 +145,6 @@ const Index = () => {
               <h1 className="text-3xl lg:text-5xl font-extrabold mb-6 leading-tight">
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
                   TECHMIYA ED-TECH
-                </span>
-                <span className="block text-xl lg:text-2xl text-white font-bold mt-2">
-                  Best IT Training Institute in Jayanagar, Bangalore
                 </span>
               </h1>
 
@@ -172,23 +169,12 @@ const Index = () => {
                   </span>
                 </p>
 
-                <p className="text-lg text-blue-100 leading-relaxed">
-                  We also conduct{" "}
-                  <strong className="text-yellow-300">
-                    Corporate Trainings
-                  </strong>{" "}
-                  and{" "}
-                  <strong className="text-yellow-300">
-                    Engineering College Workshops
-                  </strong>{" "}
-                  led by expert IT trainers and IIT graduates.
-                </p>
               </div>
 
               <p className="text-lg text-blue-100 mb-10 font-medium">
                 Trusted by over{" "}
                 <span className="font-bold text-yellow-300 text-2xl">
-                  5,000+
+                  50,000+
                 </span>{" "}
                 students across India
               </p>

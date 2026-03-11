@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -47,13 +48,29 @@ export const StickyFooterBar = () => {
                             <Sparkles className="w-6 h-6 text-amber-400" />
                         </div>
 
-                        {/* Enroll Now Button */}
-                        <Button
-                            onClick={() => setIsOpen(true)}
-                            className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold px-8 py-3 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                        >
-                            🚀 Enroll Now
-                        </Button>
+                        {/* Action Buttons */}
+                        <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto">
+                            <Link to="/register">
+                                <Button
+                                    className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
+                                >
+                                    🎓 Attend Free Demo Class
+                                </Button>
+                            </Link>
+                            <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
+                                <Button
+                                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
+                                >
+                                    💻 Get Access to LMS
+                                </Button>
+                            </a>
+                            <Button
+                                onClick={() => setIsOpen(true)}
+                                className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
+                            >
+                                🚀 Enroll Now
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
