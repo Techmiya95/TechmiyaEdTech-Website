@@ -8,6 +8,7 @@ import { CTAPopup } from "@/components/CTAPopup";
 import { LeadGenVoucher } from "@/components/LeadGenVoucher";
 import { SEOHead } from "@/components/SEOHead";
 import CollegeVsIndustrySection from "@/components/CollegeVsIndustrySection";
+import { HeroLeadGenForm } from "@/components/HeroLeadGenForm";
 import YouTubeShortsSection from "@/components/YouTubeShortsSection";
 import InstagramReelsSection from "@/components/InstagramReelsSection";
 
@@ -89,7 +90,7 @@ const Index = () => {
       <section className="relative bg-background text-white overflow-hidden">
         <div className="absolute inset-0 bg-blue-800/100"></div>
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 lg:pt-10 lg:pb-32">
+        <div className="relative w-full mx-auto px-2 sm:px-3 lg:px-4 pt-6 pb-24 lg:pt-10 lg:pb-32">
           {/* Top Tagline - Full Width */}
           <div className="flex justify-center mb-6 w-full">
             <div className="flex w-full items-center justify-center px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
@@ -100,9 +101,9 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Side - Rotating Tech Logos */}
-            <div className="relative h-64 w-64 mx-auto lg:mx-0">
+          <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-6 lg:gap-8 items-center">
+            {/* Left Column - Rotating Tech Logos */}
+            <div className="relative h-64 w-64 mx-auto lg:mx-0 flex-shrink-0 order-1 lg:order-1">
               {/* Circle Container */}
               <div className="absolute inset-0 rounded-full border-4 border-blue-300/30 flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full border-2 border-blue-200/20 animate-ping"></div>
@@ -130,83 +131,68 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Right Side -  Content */}
-            <div className="text-center lg:text-left">
-
-
+            {/* Center Column - Text Content */}
+            <div className="text-center order-2 lg:order-2 px-2 lg:px-4">
               <Badge
                 variant="secondary"
-                className="mb-6 bg-yellow-400 text-blue-900 text-xl font-extrabold px-6 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300"
+                className="mb-4 bg-yellow-400 text-blue-900 text-sm lg:text-base font-extrabold px-4 py-2 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300"
               >
-                INDIA’S NO. 1 SOFTWARE, HARDWARE & AI TRAINING INSTITUTE
+                INDIA'S NO. 1 SOFTWARE, HARDWARE & AI TRAINING INSTITUTE
               </Badge>
 
-
-              <h1 className="text-3xl lg:text-5xl font-extrabold mb-6 leading-tight">
+              <h1 className="text-2xl lg:text-4xl font-extrabold mb-4 leading-tight">
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
                   TECHMIYA ED-TECH
                 </span>
               </h1>
 
-              <div className="space-y-5 mb-10">
-                {/* <p className="text-2xl lg:text-3xl font-semibold flex items-center justify-center lg:justify-start text-white">
-                  <span className="mr-3 text-3xl">🎯</span> Empowering the Next
-                  Generation of Innovators
-                </p> */}
-                <p className="text-xl lg:text-2xl font-medium flex items-center justify-center lg:justify-start text-blue-100">
-                  <span className="mr-3"></span> Bridging Technology and
-                  Employment
-                </p>
+              <p className="text-base lg:text-lg font-medium text-blue-100 mb-3">
+                Bridging Technology and Employment
+              </p>
 
-                <p className="text-4xl text-yellow-300 font-bold leading-relaxed">
-                  Expertise in{" "}
-                  <span className="text-white font-extrabold underline decoration-yellow-400 underline-offset-4 animate-pulse">
-                    Machine Learning, AI, GenAI,{" "}
-                    <span className="text-yellow-400 animate-glow">
-                      Agentic AI
-                    </span>
-                    , and MCP
+              <p className="text-lg lg:text-2xl text-yellow-300 font-bold leading-relaxed mb-3">
+                Expertise in{" "}
+                <span className="text-white font-extrabold underline decoration-yellow-400 underline-offset-4 animate-pulse">
+                  Machine Learning, AI, GenAI,{" "}
+                  <span className="text-yellow-400 animate-glow">
+                    Agentic AI
                   </span>
-                </p>
+                  , and MCP
+                </span>
+              </p>
 
-              </div>
-
-              <p className="text-lg text-blue-100 mb-10 font-medium">
+              <p className="text-sm lg:text-base text-blue-100 mb-5 font-medium">
                 Trusted by over{" "}
-                <span className="font-bold text-yellow-300 text-2xl">
+                <span className="font-bold text-yellow-300 text-lg lg:text-xl">
                   50,000+
                 </span>{" "}
                 students across India
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <Link to="/register">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-10 py-5 text-xl rounded-2xl shadow-md transition-transform hover:scale-105"
+                    className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105"
                   >
                     Attend Free Demo Class
                   </Button>
                 </Link>
 
-                {/* <Link to="/workshop-register">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-10 py-5 text-xl rounded-2xl shadow-md transition-transform hover:scale-105"
-                  >
-                    Register For Webinar
-                  </Button>
-                </Link> */}
-
                 <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-10 py-5 text-xl rounded-2xl shadow-md transition-transform hover:scale-105"
+                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105"
                   >
                     Get Access to LMS
                   </Button>
                 </a>
               </div>
+            </div>
+
+            {/* Right Column - Lead Gen Voucher Form */}
+            <div className="flex justify-center lg:justify-end flex-shrink-0 order-3 lg:order-3">
+              <HeroLeadGenForm />
             </div>
           </div>
         </div>
