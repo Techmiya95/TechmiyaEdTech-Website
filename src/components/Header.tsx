@@ -78,7 +78,7 @@ export const Header = () => {
 
   const jobItems = [
     { name: "🏢 On Campus", path: "https://oncampusjobs.techmiyaedtech.com/" },
-    { name: "🌐 Off Campus", path: "https://offcampus.jobs.techmiyaedtech.com/" },
+    { name: "🌐 Off Campus", path: "https://offcampusjobs.techmiyaedtech.com/" },
   ];
 
   const serviceItems = [
