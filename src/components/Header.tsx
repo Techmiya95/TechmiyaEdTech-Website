@@ -79,6 +79,7 @@ export const Header = () => {
   const jobItems = [
     { name: "🏢 On Campus", path: "https://oncampusjobs.techmiyaedtech.com/" },
     { name: "🌐 Off Campus", path: "https://offcampusjobs.techmiyaedtech.com/" },
+    { name: "👨‍💼 Admin", path: "https://app.lineupx.com/job-board/login" },
   ];
 
   const serviceItems = [
@@ -108,7 +109,7 @@ export const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-6 items-center">
+            <nav className="hidden md:flex space-x-2 lg:space-x-5 items-center">
               {navItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}

@@ -263,68 +263,68 @@ export const HeroLeadGenForm = () => {
     }
 
     return (
-        <div className="w-full max-w-sm">
+        <div className="w-full max-w-[300px]">
             {/* Form Card */}
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl overflow-hidden">
                 {/* Header */}
-                <div className="bg-gradient-to-r from-purple-600 to-blue-600 px-6 py-4 text-center">
-                    <div className="flex justify-center mb-2">
+                <div className="bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-3 text-center">
+                    <div className="flex justify-center mb-1">
                         <div className="relative">
-                            <Ticket className="h-8 w-8 text-yellow-300 animate-bounce" />
-                            <Sparkles className="h-4 w-4 text-yellow-400 absolute -top-1 -right-2 animate-pulse" />
+                            <Ticket className="h-6 w-6 text-yellow-300 animate-bounce" />
+                            <Sparkles className="h-3 w-3 text-yellow-400 absolute -top-1 -right-2 animate-pulse" />
                         </div>
                     </div>
-                    <h3 className="text-xl font-bold text-white">
-                        Get Flat ₹1000 OFF Voucher
+                    <h3 className="text-lg font-bold text-white leading-tight">
+                        Get Flat ₹1000 OFF
                     </h3>
-                    <p className="text-blue-100 text-sm mt-1">
+                    <p className="text-blue-100 text-[11px] mt-1">
                         Fill in details to get your <strong>exclusive discount!</strong>
                     </p>
                 </div>
 
                 {/* Form Body */}
-                <div className="px-6 py-5">
-                    <form onSubmit={handleSubmit} className="space-y-3">
+                <div className="px-5 py-4">
+                    <form onSubmit={handleSubmit} className="space-y-2.5">
                         <div className="relative">
-                            <User className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                            <User className="absolute left-3 top-2.5 h-4 w-4 text-gray-400" />
                             <Input
                                 id="hero-lead-name"
                                 placeholder="Your Full Name"
-                                className="pl-9 bg-gray-50 border-gray-200 focus:bg-white transition-colors h-10"
+                                className="pl-9 text-sm bg-gray-50 border-gray-200 focus:bg-white transition-colors h-9"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </div>
 
                         <div className="relative">
-                            <Mail className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                            <Mail className="absolute left-3 top-2.5 h-4 w-4 text-gray-400" />
                             <Input
                                 id="hero-lead-email"
                                 type="email"
                                 placeholder="Your Email"
-                                className="pl-9 bg-gray-50 border-gray-200 focus:bg-white transition-colors h-10"
+                                className="pl-9 text-sm bg-gray-50 border-gray-200 focus:bg-white transition-colors h-9"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                         </div>
 
                         <div className="relative">
-                            <Phone className="absolute left-3 top-3 h-4 w-4 text-gray-400" />
+                            <Phone className="absolute left-3 top-2.5 h-4 w-4 text-gray-400" />
                             <Input
                                 id="hero-lead-phone"
                                 type="tel"
                                 placeholder="Phone Number"
-                                className="pl-9 bg-gray-50 border-gray-200 focus:bg-white transition-colors h-10"
+                                className="pl-9 text-sm bg-gray-50 border-gray-200 focus:bg-white transition-colors h-9"
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)}
                             />
                         </div>
 
                         <div className="relative">
-                            <BookOpen className="absolute left-3 top-3 h-4 w-4 text-gray-400 z-10" />
+                            <BookOpen className="absolute left-3 top-2.5 h-4 w-4 text-gray-400 z-10" />
                             <Select value={course} onValueChange={setCourse}>
-                                <SelectTrigger id="hero-lead-course" className="pl-9 bg-gray-50 border-gray-200 focus:bg-white transition-colors h-10">
-                                    <SelectValue placeholder="Select Course of Interest" />
+                                <SelectTrigger id="hero-lead-course" className="pl-9 text-sm bg-gray-50 border-gray-200 focus:bg-white transition-colors h-9">
+                                    <SelectValue placeholder="Course of Interest" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectItem value="Generative AI">Generative AI</SelectItem>
@@ -349,17 +349,17 @@ export const HeroLeadGenForm = () => {
                             type="submit"
                             id="hero-lead-submit"
                             disabled={isSubmitting}
-                            className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-5 text-base shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5"
+                            className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold h-10 text-sm shadow-[0_4px_14px_0_rgba(124,58,237,0.39)] hover:shadow-[0_6px_20px_rgba(124,58,237,0.23)] transition-all duration-300 transform hover:-translate-y-0.5 mt-2"
                         >
                             {isSubmitting ? (
-                                <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
                             ) : (
-                                <Gift className="w-5 h-5 mr-2" />
+                                <Gift className="w-4 h-4 mr-2" />
                             )}
-                            {isSubmitting ? "Generating Voucher..." : "Get Flat ₹1000 OFF Voucher 🎫"}
+                            {isSubmitting ? "Generating..." : "Get Flat ₹1000 OFF"}
                         </Button>
 
-                        <p className="text-xs text-center text-gray-500">
+                        <p className="text-[10px] leading-tight text-center text-gray-500 pt-1">
                             By submitting, you agree to receive course updates from Techmiya EdTech. 🚀
                         </p>
                     </form>

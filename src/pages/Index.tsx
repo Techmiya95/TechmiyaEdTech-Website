@@ -86,45 +86,50 @@ const Index = () => {
         structuredData={homepageSchema}
       />
       {/* Hero Section */}
-      {/* Hero Section - Replaced with TAP ACADEMY version */}
       <section className="relative bg-background text-white overflow-hidden">
         <div className="absolute inset-0 bg-blue-800/100"></div>
 
-        <div className="relative w-full mx-auto px-2 sm:px-3 lg:px-4 pt-6 pb-24 lg:pt-10 lg:pb-32">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-24 lg:pt-10 lg:pb-32">
           {/* Top Tagline - Full Width */}
           <div className="flex justify-center mb-6 w-full">
-            <div className="flex w-full items-center justify-center px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
-              <span className="mr-4 text-2xl animate-pulse"></span>
-              <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase text-center drop-shadow-sm leading-tight">
+            <div className="flex w-full items-center justify-center px-4 sm:px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
+              <span className="mr-4 text-2xl animate-pulse hidden sm:block"></span>
+              <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase text-center drop-shadow-sm leading-tight">
                 "Learn What College Doesn't Teach You"
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-6 lg:gap-8 items-center">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-2 w-full max-w-full">
             {/* Left Column - Rotating Tech Logos */}
-            <div className="relative h-64 w-64 mx-auto lg:mx-0 flex-shrink-0 order-1 lg:order-1">
+            <div className="relative h-56 w-56 xl:h-64 xl:w-64 flex-shrink-0 order-2 lg:order-1 hidden lg:block scale-90 xl:scale-100 origin-center lg:origin-left xl:-ml-4">
               {/* Circle Container */}
               <div className="absolute inset-0 rounded-full border-4 border-blue-300/30 flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full border-2 border-blue-200/20 animate-ping"></div>
               </div>
 
-              {/* Rotating Logos */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-orbit origin-[50%_150px]">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-10 h-10" />
-              </div>
-              <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-orbit origin-[-50px_50%] delay-1000">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-10 h-10" />
-              </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-orbit origin-[50%_-50px] delay-2000">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10" />
-              </div>
-              <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-orbit origin-[150px_50%] delay-3000">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10" />
+              {/* Rotating Logos Wrapper */}
+              <div className="absolute inset-0 animate-[spin_20s_linear_infinite]">
+                 {/* HTML5 - Top */}
+                 <div className="absolute top-0 left-1/2 -mt-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-10 h-10" />
+                 </div>
+                 {/* CSS3 - Right */}
+                 <div className="absolute top-1/2 right-0 -mr-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-10 h-10" />
+                 </div>
+                 {/* JS - Bottom */}
+                 <div className="absolute bottom-0 left-1/2 -mb-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10" />
+                 </div>
+                 {/* React - Left */}
+                 <div className="absolute top-1/2 left-0 -ml-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10" />
+                 </div>
               </div>
 
               {/* Center Logo */}
-              <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center z-10">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-xl overflow-hidden">
                   <img src="/edtech-logo.png" alt="Techmiya EdTech Logo" className="w-16 h-16 object-contain" />
                 </div>
@@ -132,15 +137,15 @@ const Index = () => {
             </div>
 
             {/* Center Column - Text Content */}
-            <div className="text-center order-2 lg:order-2 px-2 lg:px-4">
+            <div className="text-center order-1 lg:order-2 flex-grow max-w-2xl px-2 lg:px-4 w-full flex flex-col items-center mx-auto">
               <Badge
                 variant="secondary"
-                className="mb-4 bg-yellow-400 text-blue-900 text-sm lg:text-base font-extrabold px-4 py-2 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300"
+                className="mb-4 bg-yellow-400 text-blue-900 text-xs sm:text-base font-extrabold px-3 sm:px-4 py-2 rounded-full shadow-lg hover:bg-yellow-500 transition-all duration-300 text-center whitespace-normal"
               >
                 INDIA'S NO. 1 SOFTWARE, HARDWARE & AI TRAINING INSTITUTE
               </Badge>
 
-              <h1 className="text-2xl lg:text-4xl font-extrabold mb-4 leading-tight">
+              <h1 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold mb-4 leading-tight w-full">
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
                   TECHMIYA ED-TECH
                 </span>
@@ -150,7 +155,7 @@ const Index = () => {
                 Bridging Technology and Employment
               </p>
 
-              <p className="text-lg lg:text-2xl text-yellow-300 font-bold leading-relaxed mb-3">
+              <p className="text-lg lg:text-xl xl:text-2xl text-yellow-300 font-bold leading-relaxed mb-3 px-2">
                 Expertise in{" "}
                 <span className="text-white font-extrabold underline decoration-yellow-400 underline-offset-4 animate-pulse">
                   Machine Learning, AI, GenAI,{" "}
@@ -169,11 +174,11 @@ const Index = () => {
                 students across India
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center w-full mt-2">
                 <Link to="/register">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105"
+                    className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105"
                   >
                     Attend Free Demo Class
                   </Button>
@@ -182,7 +187,7 @@ const Index = () => {
                 <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105"
+                    className="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105"
                   >
                     Get Access to LMS
                   </Button>
@@ -191,7 +196,7 @@ const Index = () => {
             </div>
 
             {/* Right Column - Lead Gen Voucher Form */}
-            <div className="flex justify-center lg:justify-end flex-shrink-0 order-3 lg:order-3">
+            <div className="flex justify-end flex-shrink-0 order-3 w-full sm:w-auto lg:w-[280px] xl:w-[300px] mt-6 lg:mt-0 z-10 xl:-mr-4">
               <HeroLeadGenForm />
             </div>
           </div>
