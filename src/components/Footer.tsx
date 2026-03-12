@@ -45,6 +45,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="https://vtuupdates.techmiyaedtech.com/" className="text-gray-300 hover:text-white transition-colors">
+                  VTU Updates
+                </Link>
+              </li>
+              <li>
                 <Link to="/courses" className="text-gray-300 hover:text-white transition-colors">
                   Courses
                 </Link>
