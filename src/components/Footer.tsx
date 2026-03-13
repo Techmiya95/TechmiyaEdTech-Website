@@ -50,6 +50,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="https://hackathon.techmiyaedtech.com/" className="text-gray-300 hover:text-white transition-colors">
+                  Hackathon
+                </Link>
+              </li>
+              <li>
                 <Link to="/courses" className="text-gray-300 hover:text-white transition-colors">
                   Courses
                 </Link>
