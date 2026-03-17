@@ -3,9 +3,9 @@ import { Instagram, Facebook, Youtube, Linkedin, MessageCircle, Phone } from "lu
 const SocialSidebar = () => {
     const socials = [
         { icon: Instagram, href: "https://www.instagram.com/techmiyaedtech", label: "Instagram", bgColor: "bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500" },
-        { icon: Facebook, href: "https://www.facebook.com/techmiyaedtech", label: "Facebook", bgColor: "bg-blue-600" },
-        { icon: Youtube, href: "https://www.youtube.com/@techmiyaedtech", label: "YouTube", bgColor: "bg-red-600" },
-        { icon: Linkedin, href: "https://www.linkedin.com/company/techmiyaedtech", label: "LinkedIn", bgColor: "bg-blue-700" },
+        { icon: Facebook, href: "https://www.facebook.com/profile.php?id=61582781876474", label: "Facebook", bgColor: "bg-blue-600" },
+        { icon: Youtube, href: "https://www.youtube.com/channel/UCqyZlCLdyDFjyM3VFDea4rw", label: "YouTube", bgColor: "bg-red-600" },
+        { icon: Linkedin, href: "https://www.linkedin.com/company/107848664/admin/dashboard/", label: "LinkedIn", bgColor: "bg-blue-700" },
     ];
 
     return (
