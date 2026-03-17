@@ -20,13 +20,13 @@ export const Footer = () => {
               Empowering students to build successful careers in tech.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61582781876474" className="text-gray-300 hover:text-white transition-colors">
                 Facebook
               </a>
               <a href="https://www.youtube.com/channel/UCqyZlCLdyDFjyM3VFDea4rw" className="text-gray-300 hover:text-white transition-colors">
                 Youtube
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/107848664/admin/dashboard/" className="text-gray-300 hover:text-white transition-colors">
                 LinkedIn
               </a>
               <a href="https://www.instagram.com/techmiya_edtech" className="text-gray-300 hover:text-white transition-colors">
