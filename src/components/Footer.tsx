@@ -8,12 +8,9 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-                <img src="techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
-
-              </div>
-              <span className="text-xl font-bold text-amber-500">Techmiya Edtech</span>
+            <div className="flex items-center space-x-2 mb-6">
+              <img src="/techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
+              <span className="text-xl font-bold text-amber-500">Techmiya Ed-Tech </span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Transforming learning with cutting-edge technology education.

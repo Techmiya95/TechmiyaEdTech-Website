@@ -88,7 +88,7 @@ const Courses = () => {
       description: "Learn ethical hacking, penetration testing, and defensive security to protect systems from cyber threats.",
       duration: "6 months",
       level: "Beginner to Advanced",
-      image: "https://www.neit.edu/wp-content/uploads/2022/10/Cyber-Security-Icon-Concept-2-1.jpeg",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=400",
       features: ["Ethical Hacking", "Network Security", "Web App Security", "Incident Response", "Security Tools"],
       modules: 10
     },
@@ -108,7 +108,7 @@ const Courses = () => {
       description: "Learn CI/CD pipelines, containerization, cloud deployment, and automation tools for modern software delivery.",
       duration: "3 months",
       level: "Beginner to Advanced",
-      image: "https://miro.medium.com/v2/resize:fit:1400/1*hnrlp3W6kfInWHtJd9Vvag.jpeg",
+      image: "https://images.unsplash.com/photo-1667372333114-3d40314f3cf7?w=400",
       features: ["Docker", "Kubernetes", "Jenkins", "CI/CD Pipelines", "Cloud Deployment"],
       modules: 8
     },
@@ -118,7 +118,7 @@ const Courses = () => {
       description: "Bridge machine learning and operations. Deploy, monitor, and manage ML models in production and also basic of GenAI and LLMOps",
       duration: "4 months",
       level: "Beginner to Advanced",
-      image: "https://www.atomcamp.com/wp-content/uploads/2024/04/image-10-1024x495.png",
+      image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400",
       features: ["Model Deployment", "Data Pipelines", "Monitoring", "Versioning", "Cloud MLOps Tools"],
       modules: 9
     },
@@ -128,7 +128,7 @@ const Courses = () => {
       description: "Explore large language models, image generation, and AI-powered creative tools with hands-on projects.",
       duration: "6 months",
       level: "Beginner to Advanced",
-      image: "https://pub-e93d5c9fdf134c89830082377f6df465.r2.dev/2025/01/Generative-AI-edited.webp",
+      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400",
       features: ["Prompt Engineering", "LLMs", "Image Generation", "Chatbot Development", "Ethics & Safety"],
       modules: 8
     },
@@ -138,7 +138,7 @@ const Courses = () => {
       description: "Learn microcontroller programming, IoT protocols, and real-time data integration with cloud services.",
       duration: "4 months",
       level: "Beginner to Advanced",
-      image: "https://www.ultralibrarian.com/wp-content/uploads/2022/06/shutterstock_13717364781.jpg",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400",
       features: ["Arduino", "ESP32", "IoT Protocols", "Cloud Integration", "Embedded C/C++"],
       modules: 10
     },
@@ -158,7 +158,7 @@ const Courses = () => {
       description: "QA Engineering with Selenium and JUnit, Load Runner and Trello",
       duration: "3 months",
       level: "Beginner to Advanced",
-      image: "https://executeautomationtest.wordpress.com/wp-content/uploads/2017/11/automation-testing.png",
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400",
       features: ["Manual", "Automation", "Trello", "Selenium", "Load Runner"],
       modules: 7
     }
@@ -235,10 +235,6 @@ const Courses = () => {
                   </div>
 
                   <div className="border-t pt-4">
-                    <div className="flex justify-between items-center mb-4">
-                      <span className="text-2xl font-bold text-purple-600">{course.price}</span>
-                      <span className="text-sm text-gray-500">One-time payment</span>
-                    </div>
                     <div className="space-y-2">
                       <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer" className="block">
                         <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">

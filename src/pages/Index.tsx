@@ -205,74 +205,58 @@ const Index = () => {
         {/* Company Marquee */}
         <div className="relative bg-white/10 py-6">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h3 className="text-center text-blue-200 text-sm font-semibold mb-4">OUR RECRUITMENT PARTNERS</h3>
-            <div className="flex overflow-hidden space-x-12">
-              <div className="flex space-x-12 animate-marquee whitespace-nowrap items-center">
-                <div className="flex items-center space-x-2">
-                  <img src="https://www.vectorkhazana.com/assets/images/products/google_ico.jpg" alt="Google" className="h-8 mix-blend-multiply" />
-                  <span className="text-sm text-blue-900 font-medium">Google</span>
+            <h3 className="text-center text-blue-200 text-sm font-semibold mb-4 uppercase tracking-wider">Our Recruitment Partners</h3>
+            <div className="flex overflow-hidden group">
+              <div className="flex space-x-12 animate-marquee whitespace-nowrap items-center py-2">
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" className="h-6 object-contain" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://pngimg.com/d/amazon_PNG13.png" alt="Amazon" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Amazon</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" className="h-6 brightness-200" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://pngimg.com/uploads/microsoft/microsoft_PNG6.png" alt="Microsoft" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Microsoft</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" className="h-6" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://static.vecteezy.com/system/resources/previews/020/190/476/non_2x/infosys-logo-infosys-icon-free-free-vector.jpg" alt="Infosys" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Infosys</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys" className="h-6" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Orcc8T6aZ8yvyRGyAFe8PzVp0QjW38NeWg&s" alt="TCS" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">TCS</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg" alt="TCS" className="h-8" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyU_onXKtumMXrTrnSlGZK-LIi1Y0DGOStJw&s" alt="Accenture" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Accenture</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" alt="Accenture" className="h-6 brightness-200" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://images.livemint.com/rf/Image-330x220/LiveMint/Period2/2017/05/05/Photos/Processed/wiprologo-kXmF--621x414@LiveMint.jpg" alt="Wipro" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Wipro</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Logo.svg" alt="Wipro" className="h-8" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://e7.pngegg.com/pngimages/504/57/png-clipart-capgemini-logo-capgemini-logo-business-insuretech-connect-cfo-rising-europe-summit-others-blue-text.png" alt="Capgemini" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Capgemini</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Capgemini_201x_logo.svg" alt="Capgemini" className="h-6" />
                 </div>
               </div>
-              <div className="flex space-x-12 animate-marquee2 whitespace-nowrap items-center">
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/google.com" alt="Google" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Google</span>
+              <div className="flex space-x-12 animate-marquee whitespace-nowrap items-center py-2 ml-12" aria-hidden="true">
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" className="h-6 object-contain" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/amazon.com" alt="Amazon" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Amazon</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" className="h-6 brightness-200" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Microsoft</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" className="h-6" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/infosys.com" alt="Infosys" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Infosys</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg" alt="Infosys" className="h-6" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/tcs.com" alt="TCS" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">TCS</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Tata_Consultancy_Services_Logo.svg" alt="TCS" className="h-8" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/accenture.com" alt="Accenture" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Accenture</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Accenture.svg" alt="Accenture" className="h-6 brightness-200" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/wipro.com" alt="Wipro" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Wipro</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Logo.svg" alt="Wipro" className="h-8" />
                 </div>
-                <div className="flex items-center space-x-2">
-                  <img src="https://logo.clearbit.com/capgemini.com" alt="Capgemini" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-                  <span className="text-sm text-white">Capgemini</span>
+                <div className="flex items-center space-x-3 grayscale hover:grayscale-0 transition-all duration-300">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Capgemini_201x_logo.svg" alt="Capgemini" className="h-6" />
                 </div>
               </div>
             </div>

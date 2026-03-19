@@ -71,6 +71,7 @@ export const Header = () => {
     { name: "Courses", path: "/courses" },
     { name: "Tutorials", path: "https://tutorials.techmiyaedtech.com/" },
     { name: "Reviews", path: "/reviews" },
+    { name: "Placements", path: "/placements" },
     { name: "Psychometric Test", path: "https://pt.techmiyaedtech.com/" },
     { name: "Contact", path: "/contact" },
     { name: "Blog", path: "https://blogs.techmiyaedtech.com/" },
@@ -104,7 +105,7 @@ export const Header = () => {
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <Link to="/" className="flex items-center space-x-2">
-              <img src="techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
+              <img src="/techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
               <span className="text-xl font-bold text-amber-500">Techmiya Ed-Tech </span>
             </Link>
 
@@ -232,6 +233,7 @@ export const Header = () => {
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
+                aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>

@@ -1,0 +1,674 @@
+[
+  {
+    "id": "TC-001",
+    "category": "Page Load",
+    "test": "Home Page (/) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Best IT Training Institute in Jayanagar, Bangalore | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-002",
+    "category": "Page Load",
+    "test": "Courses Page (/courses) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'IT Training Courses - Full Stack, Data Science, AI, DevOps | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-003",
+    "category": "Page Load",
+    "test": "Reviews Page (/reviews) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Student Reviews & Success Stories | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-004",
+    "category": "Page Load",
+    "test": "Register Page (/register) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'IT Training Institutes in Jayanagar | Best IT Training Bangalore | Techmiya EdTech'"
+  },
+  {
+    "id": "TC-005",
+    "category": "Page Load",
+    "test": "Contact Page (/contact) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Contact Us - Get in Touch for IT Training | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-006",
+    "category": "Page Load",
+    "test": "Terms & Conditions (/conditions) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'IT Training Institutes in Jayanagar | Best IT Training Bangalore | Techmiya EdTech'"
+  },
+  {
+    "id": "TC-007",
+    "category": "Page Load",
+    "test": "Privacy Policy (/privacy.html) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Privacy Policy - Techmiya Edtech | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-008",
+    "category": "Page Load",
+    "test": "Data Deletion (/data-deletion.html) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Data Deletion Instructions - Techmiya Edtech | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-009",
+    "category": "Page Load",
+    "test": "Psychometric Test (/psychometric-test) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'IT Training Institutes in Jayanagar | Best IT Training Bangalore | Techmiya EdTech'"
+  },
+  {
+    "id": "TC-010",
+    "category": "Page Load",
+    "test": "Blog Page (/blog) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Tech Blog - AI, Machine Learning & Software Development Insights | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-011",
+    "category": "Page Load",
+    "test": "Jobs Page (/jobs) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'IT Jobs & Career Opportunities in Bangalore | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-012",
+    "category": "Page Load",
+    "test": "Corporate Training (/services/corporate-training) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Corporate Training - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-013",
+    "category": "Page Load",
+    "test": "CSR Programs (/services/csr-programs) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'CSR Programs - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-014",
+    "category": "Page Load",
+    "test": "Partnerships (/services/partnerships) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Partnerships Building - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-015",
+    "category": "Page Load",
+    "test": "Campus Drives (/services/campus-drives) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Campus Drives - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-016",
+    "category": "Page Load",
+    "test": "Hackathons (/services/hackathons) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Hackathons - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-017",
+    "category": "Page Load",
+    "test": "FDP & SDP (/services/fdp-sdp) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'FDP & SDP - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-018",
+    "category": "Page Load",
+    "test": "Internships (/services/internships) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Internships & Live Projects - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-019",
+    "category": "Page Load",
+    "test": "Mentorship (/services/mentorship) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Industry Mentorship - Techmiya EdTech Services | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-020",
+    "category": "Page Load",
+    "test": "Thank You Page (/thankyou) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'IT Training Institutes in Jayanagar | Best IT Training Bangalore | Techmiya EdTech'"
+  },
+  {
+    "id": "TC-021",
+    "category": "Page Load",
+    "test": "Get Voucher Page (/get-voucher) loads successfully",
+    "status": "PASS",
+    "details": "Title: 'Get Flat \u20b91000 OFF Course Voucher | Techmiya EdTech | Techmiya EdTech - Best IT Training Institute Bangalore'"
+  },
+  {
+    "id": "TC-100",
+    "category": "Error Handling",
+    "test": "404 page displays for unknown route",
+    "status": "WARN",
+    "details": "Page loaded but no clear 404 message found"
+  },
+  {
+    "id": "TC-101",
+    "category": "Header",
+    "test": "Logo image is present in header",
+    "status": "PASS",
+    "details": "alt='Tech Miya Logo'"
+  },
+  {
+    "id": "TC-102",
+    "category": "Header",
+    "test": "Brand name 'Techmiya' is visible",
+    "status": "PASS",
+    "details": "Techmiya Ed-Tech"
+  },
+  {
+    "id": "TC-103",
+    "category": "Header",
+    "test": "Top bar shows '100% Job Guarantee' message",
+    "status": "PASS",
+    "details": "Message found"
+  },
+  {
+    "id": "TC-104",
+    "category": "Header",
+    "test": "Branch phone numbers displayed (at least 3)",
+    "status": "PASS",
+    "details": "Found 5 phone links"
+  },
+  {
+    "id": "TC-105",
+    "category": "Header",
+    "test": "All primary navigation links present",
+    "status": "PASS",
+    "details": "Found: Home, Courses, Services, Reviews, Contact"
+  },
+  {
+    "id": "TC-106",
+    "category": "Header",
+    "test": "'Access LMS' button links to LMS subdomain",
+    "status": "PASS",
+    "details": "href=https://lms.techmiyaedtech.com/"
+  },
+  {
+    "id": "TC-107",
+    "category": "Header",
+    "test": "'Enquire Now' button links to register page",
+    "status": "PASS",
+    "details": "Button found"
+  },
+  {
+    "id": "TC-201",
+    "category": "Footer",
+    "test": "Footer element is present on page",
+    "status": "PASS",
+    "details": "Found <footer> tag"
+  },
+  {
+    "id": "TC-202",
+    "category": "Footer",
+    "test": "Footer displays company name",
+    "status": "PASS",
+    "details": "Techmiya Edtech"
+  },
+  {
+    "id": "TC-203-Facebook",
+    "category": "Footer",
+    "test": "Facebook social link present in footer",
+    "status": "PASS",
+    "details": "href=https://www.facebook.com/profile.php?id=61582781876474"
+  },
+  {
+    "id": "TC-203-Youtube",
+    "category": "Footer",
+    "test": "Youtube social link present in footer",
+    "status": "PASS",
+    "details": "href=https://www.youtube.com/channel/UCqyZlCLdyDFjyM3VFDea4rw"
+  },
+  {
+    "id": "TC-203-LinkedIn",
+    "category": "Footer",
+    "test": "LinkedIn social link present in footer",
+    "status": "PASS",
+    "details": "href=https://www.linkedin.com/company/107848664/admin/dashboard/"
+  },
+  {
+    "id": "TC-203-Instagram",
+    "category": "Footer",
+    "test": "Instagram social link present in footer",
+    "status": "PASS",
+    "details": "href=https://www.instagram.com/techmiya_edtech"
+  },
+  {
+    "id": "TC-204",
+    "category": "Footer",
+    "test": "All quick links present in footer",
+    "status": "PASS",
+    "details": "Found: Home, Courses, Reviews, Contact, Terms, Privacy"
+  },
+  {
+    "id": "TC-205",
+    "category": "Footer",
+    "test": "Contact info (email, phone, address) in footer",
+    "status": "PASS",
+    "details": "All present"
+  },
+  {
+    "id": "TC-206",
+    "category": "Footer",
+    "test": "Copyright notice present",
+    "status": "PASS",
+    "details": "\u00a9 2026 Techmiya. All rights reserved."
+  },
+  {
+    "id": "TC-301",
+    "category": "Home Page",
+    "test": "Hero section / lead gen form is present",
+    "status": "PASS",
+    "details": "Lead gen content detected"
+  },
+  {
+    "id": "TC-302",
+    "category": "Home Page",
+    "test": "Home page contains images",
+    "status": "PASS",
+    "details": "Found 30 images"
+  },
+  {
+    "id": "TC-303",
+    "category": "Home Page",
+    "test": "Floating WhatsApp button present",
+    "status": "PASS",
+    "details": "href=https://wa.me/916363760275"
+  },
+  {
+    "id": "TC-304",
+    "category": "Home Page",
+    "test": "Social sidebar links present",
+    "status": "PASS",
+    "details": "Found 7 social links on page"
+  },
+  {
+    "id": "TC-401",
+    "category": "Contact Form",
+    "test": "Contact form is visible on page",
+    "status": "PASS",
+    "details": "Form element found"
+  },
+  {
+    "id": "TC-402",
+    "category": "Contact Form",
+    "test": "Name input field present (id='name')",
+    "status": "PASS",
+    "details": "Found"
+  },
+  {
+    "id": "TC-403",
+    "category": "Contact Form",
+    "test": "Email input field present (id='email')",
+    "status": "PASS",
+    "details": "type=email"
+  },
+  {
+    "id": "TC-404",
+    "category": "Contact Form",
+    "test": "Phone input field present (id='phone')",
+    "status": "PASS",
+    "details": "type=tel"
+  },
+  {
+    "id": "TC-405",
+    "category": "Contact Form",
+    "test": "Subject input field present (id='subject')",
+    "status": "PASS",
+    "details": "Found"
+  },
+  {
+    "id": "TC-406",
+    "category": "Contact Form",
+    "test": "Message textarea present (id='message')",
+    "status": "PASS",
+    "details": "tag=textarea"
+  },
+  {
+    "id": "TC-407",
+    "category": "Contact Form",
+    "test": "Submit button present",
+    "status": "PASS",
+    "details": "Text: 'Send Message'"
+  },
+  {
+    "id": "TC-408",
+    "category": "Contact Form",
+    "test": "Google Maps iframe is embedded",
+    "status": "PASS",
+    "details": "iframe found"
+  },
+  {
+    "id": "TC-409",
+    "category": "Contact Form",
+    "test": "FAQ section is visible on contact page",
+    "status": "PASS",
+    "details": "FAQ heading found"
+  },
+  {
+    "id": "TC-410-EmailUs",
+    "category": "Contact Form",
+    "test": "'Email Us' info card present",
+    "status": "PASS",
+    "details": "Found"
+  },
+  {
+    "id": "TC-410-CallUs",
+    "category": "Contact Form",
+    "test": "'Call Us' info card present",
+    "status": "PASS",
+    "details": "Found"
+  },
+  {
+    "id": "TC-410-VisitUs",
+    "category": "Contact Form",
+    "test": "'Visit Us' info card present",
+    "status": "PASS",
+    "details": "Found"
+  },
+  {
+    "id": "TC-411",
+    "category": "Contact Form",
+    "test": "Office Hours section present",
+    "status": "PASS",
+    "details": "Found"
+  },
+  {
+    "id": "TC-501",
+    "category": "Courses",
+    "test": "Courses page has an <h1> heading",
+    "status": "PASS",
+    "details": "Text: 'Our Courses'"
+  },
+  {
+    "id": "TC-502",
+    "category": "Courses",
+    "test": "Multiple course cards displayed",
+    "status": "PASS",
+    "details": "Found ~14 card-like elements"
+  },
+  {
+    "id": "TC-601",
+    "category": "Reviews",
+    "test": "Reviews page has an <h1> heading",
+    "status": "PASS",
+    "details": "'Student Reviews'"
+  },
+  {
+    "id": "TC-602",
+    "category": "Reviews",
+    "test": "Review content / testimonials are displayed",
+    "status": "PASS",
+    "details": "Body length: 4457 chars"
+  },
+  {
+    "id": "TC-701",
+    "category": "Register",
+    "test": "Registration form is present",
+    "status": "PASS",
+    "details": "Form found"
+  },
+  {
+    "id": "TC-702",
+    "category": "Register",
+    "test": "Register form has multiple input fields",
+    "status": "PASS",
+    "details": "Found 3 inputs"
+  },
+  {
+    "id": "TC-800",
+    "category": "SEO",
+    "test": "Home page has a meaningful <title> tag",
+    "status": "PASS",
+    "details": "'Best IT Training Institute in Jayanagar, Bangalore | Techmiya EdTech - Best IT T'"
+  },
+  {
+    "id": "TC-801",
+    "category": "SEO",
+    "test": "Home page has meta description",
+    "status": "PASS",
+    "details": "'Techmiya EdTech - Best IT training institute in Jayanagar, Bangalore. Python, Ja...'"
+  },
+  {
+    "id": "TC-802",
+    "category": "SEO",
+    "test": "Home page has an <h1> tag",
+    "status": "PASS",
+    "details": "'TECHMIYA ED-TECH'"
+  },
+  {
+    "id": "TC-803",
+    "category": "SEO",
+    "test": "Courses page has a meaningful <title> tag",
+    "status": "PASS",
+    "details": "'IT Training Courses - Full Stack, Data Science, AI, DevOps | Techmiya EdTech - B'"
+  },
+  {
+    "id": "TC-804",
+    "category": "SEO",
+    "test": "Courses page has meta description",
+    "status": "PASS",
+    "details": "'Techmiya EdTech - Best IT training institute in Jayanagar, Bangalore. Python, Ja...'"
+  },
+  {
+    "id": "TC-805",
+    "category": "SEO",
+    "test": "Courses page has an <h1> tag",
+    "status": "PASS",
+    "details": "'Our Courses'"
+  },
+  {
+    "id": "TC-806",
+    "category": "SEO",
+    "test": "Contact page has a meaningful <title> tag",
+    "status": "PASS",
+    "details": "'Contact Us - Get in Touch for IT Training | Techmiya EdTech - Best IT Training I'"
+  },
+  {
+    "id": "TC-807",
+    "category": "SEO",
+    "test": "Contact page has meta description",
+    "status": "PASS",
+    "details": "'Techmiya EdTech - Best IT training institute in Jayanagar, Bangalore. Python, Ja...'"
+  },
+  {
+    "id": "TC-808",
+    "category": "SEO",
+    "test": "Contact page has an <h1> tag",
+    "status": "PASS",
+    "details": "'Contact Us'"
+  },
+  {
+    "id": "TC-809",
+    "category": "SEO",
+    "test": "Reviews page has a meaningful <title> tag",
+    "status": "PASS",
+    "details": "'Student Reviews & Success Stories | Techmiya EdTech - Best IT Training Institute'"
+  },
+  {
+    "id": "TC-810",
+    "category": "SEO",
+    "test": "Reviews page has meta description",
+    "status": "PASS",
+    "details": "'Techmiya EdTech - Best IT training institute in Jayanagar, Bangalore. Python, Ja...'"
+  },
+  {
+    "id": "TC-811",
+    "category": "SEO",
+    "test": "Reviews page has an <h1> tag",
+    "status": "PASS",
+    "details": "'Student Reviews'"
+  },
+  {
+    "id": "TC-900-Mobile",
+    "category": "Responsive",
+    "test": "No horizontal overflow at Mobile (375x812)",
+    "status": "PASS",
+    "details": "body=467, viewport=482"
+  },
+  {
+    "id": "TC-900-Tablet",
+    "category": "Responsive",
+    "test": "No horizontal overflow at Tablet (768x1024)",
+    "status": "PASS",
+    "details": "body=735, viewport=750"
+  },
+  {
+    "id": "TC-900-Desktop",
+    "category": "Responsive",
+    "test": "No horizontal overflow at Desktop (1920x1080)",
+    "status": "PASS",
+    "details": "body=1887, viewport=1902"
+  },
+  {
+    "id": "TC-950",
+    "category": "Performance",
+    "test": "Home page loads in under 5s",
+    "status": "PASS",
+    "details": "Load time: 1.74s"
+  },
+  {
+    "id": "TC-951",
+    "category": "Performance",
+    "test": "Courses page loads in under 5s",
+    "status": "PASS",
+    "details": "Load time: 0.51s"
+  },
+  {
+    "id": "TC-952",
+    "category": "Performance",
+    "test": "Contact page loads in under 5s",
+    "status": "PASS",
+    "details": "Load time: 0.52s"
+  },
+  {
+    "id": "TC-970",
+    "category": "External Links",
+    "test": "LMS link points to lms.techmiyaedtech.com (opens new tab)",
+    "status": "PASS",
+    "details": "href=https://lms.techmiyaedtech.com/"
+  },
+  {
+    "id": "TC-971",
+    "category": "External Links",
+    "test": "Tutorials link points to tutorials.techmiyaedtech.com (opens new tab)",
+    "status": "PASS",
+    "details": "href=https://tutorials.techmiyaedtech.com/"
+  },
+  {
+    "id": "TC-1000",
+    "category": "Services",
+    "test": "Corporate Training page has heading and content",
+    "status": "PASS",
+    "details": "h1='Corporate Training'"
+  },
+  {
+    "id": "TC-1001",
+    "category": "Services",
+    "test": "CSR Programs page has heading and content",
+    "status": "PASS",
+    "details": "h1='CSR Programs'"
+  },
+  {
+    "id": "TC-1002",
+    "category": "Services",
+    "test": "Partnerships page has heading and content",
+    "status": "PASS",
+    "details": "h1='Partnerships Building'"
+  },
+  {
+    "id": "TC-1003",
+    "category": "Services",
+    "test": "Campus Drives page has heading and content",
+    "status": "PASS",
+    "details": "h1='Campus Drives'"
+  },
+  {
+    "id": "TC-1004",
+    "category": "Services",
+    "test": "Hackathons page has heading and content",
+    "status": "PASS",
+    "details": "h1='Hackathons'"
+  },
+  {
+    "id": "TC-1005",
+    "category": "Services",
+    "test": "FDP & SDP page has heading and content",
+    "status": "PASS",
+    "details": "h1='FDP & SDP'"
+  },
+  {
+    "id": "TC-1006",
+    "category": "Services",
+    "test": "Internships page has heading and content",
+    "status": "PASS",
+    "details": "h1='Internships & Live Projects'"
+  },
+  {
+    "id": "TC-1007",
+    "category": "Services",
+    "test": "Mentorship page has heading and content",
+    "status": "PASS",
+    "details": "h1='Industry Mentorship'"
+  },
+  {
+    "id": "TC-1100",
+    "category": "Accessibility",
+    "test": "All images have alt attributes",
+    "status": "PASS",
+    "details": "30 images, all with alt text"
+  },
+  {
+    "id": "TC-1101",
+    "category": "Accessibility",
+    "test": "HTML element has lang attribute",
+    "status": "PASS",
+    "details": "lang='en'"
+  },
+  {
+    "id": "TC-1102",
+    "category": "Accessibility",
+    "test": "Viewport meta tag is set",
+    "status": "PASS",
+    "details": "content='width=device-width, initial-scale=1.0'"
+  },
+  {
+    "id": "TC-1103",
+    "category": "Accessibility",
+    "test": "All buttons have text or aria-label",
+    "status": "WARN",
+    "details": "1/42 empty buttons"
+  },
+  {
+    "id": "TC-1200",
+    "category": "Console",
+    "test": "No SEVERE console errors on Home",
+    "status": "FAIL",
+    "details": "150 errors: https://logo.clearbit.com/google.com - Failed to load resource: net::ERR_NAME_NO; https://logo.clearbit.com/wipro.com - Failed to load resource: net::ERR_NAME_NOT; https://logo.clearbit.com/amazon.com - Failed to load resource: net::ERR_NAME_NO"
+  },
+  {
+    "id": "TC-1201",
+    "category": "Console",
+    "test": "No SEVERE console errors on Courses",
+    "status": "FAIL",
+    "details": "1 errors: https://www.techmiyaedtech.com/courses - Failed to load resource: the server res"
+  },
+  {
+    "id": "TC-1202",
+    "category": "Console",
+    "test": "No SEVERE console errors on Contact",
+    "status": "FAIL",
+    "details": "1 errors: https://www.techmiyaedtech.com/contact - Failed to load resource: the server res"
+  }
+]
