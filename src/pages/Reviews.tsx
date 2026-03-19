@@ -89,7 +89,7 @@ const Reviews = () => {
       course: "Full Stack Development",
       rating: 5,
       content: "Incredible learning experience! The curriculum is well-structured and the pace is perfect for working professionals. I was able to transition from accounting to software engineering successfully. The support from the Tech Miya team throughout my journey was phenomenal.",
-      avatar: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100",
+      avatar: "placements/Ram.jpg",
       date: "June 2023",
     },
     {
