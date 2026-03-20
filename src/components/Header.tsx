@@ -92,6 +92,7 @@ export const Header = () => {
     { name: "📚 FDP & SDP", path: "/services/fdp-sdp" },
     { name: "🚀 Internships & Live Projects", path: "/services/internships" },
     { name: "👨‍💼 Industry Mentorship", path: "/services/mentorship" },
+    { name: "📜 MoU", path: "/services/mou" },
   ];
 
   const isActive = (path: string) => location.pathname === path;

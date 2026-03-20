@@ -81,15 +81,22 @@ const students = [
   { name: "Vivek", image: "/placements/Vivek.jpg" },
   { name: "Xavier Fernandes", image: "/placements/Xaiver Fernandes.jpg" },
   { name: "Akhilesh", image: "/placements/akhilesh.jpg" },
+  { name: "Arjun", image: "/placements/Arjun.jpeg" },
+  { name: "Chethan", image: "/placements/Chethan.jpeg" },
+  { name: "Chitra", image: "/placements/Chitra.jpeg" },
   { name: "Deepak", image: "/placements/deepak.jpg" },
   { name: "Deepika", image: "/placements/deepika.jpg" },
   { name: "Fariq", image: "/placements/fariq.avif" },
+  { name: "Gourish", image: "/placements/Gourish.jpeg" },
   { name: "Rajeshwari", image: "/placements/rajeshwari.jpg" },
   { name: "Rakshitha", image: "/placements/rakshitha.jpg" },
   { name: "Ramesh", image: "/placements/ramesh.jpg" },
+  { name: "Rashid", image: "/placements/Rashid.jpeg" },
   { name: "Sandeep", image: "/placements/sandeep.jpg" },
   { name: "Saqib", image: "/placements/saqib.webp" },
   { name: "Shankar", image: "/placements/shankar.webp" },
+  { name: "Sharan", image: "/placements/Sharan.jpeg" },
+  { name: "Summit", image: "/placements/Summit.jpeg" },
   { name: "Udham", image: "/placements/udham.jpg" },
 ];
 
@@ -539,7 +546,7 @@ const Placements = () => {
         </p>
         <div className="pl-stats">
           <div className="pl-stat">
-            <div className="pl-stat-num">50+</div>
+            <div className="pl-stat-num">55+</div>
             <div className="pl-stat-lbl">Students Placed</div>
           </div>
           <div className="pl-stat">

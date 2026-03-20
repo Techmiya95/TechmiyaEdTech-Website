@@ -36,6 +36,7 @@ import Hackathons from "./pages/services/Hackathons";
 import FDPSDP from "./pages/services/FDPSDP";
 import Internships from "./pages/services/Internships";
 import Mentorship from "./pages/services/Mentorship";
+import MoU from "./pages/services/MoU";
 import SocialSidebar from "./components/SocialSidebar";
 import { StickyFooterBar } from "./components/StickyFooterBar";
 import ThankYou from "./pages/ThankYou";
@@ -86,6 +87,7 @@ const App = () => (
               <Route path="/services/fdp-sdp" element={<FDPSDP />} />
               <Route path="/services/internships" element={<Internships />} />
               <Route path="/services/mentorship" element={<Mentorship />} />
+              <Route path="/services/mou" element={<MoU />} />
               <Route path="/courses/:courseSlug" element={<CourseDetail />} />
             </Routes>
           </main>
