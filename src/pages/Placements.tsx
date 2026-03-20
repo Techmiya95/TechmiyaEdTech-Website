@@ -8,36 +8,36 @@ const seededRandom = (seed: number) => {
 };
 
 const bangaloreStartups = [
-  "Swiggy",
-  "Unacademy",
-  "Razorpay",
-  "Cred",
-  "Meesho",
-  "Groww",
-  "Navi Technologies",
-  "Cure.fit",
-  "Zostel",
-  "Dunzo",
-  "Khatabook",
-  "BrowserStack",
-  "Chargebee",
-  "Springworks",
-  "Slintel",
-  "Hiver",
-  "Learnapp",
-  "XoxoDay",
-  "Postman",
-  "Simplilearn",
-  "Quizizz",
-  "Darwinbox",
-  "Healthplix",
-  "Vyapar",
-  "Haptik",
-  "IndiaMart Intermesh",
-  "Clari5",
-  "Bugworks",
-  "Locus",
-  "Ather Energy",
+  { name: "Swiggy",             domain: "swiggy.com" },
+  { name: "Unacademy",          domain: "unacademy.com" },
+  { name: "Razorpay",           domain: "razorpay.com" },
+  { name: "CRED",               domain: "cred.club" },
+  { name: "Meesho",             domain: "meesho.com" },
+  { name: "Groww",              domain: "groww.in" },
+  { name: "Navi Technologies",  domain: "navi.com" },
+  { name: "Cure.fit",           domain: "cult.fit" },
+  { name: "Zostel",             domain: "zostel.com" },
+  { name: "Dunzo",              domain: "dunzo.com" },
+  { name: "Khatabook",          domain: "khatabook.com" },
+  { name: "BrowserStack",       domain: "browserstack.com" },
+  { name: "Chargebee",          domain: "chargebee.com" },
+  { name: "Springworks",        domain: "springworks.in" },
+  { name: "Slintel",            domain: "slintel.com" },
+  { name: "Hiver",              domain: "hiverhq.com" },
+  { name: "LearnApp",           domain: "learnapp.com" },
+  { name: "Xoxoday",            domain: "xoxoday.com" },
+  { name: "Postman",            domain: "postman.com" },
+  { name: "Simplilearn",        domain: "simplilearn.com" },
+  { name: "Quizizz",            domain: "quizizz.com" },
+  { name: "Darwinbox",          domain: "darwinbox.com" },
+  { name: "Healthplix",         domain: "healthplix.com" },
+  { name: "Vyapar",             domain: "vyaparapp.in" },
+  { name: "Haptik",             domain: "haptik.ai" },
+  { name: "IndiaMart",          domain: "indiamart.com" },
+  { name: "Clari5",             domain: "clari5.com" },
+  { name: "Bugworks",           domain: "bugworks.com" },
+  { name: "Locus",              domain: "locus.sh" },
+  { name: "Ather Energy",       domain: "atherenergy.com" },
 ];
 
 // All 50 students from the placements directory
@@ -110,7 +110,8 @@ const placementData = students.map((student, index) => {
   return {
     ...student,
     ctc,
-    company: bangaloreStartups[companyIndex],
+    company: bangaloreStartups[companyIndex].name,
+    companyDomain: bangaloreStartups[companyIndex].domain,
   };
 });
 
@@ -390,6 +391,13 @@ const css = `
     font-weight: 600;
     color: #1e293b;
   }
+  .pl-company-logo {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
 
   /* CTC chip */
   .pl-ctc {
@@ -507,7 +515,17 @@ const PlacementCard = ({
         <span className="pl-role">🎓 Placed Graduate</span>
 
         <div className="pl-company">
-          <span>🏢</span>
+          <img
+            src={`https://logo.clearbit.com/${student.companyDomain}`}
+            alt={student.company}
+            className="pl-company-logo"
+            onError={(e) => {
+              (e.currentTarget as HTMLImageElement).style.display = "none";
+              const fb = e.currentTarget.nextElementSibling as HTMLElement | null;
+              if (fb) fb.style.display = "inline";
+            }}
+          />
+          <span className="pl-company-fallback" style={{ display: "none" }}>🏢</span>
           <span>{student.company}</span>
         </div>
 
