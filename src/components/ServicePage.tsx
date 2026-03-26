@@ -34,6 +34,26 @@ export const ServicePage = ({ title, subtitle, description, features, benefits, 
                 </div>
             </section>
 
+            {/* Image Gallery */}
+            {images && images.length > 0 && (
+                <section className="py-12 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Gallery</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {images.map((image, index) => (
+                                <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 aspect-video">
+                                    <img
+                                        src={image}
+                                        alt={`${title} image ${index + 1}`}
+                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
             {/* Content Section */}
             <section className="py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -91,26 +111,6 @@ export const ServicePage = ({ title, subtitle, description, features, benefits, 
                     </div>
                 </div>
             </section>
-
-            {/* Image Gallery */}
-            {images && images.length > 0 && (
-                <section className="py-12 bg-white">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Gallery</h2>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {images.map((image, index) => (
-                                <div key={index} className="rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 aspect-video">
-                                    <img
-                                        src={image}
-                                        alt={`${title} image ${index + 1}`}
-                                        className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-            )}
 
             {/* Featured Video */}
             {youtubeVideoId && (

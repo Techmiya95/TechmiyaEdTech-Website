@@ -102,7 +102,7 @@ const Index = () => {
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-2 w-full max-w-full">
             {/* Left Column - Rotating Tech Logos */}
-            <div className="relative h-56 w-56 xl:h-64 xl:w-64 flex-shrink-0 order-2 lg:order-1 hidden lg:block scale-90 xl:scale-100 origin-center lg:origin-left xl:-ml-4">
+            <div className="relative h-48 w-48 lg:h-52 lg:w-52 xl:h-64 xl:w-64 flex-shrink-0 order-2 lg:order-1 hidden lg:block scale-75 lg:scale-80 xl:scale-100 origin-center lg:origin-left">
               {/* Circle Container */}
               <div className="absolute inset-0 rounded-full border-4 border-blue-300/30 flex items-center justify-center">
                 <div className="absolute inset-0 rounded-full border-2 border-blue-200/20 animate-ping"></div>
@@ -196,7 +196,7 @@ const Index = () => {
             </div>
 
             {/* Right Column - Lead Gen Voucher Form */}
-            <div className="flex justify-end flex-shrink-0 order-3 w-full sm:w-auto lg:w-[280px] xl:w-[300px] mt-6 lg:mt-0 z-10 xl:-mr-4">
+            <div className="flex justify-end flex-shrink-0 order-3 w-full sm:w-auto lg:w-[260px] xl:w-[300px] mt-6 lg:mt-0 z-10">
               <HeroLeadGenForm />
             </div>
           </div>
@@ -472,7 +472,7 @@ const Index = () => {
               We offer comprehensive training in the most in-demand technologies for software development and data careers.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-6 relative z-10">
               {[
                 { title: "Python", subtitle: "Programming", slug: "data-science-analytics", icon: "🐍" },
                 { title: "Java", subtitle: "Development", slug: "java-programming", icon: "☕" },

@@ -42,6 +42,7 @@ import { StickyFooterBar } from "./components/StickyFooterBar";
 import ThankYou from "./pages/ThankYou";
 import GetVoucher from "./pages/GetVoucher";
 import Placements from "./pages/Placements";
+import Compiler from "./pages/Compiler";
 
 const queryClient = new QueryClient();
 
@@ -88,6 +89,7 @@ const App = () => (
               <Route path="/services/internships" element={<Internships />} />
               <Route path="/services/mentorship" element={<Mentorship />} />
               <Route path="/services/mou" element={<MoU />} />
+              <Route path="/compiler" element={<Compiler />} />
               <Route path="/courses/:courseSlug" element={<CourseDetail />} />
             </Routes>
           </main>

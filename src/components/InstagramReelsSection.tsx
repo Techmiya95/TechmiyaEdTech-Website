@@ -48,11 +48,11 @@ const InstagramReelsSection = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8 justify-items-center">
                     {reelUrls.map((url, index) => (
                         <div
                             key={index}
-                            className="w-[300px] h-[580px] overflow-hidden rounded-2xl shadow-lg border border-gray-200"
+                            className="w-full max-w-[300px] h-[580px] overflow-hidden rounded-2xl shadow-lg border border-gray-200"
                         >
                             <blockquote
                                 className="instagram-media"

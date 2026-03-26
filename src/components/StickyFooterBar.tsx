@@ -49,7 +49,7 @@ export const StickyFooterBar = () => {
                         </div>
 
                         {/* Action Buttons */}
-                        <div className="flex items-center gap-2 sm:gap-3 overflow-x-auto">
+                        <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
                             {/* <Link to="/register">
                                 <Button
                                     className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"

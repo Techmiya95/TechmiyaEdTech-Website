@@ -93,6 +93,7 @@ export const Header = () => {
     { name: "🚀 Internships & Live Projects", path: "/services/internships" },
     { name: "👨‍💼 Industry Mentorship", path: "/services/mentorship" },
     { name: "📜 MoU", path: "/services/mou" },
+    { name: "💻 Compiler", path: "/compiler" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -111,12 +112,12 @@ export const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-2 lg:space-x-5 items-center">
+            <nav className="hidden lg:flex space-x-1 xl:space-x-3 items-center">
               {navItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`px-3 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${isActive(item.path)
+                  className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 ${isActive(item.path)
                     ? "text-amber-600 bg-amber-50"
                     : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                     }`}
@@ -132,7 +133,7 @@ export const Header = () => {
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
                 <button
-                  className={`px-3 py-2 rounded-lg text-base font-semibold transition-all duration-200 flex items-center gap-1 ${isServiceActive
+                  className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 flex items-center gap-1 ${isServiceActive
                     ? "text-amber-600 bg-amber-50"
                     : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                     }`}
@@ -144,16 +145,28 @@ export const Header = () => {
                 {isServicesOpen && (
                   <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
                     {serviceItems.map((item) => (
-                      <Link
-                        key={item.name}
-                        to={item.path}
-                        className={`block px-4 py-2 text-sm font-medium transition-colors ${isActive(item.path)
-                          ? "text-amber-600 bg-amber-50"
-                          : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                          }`}
-                      >
-                        {item.name}
-                      </Link>
+                      item.path.startsWith("http") ? (
+                        <a
+                          key={item.name}
+                          href={item.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                        >
+                          {item.name}
+                        </a>
+                      ) : (
+                        <Link
+                          key={item.name}
+                          to={item.path}
+                          className={`block px-4 py-2 text-sm font-medium transition-colors ${isActive(item.path)
+                            ? "text-amber-600 bg-amber-50"
+                            : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                            }`}
+                        >
+                          {item.name}
+                        </Link>
+                      )
                     ))}
                   </div>
                 )}
@@ -166,7 +179,7 @@ export const Header = () => {
                     href={item.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-3 py-2 rounded-lg text-base font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                    className="px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-gray-50 whitespace-nowrap"
                   >
                     {item.name}
                   </a>
@@ -174,7 +187,7 @@ export const Header = () => {
                   <Link
                     key={item.name}
                     to={item.path}
-                    className={`px-3 py-2 rounded-lg text-base font-semibold transition-all duration-200 ${isActive(item.path)
+                    className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 whitespace-nowrap ${isActive(item.path)
                       ? "text-amber-600 bg-amber-50"
                       : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                       }`}
@@ -191,7 +204,7 @@ export const Header = () => {
                 onMouseLeave={() => setIsJobsOpen(false)}
               >
                 <button
-                  className={`px-3 py-2 rounded-lg text-base font-semibold transition-all duration-200 flex items-center gap-1 text-gray-700 hover:text-amber-600 hover:bg-gray-50`}
+                  className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 flex items-center gap-1 text-gray-700 hover:text-amber-600 hover:bg-gray-50`}
                 >
                   Jobs
                   <ChevronDown className={`w-4 h-4 transition-transform ${isJobsOpen ? 'rotate-180' : ''}`} />
@@ -216,21 +229,21 @@ export const Header = () => {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden md:flex gap-4">
+            <div className="hidden lg:flex gap-2 xl:gap-4">
               <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white">
+                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white text-sm xl:text-base px-3 xl:px-4">
                   Access LMS
                 </Button>
               </a>
               <Link to="/register">
-                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
+                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-sm xl:text-base px-3 xl:px-4">
                   Enquire Now
                 </Button>
               </Link>
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
@@ -243,7 +256,7 @@ export const Header = () => {
 
           {/* Mobile menu */}
           {isMenuOpen && (
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
                 {navItems.slice(0, 2).map((item) => (
                   <Link
@@ -264,17 +277,30 @@ export const Header = () => {
                   <p className="text-sm font-bold text-gray-900 mb-2">Our Services</p>
                   <div className="pl-2 space-y-1 border-l-2 border-amber-200">
                     {serviceItems.map((item) => (
-                      <Link
-                        key={item.name}
-                        to={item.path}
-                        onClick={() => setIsMenuOpen(false)}
-                        className={`block px-2 py-1.5 rounded text-sm font-medium transition-colors ${isActive(item.path)
-                          ? "text-amber-600 bg-amber-50"
-                          : "text-gray-600 hover:text-amber-600"
-                          }`}
-                      >
-                        {item.name}
-                      </Link>
+                      item.path.startsWith("http") ? (
+                        <a
+                          key={item.name}
+                          href={item.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={() => setIsMenuOpen(false)}
+                          className="block px-2 py-1.5 rounded text-sm font-medium transition-colors text-gray-600 hover:text-amber-600"
+                        >
+                          {item.name}
+                        </a>
+                      ) : (
+                        <Link
+                          key={item.name}
+                          to={item.path}
+                          onClick={() => setIsMenuOpen(false)}
+                          className={`block px-2 py-1.5 rounded text-sm font-medium transition-colors ${isActive(item.path)
+                            ? "text-amber-600 bg-amber-50"
+                            : "text-gray-600 hover:text-amber-600"
+                            }`}
+                        >
+                          {item.name}
+                        </Link>
+                      )
                     ))}
                   </div>
                 </div>
