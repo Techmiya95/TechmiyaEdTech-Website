@@ -25,7 +25,7 @@ const Reviews = () => {
       course: "Full Stack Development",
       rating: 5,
       content: "Techmiya completely transformed my career. I went from having no programming experience to landing a job at Google in just 8 months. The instructors are incredibly knowledgeable and the hands-on approach really helped me understand complex concepts. The career support team was amazing too - they helped me prepare for interviews and even connected me with recruiters.",
-      avatar: "./adil.jpg",
+      avatar: "./adil.jpeg",
       date: "December 2024",
 
     },
@@ -90,6 +90,7 @@ const Reviews = () => {
       rating: 5,
       content: "Incredible learning experience! The curriculum is well-structured and the pace is perfect for working professionals. I was able to transition from accounting to software engineering successfully. The support from the Tech Miya team throughout my journey was phenomenal.",
       avatar: "./ganesh.jpeg",
+
       date: "June 2023",
     },
     {
