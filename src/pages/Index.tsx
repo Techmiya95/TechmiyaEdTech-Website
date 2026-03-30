@@ -58,7 +58,7 @@ const Index = () => {
       role: "Software Developer at HCL",
       content: "Tech Miya transformed my career. The hands-on approach and real-world projects prepared me for my dream job.",
       rating: 5,
-      avatar: "/adil.jpg"
+      avatar: "/adil.jpeg"
     },
     {
       name: "Parvez Aktar",
@@ -110,22 +110,22 @@ const Index = () => {
 
               {/* Rotating Logos Wrapper */}
               <div className="absolute inset-0 animate-[spin_20s_linear_infinite]">
-                 {/* HTML5 - Top */}
-                 <div className="absolute top-0 left-1/2 -mt-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-10 h-10" />
-                 </div>
-                 {/* CSS3 - Right */}
-                 <div className="absolute top-1/2 right-0 -mr-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-10 h-10" />
-                 </div>
-                 {/* JS - Bottom */}
-                 <div className="absolute bottom-0 left-1/2 -mb-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10" />
-                 </div>
-                 {/* React - Left */}
-                 <div className="absolute top-1/2 left-0 -ml-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10" />
-                 </div>
+                {/* HTML5 - Top */}
+                <div className="absolute top-0 left-1/2 -mt-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-10 h-10" />
+                </div>
+                {/* CSS3 - Right */}
+                <div className="absolute top-1/2 right-0 -mr-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-10 h-10" />
+                </div>
+                {/* JS - Bottom */}
+                <div className="absolute bottom-0 left-1/2 -mb-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10" />
+                </div>
+                {/* React - Left */}
+                <div className="absolute top-1/2 left-0 -ml-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10" />
+                </div>
               </div>
 
               {/* Center Logo */}
@@ -209,37 +209,37 @@ const Index = () => {
             {(() => {
               const partners = [
                 // Big Tech & IT
-                { name: "Google",       domain: "google.com",        color: "#4285F4" },
-                { name: "Amazon",       domain: "amazon.com",        color: "#FF9900" },
-                { name: "Microsoft",    domain: "microsoft.com",     color: "#00A4EF" },
-                { name: "IBM",          domain: "ibm.com",           color: "#1F70C1" },
-                { name: "Infosys",      domain: "infosys.com",       color: "#007CC3" },
-                { name: "TCS",          domain: "tcs.com",           color: "#E2001A" },
-                { name: "Accenture",    domain: "accenture.com",     color: "#A100FF" },
-                { name: "Wipro",        domain: "wipro.com",         color: "#0A1F6B" },
-                { name: "HCL",          domain: "hcltech.com",       color: "#0064C1" },
-                { name: "Cognizant",    domain: "cognizant.com",     color: "#1A5091" },
-                { name: "Capgemini",    domain: "capgemini.com",     color: "#0070AD" },
-                { name: "Freshworks",   domain: "freshworks.com",    color: "#25C16F" },
+                { name: "Google", domain: "google.com", color: "#4285F4" },
+                { name: "Amazon", domain: "amazon.com", color: "#FF9900" },
+                { name: "Microsoft", domain: "microsoft.com", color: "#00A4EF" },
+                { name: "IBM", domain: "ibm.com", color: "#1F70C1" },
+                { name: "Infosys", domain: "infosys.com", color: "#007CC3" },
+                { name: "TCS", domain: "tcs.com", color: "#E2001A" },
+                { name: "Accenture", domain: "accenture.com", color: "#A100FF" },
+                { name: "Wipro", domain: "wipro.com", color: "#0A1F6B" },
+                { name: "HCL", domain: "hcltech.com", color: "#0064C1" },
+                { name: "Cognizant", domain: "cognizant.com", color: "#1A5091" },
+                { name: "Capgemini", domain: "capgemini.com", color: "#0070AD" },
+                { name: "Freshworks", domain: "freshworks.com", color: "#25C16F" },
                 // Startups
-                { name: "Swiggy",       domain: "swiggy.com",        color: "#FC8019" },
-                { name: "Razorpay",     domain: "razorpay.com",      color: "#3395FF" },
-                { name: "Unacademy",    domain: "unacademy.com",     color: "#08BD80" },
-                { name: "CRED",         domain: "cred.club",         color: "#1C1C1C" },
-                { name: "Meesho",       domain: "meesho.com",        color: "#9F2089" },
-                { name: "Groww",        domain: "groww.in",          color: "#5367FF" },
-                { name: "BrowserStack", domain: "browserstack.com",  color: "#FF6600" },
-                { name: "Postman",      domain: "postman.com",       color: "#FF6C37" },
-                { name: "Simplilearn",  domain: "simplilearn.com",   color: "#2DC5A2" },
-                { name: "Darwinbox",    domain: "darwinbox.com",     color: "#FF5733" },
-                { name: "Chargebee",    domain: "chargebee.com",     color: "#F97316" },
-                { name: "IndiaMart",    domain: "indiamart.com",     color: "#E32020" },
-                { name: "Ather Energy", domain: "atherenergy.com",   color: "#2DCA8C" },
-                { name: "Dunzo",        domain: "dunzo.com",         color: "#00CB68" },
-                { name: "Quizizz",      domain: "quizizz.com",       color: "#8854D0" },
-                { name: "Haptik",       domain: "haptik.ai",         color: "#4A90D9" },
-                { name: "Vyapar",       domain: "vyaparapp.in",      color: "#1F8C3B" },
-                { name: "Khatabook",    domain: "khatabook.com",     color: "#E73C3E" },
+                { name: "Swiggy", domain: "swiggy.com", color: "#FC8019" },
+                { name: "Razorpay", domain: "razorpay.com", color: "#3395FF" },
+                { name: "Unacademy", domain: "unacademy.com", color: "#08BD80" },
+                { name: "CRED", domain: "cred.club", color: "#1C1C1C" },
+                { name: "Meesho", domain: "meesho.com", color: "#9F2089" },
+                { name: "Groww", domain: "groww.in", color: "#5367FF" },
+                { name: "BrowserStack", domain: "browserstack.com", color: "#FF6600" },
+                { name: "Postman", domain: "postman.com", color: "#FF6C37" },
+                { name: "Simplilearn", domain: "simplilearn.com", color: "#2DC5A2" },
+                { name: "Darwinbox", domain: "darwinbox.com", color: "#FF5733" },
+                { name: "Chargebee", domain: "chargebee.com", color: "#F97316" },
+                { name: "IndiaMart", domain: "indiamart.com", color: "#E32020" },
+                { name: "Ather Energy", domain: "atherenergy.com", color: "#2DCA8C" },
+                { name: "Dunzo", domain: "dunzo.com", color: "#00CB68" },
+                { name: "Quizizz", domain: "quizizz.com", color: "#8854D0" },
+                { name: "Haptik", domain: "haptik.ai", color: "#4A90D9" },
+                { name: "Vyapar", domain: "vyaparapp.in", color: "#1F8C3B" },
+                { name: "Khatabook", domain: "khatabook.com", color: "#E73C3E" },
               ];
 
               const strip = (
