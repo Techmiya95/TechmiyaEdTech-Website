@@ -84,12 +84,12 @@ const Reviews = () => {
     },
     {
       id: 7,
-      name: "Ganesh",
-      role: "Software Engineer at Techmiya",
+      name: "Gourish",
+      role: "Ansible Developer at Infosys",
       course: "Full Stack Development",
       rating: 5,
       content: "Incredible learning experience! The curriculum is well-structured and the pace is perfect for working professionals. I was able to transition from accounting to software engineering successfully. The support from the Tech Miya team throughout my journey was phenomenal.",
-      avatar: "placements/Ram.jpg",
+      avatar: "./ganesh.jpeg",
       date: "June 2023",
     },
     {
