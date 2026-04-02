@@ -84,6 +84,7 @@ export const Header = () => {
   ];
 
   const serviceItems = [
+    { name: "🎓 Workshops", path: "/services/workshops" },
     { name: "🏢 Corporate Training", path: "/services/corporate-training" },
     { name: "🤝 CSR Programs", path: "/services/csr-programs" },
     { name: "🔗 Partnerships Building", path: "/services/partnerships" },

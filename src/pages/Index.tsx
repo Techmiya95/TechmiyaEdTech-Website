@@ -629,6 +629,13 @@ const Index = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <Link to="/services/workshops" className="bg-gradient-to-br from-indigo-50 to-blue-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer border border-blue-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                <span className="text-2xl">🎓</span>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Technical Workshops</h3>
+              <p className="text-gray-600 text-sm">Tiered training modules to bridge the academic-industry gap.</p>
+            </Link>
             <Link to="/services/corporate-training" className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl hover:shadow-lg transition-shadow cursor-pointer">
               <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
                 <span className="text-2xl">🏢</span>
