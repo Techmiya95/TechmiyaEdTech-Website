@@ -7,7 +7,7 @@ interface SEOHeadProps {
   canonicalUrl?: string;
   ogImage?: string;
   ogType?: 'website' | 'article' | 'product';
-  structuredData?: object;
+  structuredData?: object | object[];
 }
 
 export const SEOHead = ({
@@ -15,13 +15,18 @@ export const SEOHead = ({
   description,
   keywords = 'IT training, Bangalore, Jayanagar, Generative AI, Machine Learning, Data Science, Python, AWS, DevOps',
   canonicalUrl,
-  ogImage = 'https://techmiyaedtech.com/techmiyaedtech_new_logo.png',
+  ogImage = 'https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png',
   ogType = 'website',
   structuredData,
 }: SEOHeadProps) => {
   const fullTitle = `${title} | Techmiya EdTech - Best IT Training Institute Bangalore`;
-  const siteUrl = 'https://techmiyaedtech.com';
+  const siteUrl = 'https://www.techmiyaedtech.com';
   
+  // Support both single schema object and array of schemas
+  const schemas = structuredData
+    ? Array.isArray(structuredData) ? structuredData : [structuredData]
+    : [];
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
@@ -30,6 +35,11 @@ export const SEOHead = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="robots" content="index, follow" />
+      
+      {/* Geo Location Meta Tags - Local SEO */}
+      <meta name="geo.region" content="IN-KA" />
+      <meta name="geo.placename" content="Jayanagar, Bangalore" />
+      <meta name="geo.position" content="12.9279;77.5817" />
       
       {/* Canonical URL */}
       {canonicalUrl && <link rel="canonical" href={`${siteUrl}${canonicalUrl}`} />}
@@ -50,12 +60,12 @@ export const SEOHead = ({
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
       
-      {/* Structured Data */}
-      {structuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+      {/* Structured Data - supports multiple schemas */}
+      {schemas.map((schema, index) => (
+        <script key={index} type="application/ld+json">
+          {JSON.stringify(schema)}
         </script>
-      )}
+      ))}
     </Helmet>
   );
 };

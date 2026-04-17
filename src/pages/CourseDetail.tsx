@@ -68,13 +68,53 @@ const CourseDetail = () => {
         setExpandedModule(expandedModule === index ? null : index);
     };
 
+    const courseSchema = {
+        "@context": "https://schema.org",
+        "@type": "Course",
+        "name": `${course.title} Training in Bangalore`,
+        "description": `${course.description} Learn ${course.title} in ${course.duration} with industry-oriented syllabus, placement support & certification at Techmiya EdTech, Jayanagar.`,
+        "provider": {
+            "@type": "Organization",
+            "name": "Techmiya EdTech",
+            "sameAs": "https://www.techmiyaedtech.com"
+        },
+        "courseMode": "Blended",
+        "educationalLevel": course.level,
+        "inLanguage": "en",
+        "timeRequired": course.duration,
+        "locationCreated": {
+            "@type": "Place",
+            "name": "Jayanagar, Bangalore",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bangalore",
+                "addressRegion": "Karnataka",
+                "addressCountry": "IN"
+            }
+        },
+        "offers": {
+            "@type": "Offer",
+            "category": "Paid",
+            "availability": "https://schema.org/InStock"
+        },
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "Mixed",
+            "instructor": {
+                "@type": "Organization",
+                "name": "Techmiya EdTech"
+            }
+        }
+    };
+
     return (
         <div className="min-h-screen bg-gray-50">
             <SEOHead
-                title={`${course.title} Course - Syllabus, Fee & Duration | Techmiya EdTech`}
-                description={`${course.description} Learn ${course.title} in ${course.duration} with industry-oriented syllabus, placement support & certification.`}
-                keywords={`${course.title} course, ${course.title} training Bangalore, ${course.title} syllabus, ${course.title} certification`}
+                title={`${course.title} Training in Jayanagar, Bangalore`}
+                description={`${course.description} Learn ${course.title} in ${course.duration} at Techmiya EdTech, Jayanagar Bangalore. Hands-on training, placement support & industry certification.`}
+                keywords={`${course.title} course Bangalore, ${course.title} training Jayanagar, ${course.title} syllabus, ${course.title} certification, best ${course.title} institute Bangalore`}
                 canonicalUrl={`/courses/${course.slug}`}
+                structuredData={courseSchema}
             />
 
             {/* Hero Section */}
@@ -91,7 +131,7 @@ const CourseDetail = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
                             <Badge className="bg-amber-500 text-white mb-4 text-sm">{course.level}</Badge>
-                            <h1 className="text-4xl lg:text-5xl font-bold mb-4">{course.title}</h1>
+                            <h1 className="text-4xl lg:text-5xl font-bold mb-4">{course.title} Training in Jayanagar, Bangalore</h1>
                             <p className="text-xl text-blue-100 mb-6">{course.tagline}</p>
                             <p className="text-lg text-blue-200 mb-8">{course.description}</p>
 
@@ -198,7 +238,7 @@ const CourseDetail = () => {
                         {/* Syllabus Accordion */}
                         <div className="lg:col-span-2">
                             <h2 className="text-3xl font-bold text-gray-900 mb-8">
-                                📚 Detailed Course Syllabus
+                                📚 Detailed {course.title} Course Syllabus
                             </h2>
                             <div className="space-y-4">
                                 {course.modules.map((module, index) => (
@@ -341,7 +381,7 @@ const CourseDetail = () => {
             {/* Prerequisites */}
             <section className="py-12 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-6">📋 Prerequisites</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-6">📋 Prerequisites for {course.title} Course</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         {course.prerequisites.map((prereq, index) => (
                             <div key={index} className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg">
@@ -357,7 +397,7 @@ const CourseDetail = () => {
             <section className="py-16 bg-gradient-to-r from-blue-900 via-purple-800 to-blue-900 text-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                        Ready to Start Your {course.title} Journey?
+                        Ready to Start Your {course.title} Training in Bangalore?
                     </h2>
                     <p className="text-xl text-blue-200 mb-8">
                         Join 5000+ successful students. Get 100% placement assistance and industry-recognized certification.
@@ -381,7 +421,7 @@ const CourseDetail = () => {
             {/* Related Courses */}
             <section className="py-16 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="text-2xl font-bold text-gray-900 mb-8">📚 Related Courses</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 mb-8">📚 Related IT Courses in Bangalore</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {courseSyllabi
                             .filter(c => c.id !== course.id)

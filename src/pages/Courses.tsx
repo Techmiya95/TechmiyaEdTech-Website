@@ -179,11 +179,11 @@ const Courses = () => {
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            Our Courses
+            IT Training Courses in Jayanagar, Bangalore
           </h1>
           <p className="text-xl lg:text-2xl max-w-3xl mx-auto">
             Choose from our comprehensive range of technology courses designed to
-            launch your career in the digital world.
+            launch your career. Expert trainers, hands-on projects, and 100% placement support at Techmiya EdTech.
           </p>
         </div>
       </section>
@@ -258,7 +258,7 @@ const Courses = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Our Courses?
+              Why Choose Techmiya EdTech IT Courses in Bangalore?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our courses are designed with industry experts to ensure you gain
@@ -271,7 +271,7 @@ const Courses = () => {
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">👨‍💻</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Expert Instructors</h3>
+              <h3 className="text-lg font-semibold mb-2">Industry-Expert IT Trainers</h3>
               <p className="text-gray-600">Learn from industry professionals with years of experience</p>
             </div>
 
@@ -279,7 +279,7 @@ const Courses = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🏗️</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Hands-on Projects</h3>
+              <h3 className="text-lg font-semibold mb-2">Hands-on Real-World Projects</h3>
               <p className="text-gray-600">Build real-world projects to showcase in your portfolio</p>
             </div>
 
@@ -287,7 +287,7 @@ const Courses = () => {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Job Placement</h3>
+              <h3 className="text-lg font-semibold mb-2">100% Job Placement Assistance</h3>
               <p className="text-gray-600">Dedicated support to help you land your dream job</p>
             </div>
 
@@ -295,7 +295,7 @@ const Courses = () => {
               <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🏆</span>
               </div>
-              <h3 className="text-lg font-semibold mb-2">Certification</h3>
+              <h3 className="text-lg font-semibold mb-2">Industry-Recognized Certification</h3>
               <p className="text-gray-600">Industry-recognized certificates upon completion</p>
             </div>
           </div>

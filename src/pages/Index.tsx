@@ -18,10 +18,11 @@ const Index = () => {
     "@type": "WebPage",
     "name": "Techmiya EdTech - Best IT Training Institute in Jayanagar, Bangalore",
     "description": "Premier IT Training Institute offering Generative AI, Machine Learning, Data Science, Python, AWS, DevOps courses in Jayanagar, Bangalore.",
-    "url": "https://techmiyaedtech.com/",
+    "url": "https://www.techmiyaedtech.com/",
     "mainEntity": {
       "@type": "EducationalOrganization",
-      "name": "Techmiya EdTech"
+      "name": "Techmiya EdTech",
+      "sameAs": "https://www.techmiyaedtech.com"
     }
   };
 
@@ -147,7 +148,7 @@ const Index = () => {
 
               <h1 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold mb-4 leading-tight w-full">
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
-                  TECHMIYA ED-TECH
+                  Best IT Training Institute in Jayanagar, Bangalore — Techmiya EdTech
                 </span>
               </h1>
 
@@ -303,7 +304,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              We Offer <span className="text-amber-500">3 Types</span> of Training
+              We Offer <span className="text-amber-500">3 Types</span> of IT Training in Bangalore
             </h2>
             <p className="text-xl text-gray-600">
               Choose the learning mode that fits your schedule and preference
@@ -386,7 +387,7 @@ const Index = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
-            Our Mission
+            Our Mission — Bridging Education & Industry in Bangalore
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
             To bridge the gap between traditional education and industry requirements by providing
@@ -397,7 +398,7 @@ const Index = () => {
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Industry-Focused</h3>
+              <h3 className="text-xl font-semibold mb-2">Industry-Focused IT Training Curriculum</h3>
               <p className="text-gray-600">
                 Curriculum designed with input from leading tech companies
               </p>
@@ -406,7 +407,7 @@ const Index = () => {
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🚀</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Career Support</h3>
+              <h3 className="text-xl font-semibold mb-2">100% Career & Placement Support in Bangalore</h3>
               <p className="text-gray-600">
                 Dedicated placement assistance and career guidance
               </p>
@@ -415,7 +416,7 @@ const Index = () => {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">💡</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Hands-on Learning</h3>
+              <h3 className="text-xl font-semibold mb-2">Hands-on Learning with Real Projects</h3>
               <p className="text-gray-600">
                 Real projects and practical experience from day one
               </p>
@@ -429,7 +430,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Why Choose Techmiya EdTech for IT Training in Bangalore?
+              Why Choose Techmiya EdTech — Best IT Training Institute in Jayanagar?
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               Techmiya EdTech is the leading IT training institute in Jayanagar, Bangalore, offering comprehensive courses in Python, Java, JavaScript, Data Science, Machine Learning, and Artificial Intelligence. Our industry-expert trainers and hands-on curriculum ensure you gain the practical skills employers demand.
@@ -438,7 +439,7 @@ const Index = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             <div className="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">100% Placement Assistance</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">100% Placement Assistance in Bangalore IT Companies</h3>
               <p className="text-gray-700 mb-4">
                 We provide dedicated placement support to help you land your dream job in top IT companies. Our placement cell works closely with leading recruiters from Google, Amazon, Microsoft, TCS, Infosys, Wipro, and more. We offer resume building, mock interviews, and direct job referrals to ensure your success.
               </p>
@@ -450,7 +451,7 @@ const Index = () => {
             </div>
 
             <div className="bg-gradient-to-br from-green-50 to-teal-50 p-8 rounded-2xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Upskilling for Working Professionals</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Upskilling & Weekend Courses for Working Professionals in Bangalore</h3>
               <p className="text-gray-700 mb-4">
                 Whether you are a fresher looking to start your IT career or an experienced professional wanting to upskill, our flexible batch timings and weekend classes accommodate your schedule. Learn Python programming, R for data analysis, advanced JavaScript frameworks, and cloud technologies to stay ahead in your career.
               </p>
@@ -466,7 +467,7 @@ const Index = () => {
 
           <div className="bg-gradient-to-r from-blue-900 via-purple-900 to-blue-900 text-white p-8 sm:p-16 rounded-3xl shadow-2xl relative overflow-hidden my-20">
             <h3 className="text-3xl md:text-5xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-yellow-400">
-              Our Course Offerings
+              Our IT Training Courses in Bangalore
             </h3>
             <p className="text-blue-100 text-center mb-12 max-w-3xl mx-auto text-lg">
               We offer comprehensive training in the most in-demand technologies for software development and data careers.
@@ -516,7 +517,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Featured Courses
+              Featured IT Courses in Jayanagar, Bangalore
             </h2>
             <p className="text-xl text-gray-600">
               Start your tech journey with our most popular programs
@@ -570,7 +571,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              What Our Students Say
+              Student Testimonials — IT Training Bangalore
             </h2>
             <p className="text-xl text-gray-600">
               Real stories from our successful graduates
@@ -622,7 +623,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Our Services
+              Our IT Training Services in Bangalore
             </h2>
             <p className="text-xl text-gray-600">
               Comprehensive solutions for students, professionals, and organizations
@@ -701,7 +702,7 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions
+              Frequently Asked Questions — IT Training in Jayanagar, Bangalore
             </h2>
             <p className="text-xl text-gray-600">
               Everything you need to know about our IT training programs in Jayanagar, Bangalore

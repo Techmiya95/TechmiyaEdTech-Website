@@ -1,36 +1,16 @@
 # Robots.txt for Techmiya EdTech
-# https://techmiyaedtech.com
-
-# Allow all search engines
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
-User-agent: LinkedInBot
-Allow: /
+# https://www.techmiyaedtech.com
 
 User-agent: *
 Allow: /
-Crawl-delay: 2
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /private/
 
-# Sitemap location
-Sitemap: https://techmiyaedtech.com/sitemap.xml
+Sitemap: https://www.techmiyaedtech.com/sitemap.xml
 
 # LLMs.txt for AI crawlers
 # See: https://llmstxt.org/
-LLMsTxt: https://techmiyaedtech.com/llms.txt
-
-# Disallow admin and private paths (if any)
-Disallow: /api/
-Disallow: /_next/
-Disallow: /private/
+LLMsTxt: https://www.techmiyaedtech.com/llms.txt
