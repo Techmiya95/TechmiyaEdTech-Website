@@ -170,8 +170,9 @@ const Reviews = () => {
                   <div className="flex items-start space-x-4">
                     <img
                       src={review.avatar}
-                      alt={review.name}
+                      alt={`${review.name} - Student Success Story`}
                       className="w-16 h-16 rounded-full object-cover"
+                      loading="lazy"
                     />
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold text-gray-900">{review.name}</h3>

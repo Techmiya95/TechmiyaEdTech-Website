@@ -114,7 +114,7 @@ const CourseDetail = () => {
             {/* Hero Section */}
             <section className="relative bg-gradient-to-br from-blue-900 via-purple-800 to-blue-900 text-white py-16 overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
-                    <img src={course.image} alt={course.title} className="w-full h-full object-cover" />
+                    <img src={course.image} alt={`${course.title} Training in Jayanagar Bangalore`} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <Link to="/courses" className="inline-flex items-center text-blue-200 hover:text-white mb-6 transition-colors">
@@ -426,8 +426,9 @@ const CourseDetail = () => {
                                         <div className="aspect-video overflow-hidden">
                                             <img
                                                 src={relatedCourse.image}
-                                                alt={relatedCourse.title}
+                                                alt={`${relatedCourse.title} Course Bangalore`}
                                                 className="w-full h-full object-cover"
+                                                loading="lazy"
                                             />
                                         </div>
                                         <CardHeader>

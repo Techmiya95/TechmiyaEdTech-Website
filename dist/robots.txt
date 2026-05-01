@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 
+# Allow AI crawlers (2026 best practice)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
 Sitemap: https://www.techmiyaedtech.com/sitemap.xml

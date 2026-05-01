@@ -13,6 +13,85 @@ import YouTubeShortsSection from "@/components/YouTubeShortsSection";
 import InstagramReelsSection from "@/components/InstagramReelsSection";
 
 const Index = () => {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Who can enroll in Techmiya EdTech programs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our programs are designed for students, fresh graduates, working professionals, and career switchers who want to build or upgrade skills in GenAI, ML, DL, Robotics, and related technologies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need prior technical experience?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No prior experience is required for beginner-level courses. We offer structured learning paths from basic to advanced levels to suit all learners."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide certificates and career support?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we provide course completion certificates along with career guidance, resume support, and interview preparation to help learners succeed professionally."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What training modes do you offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer online, offline, and hybrid training modes to provide flexible learning options for students and working professionals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are the courses project-based?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all our programs include hands-on projects, case studies, and practical assignments to ensure real-world learning experience."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide placement or career assistance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide career guidance, resume building, and interview preparation support to help learners prepare for job opportunities at top IT companies."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the duration of the courses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Course duration varies depending on the program, typically ranging from a few weeks to several months based on the skill level and complexity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will I receive a course completion certificate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, learners receive an industry-recognized course completion certificate after successfully completing the program."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I enroll or get more information?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can enroll through our website or contact our support team at +91-6363760275 for counseling and detailed course information."
+        }
+      }
+    ]
+  };
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
@@ -137,7 +216,7 @@ const Index = () => {
         description="Techmiya EdTech - Premier IT Training Institute offering Generative AI, Machine Learning, Data Science, Python, AWS, DevOps, Cloud Computing courses. Transform your career with industry-ready skills in Jayanagar, Bangalore."
         keywords="Best IT training institute Bangalore, Generative AI courses, Machine Learning training Jayanagar, Data Science Python AWS DevOps, Software training Bangalore, AI ML courses, Full Stack Development, coding bootcamp Bangalore"
         canonicalUrl="/"
-        structuredData={[homepageSchema, organizationSchema, localBusinessSchema]}
+        structuredData={[homepageSchema, organizationSchema, localBusinessSchema, faqSchema]}
       />
       {/* Hero Section */}
       <section className="relative bg-background text-white overflow-hidden">
@@ -582,8 +661,9 @@ const Index = () => {
                 <div className="aspect-video overflow-hidden">
                   <img
                     src={course.image}
-                    alt={course.title}
+                    alt={`${course.title} Training in Jayanagar, Bangalore`}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
                 <CardHeader>

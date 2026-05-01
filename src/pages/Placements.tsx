@@ -502,6 +502,7 @@ const PlacementCard = ({
             alt={student.name}
             className="pl-photo"
             loading="lazy"
+            decoding="async"
             onError={(e) => {
               (e.currentTarget as HTMLImageElement).src = "/placeholder.svg";
             }}
