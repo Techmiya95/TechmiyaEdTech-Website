@@ -41,8 +41,10 @@ export const SEOHead = ({
       <meta name="geo.placename" content="Jayanagar, Bangalore" />
       <meta name="geo.position" content="12.9279;77.5817" />
       
-      {/* Canonical URL */}
+      {/* Canonical URL & Hreflang */}
       {canonicalUrl && <link rel="canonical" href={`${siteUrl}${canonicalUrl}`} />}
+      <link rel="alternate" hrefLang="en-IN" href={canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl} />
+      <link rel="alternate" hrefLang="x-default" href={canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl} />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />

@@ -418,7 +418,7 @@ const MoU = () => {
         <div className="mou-blob mou-blob-1" />
         <div className="mou-blob mou-blob-2" />
 
-        <div style={{ position: "relative", zIndex: 1 }}>
+        <div className="relative z-10">
           <div className="mou-hero-tag">🤝 MoU Partnerships</div>
           <h1 className="mou-hero-title">
             Bridging Academia &<br />
@@ -454,7 +454,7 @@ const MoU = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 60"
-        style={{ display: "block", marginTop: "-2px", background: "#0c4a6e" }}
+        className="block -mt-[2px] bg-[#0c4a6e]"
       >
         <path fill="#f0f9ff" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" />
       </svg>

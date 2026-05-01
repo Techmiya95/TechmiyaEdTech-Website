@@ -278,7 +278,7 @@ const Hackathons = () => {
       <section className="hk-hero">
         <div className="hk-blob hk-blob-1" />
         <div className="hk-blob hk-blob-2" />
-        <div style={{ position: "relative", zIndex: 1 }}>
+        <div className="relative z-10">
           <div className="hk-hero-tag">💻 Hackathons</div>
           <h1 className="hk-hero-title">
             Where Innovation<br />
@@ -299,7 +299,7 @@ const Hackathons = () => {
 
       {/* Wavy divider */}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60"
-        style={{ display: "block", marginTop: "-2px", background: "#312e81" }}>
+        className="block -mt-[2px] bg-[#312e81]">
         <path fill="#ffffff" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" />
       </svg>
 
@@ -322,9 +322,9 @@ const Hackathons = () => {
 
       {/* ===== BENEFITS ===== */}
       <section className="hk-benefits">
-        <div className="hk-sec-header" style={{ marginBottom: 40 }}>
-          <h2 style={{ color: "#fff" }}>Why Join Our <span>Events?</span></h2>
-          <p style={{ color: "rgba(255,255,255,0.65)" }}>Benefits for students, professionals, and organizations alike.</p>
+        <div className="hk-sec-header mb-10">
+          <h2 className="text-white">Why Join Our <span>Events?</span></h2>
+          <p className="text-white/65">Benefits for students, professionals, and organizations alike.</p>
           <div className="hk-divider" />
         </div>
         <div className="hk-benefits-grid">

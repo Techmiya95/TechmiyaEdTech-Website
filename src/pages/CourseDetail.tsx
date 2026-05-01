@@ -38,7 +38,7 @@ const CourseDetail = () => {
         return (
             <div className="min-h-screen flex items-center justify-center">
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-4">Course Not Found</h1>
+                    <h2 className="text-4xl font-bold text-gray-900 mb-4">Course Not Found</h2>
                     <Link to="/courses">
                         <Button>View All Courses</Button>
                     </Link>

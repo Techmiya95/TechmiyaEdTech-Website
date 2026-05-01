@@ -88,7 +88,7 @@ export const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2 text-gray-300">
-              <p>📧hr@techmiyaedtech.com</p>
+              <p>📧 hr [at] techmiyaedtech [dot] com</p>
               <p>📞 +91 6363760275</p>
               <p>📞 +91 6361987951</p>
 

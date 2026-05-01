@@ -102,8 +102,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="Contact Us - Get in Touch for IT Training"
-        description="Contact Techmiya EdTech in Jayanagar, Bangalore for IT course inquiries, demo class booking, career guidance, and placement assistance. Call +91-6363760275 or email us."
+        title="Contact Us - Get in Touch for IT Training in Bangalore"
+        description="Contact Techmiya EdTech in Jayanagar, Bangalore for IT course inquiries and placement assistance. Call +91-6363760275 today!"
         keywords="contact Techmiya, IT training inquiry Bangalore, demo class booking, career counseling, placement assistance, Jayanagar IT institute contact"
         canonicalUrl="/contact"
         structuredData={contactSchema}
@@ -133,7 +133,7 @@ const Contact = () => {
                 <CardTitle>Email Us</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 mb-2">hr@techmiyaedtech.com</p>
+                <p className="text-gray-600 mb-2">hr [at] techmiyaedtech [dot] com</p>
 
               </CardContent>
             </Card>
@@ -261,7 +261,7 @@ const Contact = () => {
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.863413965066!2d77.59264637484037!3d12.916498987393805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1593b046e93b%3A0x7ff3f9c780549b2e!2sTechmiya%20Ed-Tech!5e0!3m2!1sen!2sin!4v1747993732029!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
-                      style={{ border: 0 }}
+                      className="border-0"
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
@@ -313,7 +313,7 @@ const Contact = () => {
                     className="flex items-center space-x-3 p-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors"
                   >
                     <span className="text-xl">✉️</span>
-                    <span>Send an email</span>
+                    <span>Email our Manager</span>
                   </a>
 
                 </CardContent>

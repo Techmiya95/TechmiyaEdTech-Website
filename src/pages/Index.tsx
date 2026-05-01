@@ -213,7 +213,7 @@ const Index = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Best IT Training Institute in Jayanagar, Bangalore"
-        description="Techmiya EdTech - Premier IT Training Institute offering Generative AI, Machine Learning, Data Science, Python, AWS, DevOps, Cloud Computing courses. Transform your career with industry-ready skills in Jayanagar, Bangalore."
+        description="Techmiya EdTech offers top IT courses in Jayanagar, Bangalore. Learn AI, Data Science & Full Stack with 100% placement support. Enroll today!"
         keywords="Best IT training institute Bangalore, Generative AI courses, Machine Learning training Jayanagar, Data Science Python AWS DevOps, Software training Bangalore, AI ML courses, Full Stack Development, coding bootcamp Bangalore"
         canonicalUrl="/"
         structuredData={[homepageSchema, organizationSchema, localBusinessSchema, faqSchema]}
