@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+"use client";
+import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -50,7 +51,7 @@ export const StickyFooterBar = () => {
 
                         {/* Action Buttons */}
                         <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
-                            {/* <Link to="/register">
+                            {/* <Link href="/register">
                                 <Button
                                     className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
                                 >
@@ -147,3 +148,4 @@ export const StickyFooterBar = () => {
         </>
     );
 };
+

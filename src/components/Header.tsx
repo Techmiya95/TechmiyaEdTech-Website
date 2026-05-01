@@ -1,6 +1,8 @@
-
+"use client";
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
 import { Menu, X, ChevronDown, Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/logo.jpeg";
@@ -64,7 +66,7 @@ export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isJobsOpen, setIsJobsOpen] = useState(false);
-  const location = useLocation();
+  const pathname = usePathname();
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -97,8 +99,8 @@ export const Header = () => {
     { name: "💻 Compiler", path: "/compiler" },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
-  const isServiceActive = serviceItems.some(item => location.pathname === item.path);
+  const isActive = (path: string) => pathname === path;
+  const isServiceActive = serviceItems.some(item => pathname === item.path);
 
   return (
     <div className="md:sticky md:top-0 z-50">
@@ -107,7 +109,7 @@ export const Header = () => {
         <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <img src="/techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
               <span className="text-xl font-bold text-amber-500">Techmiya Ed-Tech </span>
             </Link>
@@ -117,7 +119,7 @@ export const Header = () => {
               {navItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}
-                  to={item.path}
+                  href={item.path}
                   className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 ${isActive(item.path)
                     ? "text-amber-600 bg-amber-50"
                     : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
@@ -159,7 +161,7 @@ export const Header = () => {
                       ) : (
                         <Link
                           key={item.name}
-                          to={item.path}
+                          href={item.path}
                           className={`block px-4 py-2 text-sm font-medium transition-colors ${isActive(item.path)
                             ? "text-amber-600 bg-amber-50"
                             : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
@@ -187,7 +189,7 @@ export const Header = () => {
                 ) : (
                   <Link
                     key={item.name}
-                    to={item.path}
+                    href={item.path}
                     className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 whitespace-nowrap ${isActive(item.path)
                       ? "text-amber-600 bg-amber-50"
                       : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
@@ -236,7 +238,7 @@ export const Header = () => {
                   Access LMS
                 </Button>
               </a>
-              <Link to="/register">
+              <Link href="/register">
                 <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-sm xl:text-base px-3 xl:px-4">
                   Enquire Now
                 </Button>
@@ -262,7 +264,7 @@ export const Header = () => {
                 {navItems.slice(0, 2).map((item) => (
                   <Link
                     key={item.name}
-                    to={item.path}
+                    href={item.path}
                     onClick={() => setIsMenuOpen(false)}
                     className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
                       ? "text-amber-600 bg-amber-50"
@@ -292,7 +294,7 @@ export const Header = () => {
                       ) : (
                         <Link
                           key={item.name}
-                          to={item.path}
+                          href={item.path}
                           onClick={() => setIsMenuOpen(false)}
                           className={`block px-2 py-1.5 rounded text-sm font-medium transition-colors ${isActive(item.path)
                             ? "text-amber-600 bg-amber-50"
@@ -321,7 +323,7 @@ export const Header = () => {
                   ) : (
                     <Link
                       key={item.name}
-                      to={item.path}
+                      href={item.path}
                       onClick={() => setIsMenuOpen(false)}
                       className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.path)
                         ? "text-amber-600 bg-amber-50"
@@ -357,7 +359,7 @@ export const Header = () => {
                   </Button>
                 </a>
                 <Link
-                  to="/register"
+                  href="/register"
                   onClick={() => setIsMenuOpen(false)}
                   className="block w-full mt-2"
                 >

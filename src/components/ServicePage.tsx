@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { SEOHead } from "@/components/SEOHead";
 
@@ -95,7 +95,7 @@ export const ServicePage = ({ title, subtitle, description, features, benefits, 
                                     Contact us today to discuss how we can help your organization with our {title.toLowerCase()} services.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link to="/contact">
+                                    <Link href="/contact">
                                         <Button size="lg" className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600">
                                             Contact Us
                                         </Button>
@@ -136,7 +136,7 @@ export const ServicePage = ({ title, subtitle, description, features, benefits, 
             {/* Back to Home */}
             <section className="py-8 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <Link to="/" className="text-blue-600 hover:text-blue-800 font-medium">
+                    <Link href="/" className="text-blue-600 hover:text-blue-800 font-medium">
                         ← Back to Home
                     </Link>
                 </div>

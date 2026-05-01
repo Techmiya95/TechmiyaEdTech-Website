@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
@@ -10,7 +11,7 @@ import { Phone, Mail, Gift, Send, Sparkles, Loader2 } from "lucide-react";
 const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycby9W5Nc-yx6eJRHMjmtTPCsN3kYebShXR5_23u6vBgHJXPCG1LM-Z9ad3LIpyCuH_I/exec";
 
 export const CTAPopup = () => {
-    const navigate = useNavigate();
+    const navigate = useRouter();
     const [isOpen, setIsOpen] = useState(false);
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");

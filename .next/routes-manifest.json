@@ -1,0 +1,272 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "hybrid",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/courses/[courseSlug]",
+      "regex": "^/courses/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcourseSlug": "nxtPcourseSlug"
+      },
+      "namedRegex": "^/courses/(?<nxtPcourseSlug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/jobs/[jobId]",
+      "regex": "^/jobs/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPjobId": "nxtPjobId"
+      },
+      "namedRegex": "^/jobs/(?<nxtPjobId>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/blog",
+      "regex": "^/blog(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog(?:/)?$"
+    },
+    {
+      "page": "/blog/how-to-become-devops-engineer-in-bangalore",
+      "regex": "^/blog/how\\-to\\-become\\-devops\\-engineer\\-in\\-bangalore(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog/how\\-to\\-become\\-devops\\-engineer\\-in\\-bangalore(?:/)?$"
+    },
+    {
+      "page": "/blog/machine-learning-introduction",
+      "regex": "^/blog/machine\\-learning\\-introduction(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/blog/machine\\-learning\\-introduction(?:/)?$"
+    },
+    {
+      "page": "/compiler",
+      "regex": "^/compiler(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/compiler(?:/)?$"
+    },
+    {
+      "page": "/conditions",
+      "regex": "^/conditions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/conditions(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/courses",
+      "regex": "^/courses(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/courses(?:/)?$"
+    },
+    {
+      "page": "/courses/devops-training-jayanagar",
+      "regex": "^/courses/devops\\-training\\-jayanagar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/courses/devops\\-training\\-jayanagar(?:/)?$"
+    },
+    {
+      "page": "/courses/generative-ai-training-bangalore",
+      "regex": "^/courses/generative\\-ai\\-training\\-bangalore(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/courses/generative\\-ai\\-training\\-bangalore(?:/)?$"
+    },
+    {
+      "page": "/data-deletion",
+      "regex": "^/data\\-deletion(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/data\\-deletion(?:/)?$"
+    },
+    {
+      "page": "/get-voucher",
+      "regex": "^/get\\-voucher(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/get\\-voucher(?:/)?$"
+    },
+    {
+      "page": "/jobs",
+      "regex": "^/jobs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/jobs(?:/)?$"
+    },
+    {
+      "page": "/placements",
+      "regex": "^/placements(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/placements(?:/)?$"
+    },
+    {
+      "page": "/privacy",
+      "regex": "^/privacy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacy(?:/)?$"
+    },
+    {
+      "page": "/psychometric/psychometric-engineering",
+      "regex": "^/psychometric/psychometric\\-engineering(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/psychometric/psychometric\\-engineering(?:/)?$"
+    },
+    {
+      "page": "/psychometric/psychometric-generic",
+      "regex": "^/psychometric/psychometric\\-generic(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/psychometric/psychometric\\-generic(?:/)?$"
+    },
+    {
+      "page": "/psychometric/psychometric-management",
+      "regex": "^/psychometric/psychometric\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/psychometric/psychometric\\-management(?:/)?$"
+    },
+    {
+      "page": "/psychometric-test",
+      "regex": "^/psychometric\\-test(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/psychometric\\-test(?:/)?$"
+    },
+    {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
+    },
+    {
+      "page": "/reviews",
+      "regex": "^/reviews(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/reviews(?:/)?$"
+    },
+    {
+      "page": "/services/campus-drives",
+      "regex": "^/services/campus\\-drives(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/campus\\-drives(?:/)?$"
+    },
+    {
+      "page": "/services/corporate-training",
+      "regex": "^/services/corporate\\-training(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/corporate\\-training(?:/)?$"
+    },
+    {
+      "page": "/services/csrprograms",
+      "regex": "^/services/csrprograms(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/csrprograms(?:/)?$"
+    },
+    {
+      "page": "/services/fdpsdp",
+      "regex": "^/services/fdpsdp(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/fdpsdp(?:/)?$"
+    },
+    {
+      "page": "/services/hackathons",
+      "regex": "^/services/hackathons(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/hackathons(?:/)?$"
+    },
+    {
+      "page": "/services/internships",
+      "regex": "^/services/internships(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/internships(?:/)?$"
+    },
+    {
+      "page": "/services/mentorship",
+      "regex": "^/services/mentorship(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/mentorship(?:/)?$"
+    },
+    {
+      "page": "/services/mo-u",
+      "regex": "^/services/mo\\-u(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/mo\\-u(?:/)?$"
+    },
+    {
+      "page": "/services/partnerships",
+      "regex": "^/services/partnerships(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/partnerships(?:/)?$"
+    },
+    {
+      "page": "/services/workshops",
+      "regex": "^/services/workshops(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/workshops(?:/)?$"
+    },
+    {
+      "page": "/thankyou",
+      "regex": "^/thankyou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/thankyou(?:/)?$"
+    },
+    {
+      "page": "/workshop-register",
+      "regex": "^/workshop\\-register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/workshop\\-register(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

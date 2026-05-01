@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 interface BlogCardProps {
@@ -38,7 +38,7 @@ export const BlogCard = ({ title, description, date, slug, image, isPlaceholder 
                 {isPlaceholder ? (
                     <Button variant="outline" className="w-full" disabled>Coming Soon</Button>
                 ) : (
-                    <Link to={slug} className="w-full">
+                    <Link href={slug} className="w-full">
                         <Button className="w-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white group">
                             Read Article <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>

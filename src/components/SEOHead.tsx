@@ -1,6 +1,4 @@
-import { Helmet } from 'react-helmet-async';
-
-interface SEOHeadProps {
+export interface SEOHeadProps {
   title: string;
   description: string;
   keywords?: string;
@@ -22,14 +20,12 @@ export const SEOHead = ({
   const fullTitle = `${title} | Techmiya EdTech`;
   const siteUrl = 'https://www.techmiyaedtech.com';
   
-  // Support both single schema object and array of schemas
   const schemas = structuredData
     ? Array.isArray(structuredData) ? structuredData : [structuredData]
     : [];
 
   return (
-    <Helmet>
-      {/* Primary Meta Tags */}
+    <>
       <title>{fullTitle}</title>
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
@@ -38,42 +34,30 @@ export const SEOHead = ({
       <meta name="googlebot" content="index, follow" />
       <meta name="author" content="Techmiya EdTech" />
       
-      {/* Geo Location Meta Tags - Local SEO */}
-      <meta name="geo.region" content="IN-KA" />
-      <meta name="geo.placename" content="Jayanagar, Bangalore" />
-      <meta name="geo.position" content="12.9279;77.5817" />
-      
-      {/* Canonical URL & Hreflang */}
-      {canonicalUrl && <link rel="canonical" href={`${siteUrl}${canonicalUrl}`} />}
-      <link rel="alternate" hrefLang="en-IN" href={canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl} />
-      <link rel="alternate" hrefLang="x-default" href={canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl} />
-      
-      {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
-      <meta property="og:url" content={canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl} />
+      <meta property="og:url" content={`${siteUrl}${canonicalUrl || ''}`} />
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
       <meta property="og:site_name" content="Techmiya EdTech" />
-      <meta property="og:locale" content="en_IN" />
-      
-      {/* Twitter Card */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:url" content={canonicalUrl ? `${siteUrl}${canonicalUrl}` : siteUrl} />
-      <meta name="twitter:title" content={fullTitle} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content="@TechmiyaEdtech" />
-      <meta name="twitter:creator" content="@TechmiyaEdtech" />
-      
-      {/* Structured Data - supports multiple schemas */}
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={`${siteUrl}${canonicalUrl || ''}`} />
+      <meta property="twitter:title" content={fullTitle} />
+      <meta property="twitter:description" content={description} />
+      <meta property="twitter:image" content={ogImage} />
+
+      {canonicalUrl && (
+        <link rel="canonical" href={`${siteUrl}${canonicalUrl}`} />
+      )}
+
       {schemas.map((schema, index) => (
-        <script key={index} type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       ))}
-    </Helmet>
+    </>
   );
 };
-
-export default SEOHead;

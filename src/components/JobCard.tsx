@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { MapPin, Clock } from "lucide-react";
 
 interface JobCardProps {
@@ -42,7 +42,7 @@ export const JobCard = ({ id, title, description, postedDate, location, type }: 
                 </CardDescription>
             </CardContent>
             <CardFooter>
-                <Link to={`/jobs/${id}`} className="w-full">
+                <Link href={`/jobs/${id}`} className="w-full">
                     <Button variant="outline" className="w-full border-amber-200 text-amber-700 hover:bg-amber-50 hover:text-amber-800">
                         Read More
                     </Button>

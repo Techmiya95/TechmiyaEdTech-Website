@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -37,62 +37,62 @@ export const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="https://vtuupdates.techmiyaedtech.com/" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="https://vtuupdates.techmiyaedtech.com/" className="text-gray-300 hover:text-white transition-colors">
                   VTU Updates
                 </Link>
               </li>
               <li>
-                <Link to="https://hackathon.techmiyaedtech.com/" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="https://hackathon.techmiyaedtech.com/" className="text-gray-300 hover:text-white transition-colors">
                   Hackathon
                 </Link>
               </li>
               <li>
-                <Link to="/courses" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/courses" className="text-gray-300 hover:text-white transition-colors">
                   All Courses
                 </Link>
               </li>
               <li>
-                <Link to="/courses/generative-ai-training-bangalore" className="text-amber-500 font-semibold hover:text-white transition-colors">
+                <Link href="/courses/generative-ai-training-bangalore" className="text-amber-500 font-semibold hover:text-white transition-colors">
                   Generative AI Training
                 </Link>
               </li>
               <li>
-                <Link to="/courses/devops-training-jayanagar" className="text-amber-500 font-semibold hover:text-white transition-colors">
+                <Link href="/courses/devops-training-jayanagar" className="text-amber-500 font-semibold hover:text-white transition-colors">
                   DevOps Training
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
                   Tech Blog
                 </Link>
               </li>
               <li>
-                <Link to="/reviews" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/reviews" className="text-gray-300 hover:text-white transition-colors">
                   Reviews
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
-                <Link to="/conditions" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/conditions" className="text-gray-300 hover:text-white transition-colors">
                   Terms & Condition
                 </Link>
               </li>
               <li>
-                <Link to="/privacy.html" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/privacy.html" className="text-gray-300 hover:text-white transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/data-deletion.html" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/data-deletion.html" className="text-gray-300 hover:text-white transition-colors">
                   Data Deletion
                 </Link>
               </li>
