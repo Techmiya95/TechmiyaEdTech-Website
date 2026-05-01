@@ -102,7 +102,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="Contact Us - Get in Touch for IT Training in Bangalore"
+        title="Contact IT Training Institute Bangalore"
         description="Contact Techmiya EdTech in Jayanagar, Bangalore for IT course inquiries and placement assistance. Call +91-6363760275 today!"
         keywords="contact Techmiya, IT training inquiry Bangalore, demo class booking, career counseling, placement assistance, Jayanagar IT institute contact"
         canonicalUrl="/contact"

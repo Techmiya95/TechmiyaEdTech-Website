@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+  <!-- Force HTTPS redirect -->
+  <script>
+    if (location.protocol !== 'https:' && location.hostname !== 'localhost') {
+      location.replace('https://' + location.hostname + location.pathname + location.search);
+    }
+  </script>
   <!-- Google tag (gtag.js) - Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DXSCN0G1RZ"></script>
   <script>

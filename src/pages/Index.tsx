@@ -111,6 +111,11 @@ const Index = () => {
       "contactType": "customer service",
       "areaServed": "IN",
       "availableLanguage": ["en", "Hindi", "Kannada"]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "200"
     }
   };
 
@@ -147,7 +152,16 @@ const Index = () => {
       ],
       "opens": "09:00",
       "closes": "19:00"
-    }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "200"
+    },
+    "sameAs": [
+      "https://www.google.com/maps?cid=YOUR_GOOGLE_BUSINESS_ID",
+      "https://www.justdial.com/Bangalore/Techmiya-Edtech-YOUR_JUSTDIAL_ID"
+    ]
   };
 
   const homepageSchema = {
@@ -212,8 +226,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <SEOHead
-        title="Best IT Training Institute in Jayanagar, Bangalore"
-        description="Techmiya EdTech offers top IT courses in Jayanagar, Bangalore. Learn AI, Data Science & Full Stack with 100% placement support. Enroll today!"
+        title="Best IT Training Institute in Jayanagar Bangalore | 100% Placement"
+        description="Techmiya EdTech—#1 IT training institute in Jayanagar, Bangalore. Best courses in AI, Data Science & Full Stack development. 100% placement. Enroll today!"
         keywords="Best IT training institute Bangalore, Generative AI courses, Machine Learning training Jayanagar, Data Science Python AWS DevOps, Software training Bangalore, AI ML courses, Full Stack Development, coding bootcamp Bangalore"
         canonicalUrl="/"
         structuredData={[homepageSchema, organizationSchema, localBusinessSchema, faqSchema]}
@@ -280,7 +294,7 @@ const Index = () => {
 
               <h1 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold mb-4 leading-tight w-full">
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
-                  Best IT Training Institute in Jayanagar, Bangalore — Techmiya EdTech
+                  Best IT Training Institute in Jayanagar, Bangalore — Techmiya EdTech Courses
                 </span>
               </h1>
 
@@ -388,25 +402,15 @@ const Index = () => {
                         className="w-9 h-9 object-contain rounded"
                         onError={(e) => {
                           const img = e.currentTarget as HTMLImageElement;
-                          img.style.display = "none";
+                          img.classList.add("hidden");
                           const badge = img.nextElementSibling as HTMLElement | null;
-                          if (badge) badge.style.display = "flex";
+                          if (badge) { badge.classList.remove("hidden"); badge.classList.add("flex"); }
                         }}
                       />
                       {/* Fallback initial badge */}
                       <span
-                        style={{
-                          display: "none",
-                          width: 36, height: 36,
-                          borderRadius: 8,
-                          background: p.color,
-                          color: "#fff",
-                          fontWeight: 800,
-                          fontSize: 14,
-                          alignItems: "center",
-                          justifyContent: "center",
-                          flexShrink: 0,
-                        }}
+                        className="hidden w-9 h-9 rounded-lg items-center justify-center shrink-0 text-white font-extrabold text-sm"
+                        style={{ background: p.color }}
                       >
                         {p.name.charAt(0)}
                       </span>
@@ -628,12 +632,12 @@ const Index = () => {
                   <div className="mt-auto pt-4 border-t border-white/10 space-y-3">
                     <Link to={`/courses/${item.slug}`}>
                       <Button variant="secondary" className="w-full bg-white/10 hover:bg-white/20 text-white border-none text-xs h-8">
-                        View Syllabus
+                        Explore Syllabus
                       </Button>
                     </Link>
                     <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer" className="block">
                       <Button className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold text-xs h-9 shadow-lg">
-                        View Course
+                        Explore Course
                       </Button>
                     </a>
                   </div>

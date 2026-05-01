@@ -266,7 +266,7 @@ const Hackathons = () => {
   return (
     <>
       <SEOHead
-        title="Hackathons – Techmiya EdTech | Innovation-Driven Coding Events"
+        title="Hackathons & Coding Events Bangalore"
         description="Techmiya EdTech organizes and sponsors hackathons that challenge students to solve real-world problems using AI, ML, IoT and more. View our hackathon gallery."
         keywords="Techmiya hackathons, coding events Bangalore, innovation hackathon, AI ML hackathon, student hackathon"
         canonicalUrl="/services/hackathons"

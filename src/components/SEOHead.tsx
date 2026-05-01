@@ -19,7 +19,7 @@ export const SEOHead = ({
   ogType = 'website',
   structuredData,
 }: SEOHeadProps) => {
-  const fullTitle = `${title} | Techmiya EdTech - Best IT Training Institute Bangalore`;
+  const fullTitle = `${title} | Techmiya EdTech`;
   const siteUrl = 'https://www.techmiyaedtech.com';
   
   // Support both single schema object and array of schemas
@@ -34,7 +34,9 @@ export const SEOHead = ({
       <meta name="title" content={fullTitle} />
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="googlebot" content="index, follow" />
+      <meta name="author" content="Techmiya EdTech" />
       
       {/* Geo Location Meta Tags - Local SEO */}
       <meta name="geo.region" content="IN-KA" />

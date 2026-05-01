@@ -11,7 +11,7 @@ const Reviews = () => {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
-      "reviewCount": "2500",
+      "reviewCount": "200",
       "bestRating": "5",
       "worstRating": "1"
     }
@@ -107,7 +107,7 @@ const Reviews = () => {
   ];
 
   const stats = [
-    { label: "Total Reviews", value: "2,500+" },
+    { label: "Total Reviews", value: "200+" },
     { label: "Average Rating", value: "4.9/5" },
     { label: "Job Placement Rate", value: "85%" },
     { label: "Salary Increase", value: "300%" },
@@ -117,7 +117,7 @@ const Reviews = () => {
     <div className="min-h-screen bg-gray-50">
       <SEOHead
         title="Student Reviews & Success Stories"
-        description="Read 2,500+ authentic reviews from Techmiya EdTech students. 4.9/5 rating, 85% job placement rate. Success stories from Google, Microsoft, Amazon, and top tech companies."
+        description="Read 200+ authentic reviews from Techmiya EdTech students. 4.9/5 rating, 85% job placement rate. Success stories from Google, Microsoft, Amazon, and top tech companies."
         keywords="Techmiya reviews, IT training reviews Bangalore, student testimonials, success stories, job placement reviews, coding bootcamp reviews, tech training feedback"
         canonicalUrl="/reviews"
         structuredData={reviewsSchema}

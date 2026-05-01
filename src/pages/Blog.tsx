@@ -21,6 +21,14 @@ const Blog = () => {
             slug: "/blog/machine-learning-introduction",
             isPlaceholder: false,
         },
+        {
+            id: 2,
+            title: "How to Become a DevOps Engineer in Bangalore (2026 Guide)",
+            description: "A complete step-by-step guide on how to become a DevOps Engineer in Bangalore. Learn the roadmap, salary expectations, and top tools to master.",
+            date: "May 1, 2026",
+            slug: "/blog/how-to-become-devops-engineer-in-bangalore",
+            isPlaceholder: false,
+        },
         // Generate 9 placeholders
         ...Array.from({ length: 9 }).map((_, i) => ({
             id: i + 2,
@@ -35,7 +43,7 @@ const Blog = () => {
     return (
         <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
             <SEOHead
-                title="Tech Blog - AI, Machine Learning & Software Development Insights"
+                title="Tech Blog - AI & Software Insights"
                 description="Read expert articles on Generative AI, Machine Learning, Data Science, Python programming, career advice, and software development tutorials from Techmiya EdTech."
                 keywords="tech blog, Machine Learning tutorials, AI articles, programming tips, career development, software engineering blog, Python tutorials, Data Science insights, IT industry news"
                 canonicalUrl="/blog"

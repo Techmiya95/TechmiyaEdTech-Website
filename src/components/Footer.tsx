@@ -53,7 +53,22 @@ export const Footer = () => {
               </li>
               <li>
                 <Link to="/courses" className="text-gray-300 hover:text-white transition-colors">
-                  Courses
+                  All Courses
+                </Link>
+              </li>
+              <li>
+                <Link to="/courses/generative-ai-training-bangalore" className="text-amber-500 font-semibold hover:text-white transition-colors">
+                  Generative AI Training
+                </Link>
+              </li>
+              <li>
+                <Link to="/courses/devops-training-jayanagar" className="text-amber-500 font-semibold hover:text-white transition-colors">
+                  DevOps Training
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-gray-300 hover:text-white transition-colors">
+                  Tech Blog
                 </Link>
               </li>
               <li>

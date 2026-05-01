@@ -104,8 +104,8 @@ const CourseDetail = () => {
     return (
         <div className="min-h-screen bg-gray-50">
             <SEOHead
-                title={`${course.title} Training in Jayanagar, Bangalore`}
-                description={`${course.description} Learn ${course.title} in ${course.duration} at Techmiya EdTech, Jayanagar Bangalore. Hands-on training, placement support & industry certification.`}
+                title={`${course.title} Course Bangalore`}
+                description={`${course.description} Learn ${course.title} in ${course.duration} at Techmiya EdTech, Jayanagar Bangalore. Placement support & industry certification. Enroll today!`}
                 keywords={`${course.title} course Bangalore, ${course.title} training Jayanagar, ${course.title} syllabus, ${course.title} certification, best ${course.title} institute Bangalore`}
                 canonicalUrl={`/courses/${course.slug}`}
                 structuredData={courseSchema}

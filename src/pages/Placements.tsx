@@ -526,7 +526,7 @@ const PlacementCard = ({
               if (fb) fb.style.display = "inline";
             }}
           />
-          <span className="pl-company-fallback" style={{ display: "none" }}>🏢</span>
+          <span className="pl-company-fallback hidden">🏢</span>
           <span>{student.company}</span>
         </div>
 
@@ -544,7 +544,7 @@ const Placements = () => {
   return (
     <>
       <SEOHead
-        title="Student Placements – Techmiya EdTech | Placement Gallery"
+        title="Student Placements & Success Gallery"
         description="Explore our student placement success stories. Techmiya EdTech students placed in top Bangalore startups with packages ranging from 3 LPA to 8 LPA."
         keywords="Techmiya placements, EdTech placements Bangalore, software jobs Bangalore startups, placement success stories"
         canonicalUrl="/placements"
@@ -587,7 +587,7 @@ const Placements = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 60"
-        style={{ display: "block", marginTop: "-2px", background: "#1e40af" }}
+        className="block -mt-[2px] bg-[#1e40af]"
       >
         <path fill="#f5f3ff" d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" />
       </svg>

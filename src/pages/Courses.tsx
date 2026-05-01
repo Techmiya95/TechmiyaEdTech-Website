@@ -178,8 +178,8 @@ const Courses = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <SEOHead
-        title="IT Training Courses - Full Stack, Data Science, AI, DevOps"
-        description="Explore 14+ IT courses in Jayanagar: Full Stack, Data Science, AI, DevOps & more. Expert training with 100% job placement at Techmiya EdTech."
+        title="IT Courses Bangalore - AI, DevOps & More"
+        description="Explore 14+ IT courses in Jayanagar: Full Stack, Data Science, AI, DevOps & more. Expert training with 100% job placement at Techmiya EdTech. Enroll today!"
         keywords="IT courses Bangalore, Full Stack Development course, Data Science training, Generative AI course, Machine Learning classes, AWS DevOps training, Python programming, Java course, Cybersecurity training, coding bootcamp Jayanagar"
         canonicalUrl="/courses"
         structuredData={coursesSchema}

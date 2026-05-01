@@ -405,7 +405,7 @@ const MoU = () => {
   return (
     <>
       <SEOHead
-        title="MoU & College Partnerships – Techmiya EdTech"
+        title="MoU & College Partnerships Bangalore"
         description="Techmiya EdTech has successfully partnered with many colleges and institutions across India under MoU agreements to bridge the gap between academia and industry."
         keywords="Techmiya MoU, college partnerships, institution collaborations, EdTech MoU Bangalore, academic partnerships"
         canonicalUrl="/services/mou"

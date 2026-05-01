@@ -74,7 +74,7 @@ const Workshops = () => {
     return (
         <div className="min-h-screen bg-slate-50">
             <SEOHead
-                title="Technical Workshops - Techmiya EdTech | Bridge Academic-Industry Gap"
+                title="Technical Workshops - Bridging Industry Gap"
                 description="Elevate your skills with Techmiya's tiered training modules. From intensive 3-day workshops to comprehensive 90+ hour career tracks in AI, Web Dev, and Data Science."
                 keywords="Techmiya workshops, technical training, industry skills, AI workshop, web development training, data science workshop Bangalore"
                 canonicalUrl="/services/workshops"

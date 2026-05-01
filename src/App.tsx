@@ -23,6 +23,9 @@ import DataDeletion from "./pages/DataDeletion";
 import PsychometricTest from "./pages/PsychometricTest";
 import Blog from "./pages/Blog";
 import MachineLearningIntro from "./pages/MachineLearningIntro";
+import HowToBecomeDevOpsEngineer from "./pages/blog/HowToBecomeDevOpsEngineer";
+import GenerativeAIBangalore from "./pages/landing/GenerativeAIBangalore";
+import DevOpsJayanagar from "./pages/landing/DevOpsJayanagar";
 import Jobs from "./pages/Jobs";
 import JobDetails from "./pages/JobDetails";
 import PsychometricGeneric from "./pages/psychometric/PsychometricGeneric";
@@ -77,6 +80,7 @@ const App = () => (
               <Route path="/psychometric-test/management" element={<PsychometricManagement />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/machine-learning-introduction" element={<MachineLearningIntro />} />
+              <Route path="/blog/how-to-become-devops-engineer-in-bangalore" element={<HowToBecomeDevOpsEngineer />} />
               <Route path="/jobs" element={<Jobs />} />
               <Route path="/jobs/:jobId" element={<JobDetails />} />
               {/* Service Pages */}
@@ -91,6 +95,8 @@ const App = () => (
               <Route path="/services/mentorship" element={<Mentorship />} />
               <Route path="/services/mou" element={<MoU />} />
               <Route path="/compiler" element={<Compiler />} />
+              <Route path="/courses/generative-ai-training-bangalore" element={<GenerativeAIBangalore />} />
+              <Route path="/courses/devops-training-jayanagar" element={<DevOpsJayanagar />} />
               <Route path="/courses/:courseSlug" element={<CourseDetail />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
