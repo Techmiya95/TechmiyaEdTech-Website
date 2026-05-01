@@ -14,7 +14,7 @@
 
 
   const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "https://edtech-app-backend-262331763444.us-central1.run.app";
+  process.env.NEXT_PUBLIC_API_URL || "https://edtech-app-backend-262331763444.us-central1.run.app";
   console.log(API_BASE_URL)
 
   const Register = () => {
