@@ -13,17 +13,70 @@ import YouTubeShortsSection from "@/components/YouTubeShortsSection";
 import InstagramReelsSection from "@/components/InstagramReelsSection";
 
 const Index = () => {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Techmiya EdTech",
+    "alternateName": "Tech Miya",
+    "url": "https://www.techmiyaedtech.com/",
+    "logo": "https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png",
+    "sameAs": [
+      "https://www.facebook.com/techmiyaedtech",
+      "https://www.instagram.com/techmiya_edtech",
+      "https://www.linkedin.com/company/techmiya-edtech",
+      "https://www.youtube.com/@TechmiyaEdtech"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-6363760275",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "Hindi", "Kannada"]
+    }
+  };
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Techmiya EdTech",
+    "image": "https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png",
+    "@id": "https://www.techmiyaedtech.com/",
+    "url": "https://www.techmiyaedtech.com/",
+    "telephone": "+91-6363760275",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jayanagar",
+      "addressLocality": "Bangalore",
+      "postalCode": "560041",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 12.9279,
+      "longitude": 77.5817
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "09:00",
+      "closes": "19:00"
+    }
+  };
+
   const homepageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Techmiya EdTech - Best IT Training Institute in Jayanagar, Bangalore",
     "description": "Premier IT Training Institute offering Generative AI, Machine Learning, Data Science, Python, AWS, DevOps courses in Jayanagar, Bangalore.",
-    "url": "https://www.techmiyaedtech.com/",
-    "mainEntity": {
-      "@type": "EducationalOrganization",
-      "name": "Techmiya EdTech",
-      "sameAs": "https://www.techmiyaedtech.com"
-    }
+    "url": "https://www.techmiyaedtech.com/"
   };
 
   const featuredCourses = [
@@ -84,7 +137,7 @@ const Index = () => {
         description="Techmiya EdTech - Premier IT Training Institute offering Generative AI, Machine Learning, Data Science, Python, AWS, DevOps, Cloud Computing courses. Transform your career with industry-ready skills in Jayanagar, Bangalore."
         keywords="Best IT training institute Bangalore, Generative AI courses, Machine Learning training Jayanagar, Data Science Python AWS DevOps, Software training Bangalore, AI ML courses, Full Stack Development, coding bootcamp Bangalore"
         canonicalUrl="/"
-        structuredData={homepageSchema}
+        structuredData={[homepageSchema, organizationSchema, localBusinessSchema]}
       />
       {/* Hero Section */}
       <section className="relative bg-background text-white overflow-hidden">

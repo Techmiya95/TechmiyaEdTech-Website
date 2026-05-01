@@ -13,11 +13,20 @@ const Courses = () => {
     "description": "Comprehensive IT training courses in Generative AI, Machine Learning, Full Stack Development, Data Science, Cloud Computing, DevOps, and more.",
     "numberOfItems": 14,
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Full Stack Development" },
-      { "@type": "ListItem", "position": 2, "name": "Data Science & Analytics" },
-      { "@type": "ListItem", "position": 3, "name": "Generative AI" },
-      { "@type": "ListItem", "position": 4, "name": "Machine Learning & MLOps" },
-      { "@type": "ListItem", "position": 5, "name": "Cloud Computing & DevOps" }
+      { "@type": "ListItem", "position": 1, "name": "Full Stack Development", "url": "https://www.techmiyaedtech.com/courses/full-stack-development" },
+      { "@type": "ListItem", "position": 2, "name": "Data Science & Analytics", "url": "https://www.techmiyaedtech.com/courses/data-science-analytics" },
+      { "@type": "ListItem", "position": 3, "name": "Java Programming Mastery", "url": "https://www.techmiyaedtech.com/courses/java-programming" },
+      { "@type": "ListItem", "position": 4, "name": "Aptitude Training", "url": "https://www.techmiyaedtech.com/courses/aptitude-training" },
+      { "@type": "ListItem", "position": 5, "name": "Cloud Computing", "url": "https://www.techmiyaedtech.com/courses/cloud-computing" },
+      { "@type": "ListItem", "position": 6, "name": "Mobile App Development", "url": "https://www.techmiyaedtech.com/courses/mobile-app-development" },
+      { "@type": "ListItem", "position": 7, "name": "Cybersecurity", "url": "https://www.techmiyaedtech.com/courses/cybersecurity" },
+      { "@type": "ListItem", "position": 8, "name": "Android Development", "url": "https://www.techmiyaedtech.com/courses/android-development" },
+      { "@type": "ListItem", "position": 9, "name": "DevOps", "url": "https://www.techmiyaedtech.com/courses/devops" },
+      { "@type": "ListItem", "position": 10, "name": "MLOps", "url": "https://www.techmiyaedtech.com/courses/mlops" },
+      { "@type": "ListItem", "position": 11, "name": "Generative AI", "url": "https://www.techmiyaedtech.com/courses/generative-ai" },
+      { "@type": "ListItem", "position": 12, "name": "Embedded & IoT", "url": "https://www.techmiyaedtech.com/courses/embedded-iot" },
+      { "@type": "ListItem", "position": 13, "name": "Digital Marketing", "url": "https://www.techmiyaedtech.com/courses/digital-marketing" },
+      { "@type": "ListItem", "position": 14, "name": "Automation Testing", "url": "https://www.techmiyaedtech.com/courses/automation-testing" }
     ]
   };
 

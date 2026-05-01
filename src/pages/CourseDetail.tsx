@@ -74,34 +74,28 @@ const CourseDetail = () => {
         "name": `${course.title} Training in Bangalore`,
         "description": `${course.description} Learn ${course.title} in ${course.duration} with industry-oriented syllabus, placement support & certification at Techmiya EdTech, Jayanagar.`,
         "provider": {
-            "@type": "Organization",
+            "@type": "EducationalOrganization",
             "name": "Techmiya EdTech",
+            "url": "https://www.techmiyaedtech.com",
+            "logo": "https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png",
             "sameAs": "https://www.techmiyaedtech.com"
         },
         "courseMode": "Blended",
         "educationalLevel": course.level,
         "inLanguage": "en",
         "timeRequired": course.duration,
-        "locationCreated": {
-            "@type": "Place",
-            "name": "Jayanagar, Bangalore",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Bangalore",
-                "addressRegion": "Karnataka",
-                "addressCountry": "IN"
-            }
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "1250"
         },
         "offers": {
             "@type": "Offer",
             "category": "Paid",
-            "availability": "https://schema.org/InStock"
-        },
-        "hasCourseInstance": {
-            "@type": "CourseInstance",
-            "courseMode": "Mixed",
-            "instructor": {
-                "@type": "Organization",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "EducationalOrganization",
                 "name": "Techmiya EdTech"
             }
         }

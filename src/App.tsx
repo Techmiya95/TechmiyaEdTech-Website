@@ -70,7 +70,6 @@ const App = () => (
               <Route path="/thankyou" element={<ThankYou />} />
               <Route path="/get-voucher" element={<GetVoucher />} />
               <Route path="/placements" element={<Placements />} />
-              <Route path="*" element={<NotFound />} />
               <Route path="/workshop-register" element={<WorkshopRegister />} />
               <Route path="/psychometric-test" element={<PsychometricTest />} />
               <Route path="/psychometric-test/generic" element={<PsychometricGeneric />} />
@@ -93,6 +92,7 @@ const App = () => (
               <Route path="/services/mou" element={<MoU />} />
               <Route path="/compiler" element={<Compiler />} />
               <Route path="/courses/:courseSlug" element={<CourseDetail />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
           <Footer />
