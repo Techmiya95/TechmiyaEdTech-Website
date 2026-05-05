@@ -323,6 +323,15 @@ const Index = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row flex-wrap gap-3 justify-center w-full mt-2">
+                <a href="https://hackathon.techmiyaedtech.com" target="_blank" rel="noopener noreferrer">
+                  <Button
+                    size="lg"
+                    className="w-full sm:w-auto bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105 animate-pulse"
+                  >
+                    Register for Hackathon
+                  </Button>
+                </a>
+
                 <Link href="/register">
                   <Button
                     size="lg"

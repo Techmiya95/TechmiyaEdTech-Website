@@ -4248,6 +4248,12 @@ body {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.hover\:from-purple-600:hover {
+  --tw-gradient-from: #9333ea var(--tw-gradient-from-position);
+  --tw-gradient-to: #9333ea00 var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .hover\:from-purple-700:hover {
   --tw-gradient-from: #7e22ce var(--tw-gradient-from-position);
   --tw-gradient-to: #7e22ce00 var(--tw-gradient-to-position);
@@ -4278,6 +4284,10 @@ body {
 
 .hover\:to-orange-700:hover {
   --tw-gradient-to: #c2410c var(--tw-gradient-to-position);
+}
+
+.hover\:to-pink-700:hover {
+  --tw-gradient-to: #be185d var(--tw-gradient-to-position);
 }
 
 .hover\:to-yellow-600:hover {
