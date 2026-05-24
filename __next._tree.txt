@@ -1,4 +1,12 @@
 :HL["/_next/static/chunks/0r6kefb3p3zv2.css","style"]
 :HL["/whatsapp-icon.png","image"]
 :HL["/techmiyaedtech_new_logo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"fhBydI0QptjTsBxSEUkie"}
+:HL["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg","image"]
+:HL["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg","image"]
+:HL["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg","image"]
+:HL["https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg","image"]
+:HL["/edtech-logo.png","image"]
+:HL["/adil.jpeg","image"]
+:HL["https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100","image"]
+:HL["/kashif.jpg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"j1b0n2pyWaXIGzTAFHrBY"}
