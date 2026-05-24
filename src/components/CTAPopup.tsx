@@ -1,13 +1,13 @@
+"use client";
+
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { toast } from "sonner";
 import { Phone, Mail, Gift, Send, Sparkles, Loader2 } from "lucide-react";
 
-// 🔧 REPLACE THIS with your Google Apps Script Web App URL
 const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycby9W5Nc-yx6eJRHMjmtTPCsN3kYebShXR5_23u6vBgHJXPCG1LM-Z9ad3LIpyCuH_I/exec";
 
 export const CTAPopup = () => {
@@ -33,7 +33,6 @@ export const CTAPopup = () => {
             return;
         }
 
-        // Basic email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(email)) {
             toast.error("Please enter a valid email address");
@@ -43,7 +42,6 @@ export const CTAPopup = () => {
         setIsSubmitting(true);
 
         try {
-            // Save lead data to Google Sheets
             await fetch(GOOGLE_SHEETS_URL, {
                 method: "POST",
                 mode: "no-cors",
@@ -63,7 +61,6 @@ export const CTAPopup = () => {
                 navigate("/thankyou");
             }, 1000);
         } catch {
-            // Even if the request fails, still navigate (lead capture is best-effort)
             toast.success("🎉 You're in! Redirecting...");
             setTimeout(() => {
                 setIsOpen(false);

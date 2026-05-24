@@ -1,10 +1,24 @@
-"use client";
-import { SEOHead } from "@/components/SEOHead";
+import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle2, Clock, Users, IndianRupee, Download, Monitor, Wifi, Laptop, ArrowRight } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Technical Workshops - Bridging Industry Gap | Techmiya EdTech",
+  description: "Elevate your skills with Techmiya's tiered training modules. From intensive 3-day workshops to comprehensive 90+ hour career tracks in AI, Web Dev, and Data Science.",
+  keywords: "Techmiya workshops, technical training, industry skills, AI workshop, web development training, data science workshop Bangalore",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/services/workshops",
+  },
+  openGraph: {
+    title: "Technical Workshops - Bridging Industry Gap | Techmiya EdTech",
+    description: "Elevate your skills with Techmiya's tiered training modules. From intensive 3-day workshops to comprehensive 90+ hour career tracks in AI, Web Dev, and Data Science.",
+    url: "https://www.techmiyaedtech.com/services/workshops",
+    type: "website",
+  },
+};
 
 const Workshops = () => {
     const tiers = [
@@ -74,13 +88,6 @@ const Workshops = () => {
 
     return (
         <div className="min-h-screen bg-slate-50">
-            <SEOHead
-                title="Technical Workshops - Bridging Industry Gap"
-                description="Elevate your skills with Techmiya's tiered training modules. From intensive 3-day workshops to comprehensive 90+ hour career tracks in AI, Web Dev, and Data Science."
-                keywords="Techmiya workshops, technical training, industry skills, AI workshop, web development training, data science workshop Bangalore"
-                canonicalUrl="/services/workshops"
-            />
-
             {/* Hero Section */}
             <section className="relative py-24 overflow-hidden bg-[#0f172a]">
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">

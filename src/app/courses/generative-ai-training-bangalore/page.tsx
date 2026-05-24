@@ -1,8 +1,33 @@
-"use client";
+import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SEOHead } from "@/components/SEOHead";
+
+export const metadata: Metadata = {
+  title: "Generative AI Training Bangalore | 100% Placement Support | Techmiya EdTech",
+  description: "Looking for the best Generative AI training in Bangalore? Join Techmiya EdTech in Jayanagar. Master LLMs, Prompt Engineering & LangChain. Enroll today!",
+  keywords: "Generative AI training Bangalore, GenAI course Jayanagar, LLM course Bangalore, ChatGPT API training, best AI institute South Bangalore",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/courses/generative-ai-training-bangalore",
+  },
+  openGraph: {
+    title: "Generative AI Training Bangalore | 100% Placement Support | Techmiya EdTech",
+    description: "Looking for the best Generative AI training in Bangalore? Join Techmiya EdTech in Jayanagar. Master LLMs, Prompt Engineering & LangChain. Enroll today!",
+    url: "https://www.techmiyaedtech.com/courses/generative-ai-training-bangalore",
+    type: "website",
+    images: [
+      {
+        url: "https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Generative AI Training Bangalore | 100% Placement Support | Techmiya EdTech",
+    description: "Looking for the best Generative AI training in Bangalore? Join Techmiya EdTech in Jayanagar. Master LLMs, Prompt Engineering & LangChain. Enroll today!",
+    images: ["https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png"],
+  },
+};
 import { CheckCircle2, Bot, BrainCircuit, Code, Sparkles, GraduationCap, Briefcase, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -21,12 +46,11 @@ const GenerativeAIBangalore = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <SEOHead
-        title="Generative AI Training Bangalore | 100% Placement Support"
-        description="Looking for the best Generative AI training in Bangalore? Join Techmiya EdTech in Jayanagar. Master LLMs, Prompt Engineering & LangChain. Enroll today!"
-        keywords="Generative AI training Bangalore, GenAI course Jayanagar, LLM course Bangalore, ChatGPT API training, best AI institute South Bangalore"
-        canonicalUrl="/courses/generative-ai-training-bangalore"
-        structuredData={schema}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
       />
 
       {/* Hero Section */}

@@ -1,5 +1,19 @@
-"use client";
+import { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+
+export const metadata: Metadata = {
+  title: "Internships & Live Projects - Techmiya EdTech",
+  description: "Hands-on industry exposure through real-world projects. Learn about Techmiya EdTech internship programs.",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/services/internships",
+  },
+  openGraph: {
+    title: "Internships & Live Projects - Techmiya EdTech",
+    description: "Hands-on industry exposure through real-world projects. Learn about Techmiya EdTech internship programs.",
+    url: "https://www.techmiyaedtech.com/services/internships",
+    type: "website",
+  },
+};
 
 const Internships = () => {
     return (

@@ -1,15 +1,23 @@
-"use client";
+import { Metadata } from "next";
 import React from "react";
-import { SEOHead } from "@/components/SEOHead";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Techmiya EdTech",
+  description: "Privacy Policy for Techmiya EdTech. Learn how we collect, use, and protect your personal information.",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/privacy",
+  },
+  openGraph: {
+    title: "Privacy Policy | Techmiya EdTech",
+    description: "Privacy Policy for Techmiya EdTech. Learn how we collect, use, and protect your personal information.",
+    url: "https://www.techmiyaedtech.com/privacy",
+    type: "website",
+  },
+};
 
 const PrivacyPolicy: React.FC = () => {
     return (
         <>
-            <SEOHead
-                title="Privacy Policy - Techmiya Edtech"
-                description="Privacy Policy for Techmiya Edtech. Learn how we collect, use, and protect your personal information."
-                canonicalUrl="https://techmiyaedtech.com/privacy.html"
-            />
             <div className="max-w-4xl mx-auto p-6 text-gray-800">
                 <h1 className="text-3xl font-bold mb-6 text-center">
                     Privacy Policy – Techmiya Edtech

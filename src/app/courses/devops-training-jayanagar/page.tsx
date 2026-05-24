@@ -1,8 +1,33 @@
-"use client";
+import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SEOHead } from "@/components/SEOHead";
+
+export const metadata: Metadata = {
+  title: "Best DevOps Training in Jayanagar | Placement Guarantee | Techmiya EdTech",
+  description: "Looking for the best DevOps training institute in Jayanagar, Bangalore? Techmiya EdTech offers hands-on AWS, Docker, Kubernetes & CI/CD training. Enroll today!",
+  keywords: "DevOps training Jayanagar, AWS DevOps course South Bangalore, CI/CD training Bangalore, Kubernetes course Jayanagar, best DevOps institute Jayanagar",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/courses/devops-training-jayanagar",
+  },
+  openGraph: {
+    title: "Best DevOps Training in Jayanagar | Placement Guarantee | Techmiya EdTech",
+    description: "Looking for the best DevOps training institute in Jayanagar, Bangalore? Techmiya EdTech offers hands-on AWS, Docker, Kubernetes & CI/CD training. Enroll today!",
+    url: "https://www.techmiyaedtech.com/courses/devops-training-jayanagar",
+    type: "website",
+    images: [
+      {
+        url: "https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best DevOps Training in Jayanagar | Placement Guarantee | Techmiya EdTech",
+    description: "Looking for the best DevOps training institute in Jayanagar, Bangalore? Techmiya EdTech offers hands-on AWS, Docker, Kubernetes & CI/CD training. Enroll today!",
+    images: ["https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png"],
+  },
+};
 import { CheckCircle2, Cloud, Server, Code, Shield, Terminal, ArrowRight, Laptop } from "lucide-react";
 import Link from "next/link";
 
@@ -21,12 +46,11 @@ const DevOpsJayanagar = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <SEOHead
-        title="Best DevOps Training in Jayanagar | Placement Guarantee"
-        description="Looking for the best DevOps training institute in Jayanagar, Bangalore? Techmiya EdTech offers hands-on AWS, Docker, Kubernetes & CI/CD training. Enroll today!"
-        keywords="DevOps training Jayanagar, AWS DevOps course South Bangalore, CI/CD training Bangalore, Kubernetes course Jayanagar, best DevOps institute Jayanagar"
-        canonicalUrl="/courses/devops-training-jayanagar"
-        structuredData={schema}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
       />
 
       {/* Hero Section */}

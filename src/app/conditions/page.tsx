@@ -1,5 +1,19 @@
-"use client";
+import { Metadata } from "next";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions | Techmiya EdTech",
+  description: "Terms and conditions of enrollment and placement assistance at Techmiya EdTech, Jayanagar Bangalore.",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/conditions",
+  },
+  openGraph: {
+    title: "Terms and Conditions | Techmiya EdTech",
+    description: "Terms and conditions of enrollment and placement assistance at Techmiya EdTech, Jayanagar Bangalore.",
+    url: "https://www.techmiyaedtech.com/conditions",
+    type: "website",
+  },
+};
 
 const TermsAndConditions: React.FC = () => {
   return (
@@ -7,8 +21,6 @@ const TermsAndConditions: React.FC = () => {
       <h1 className="text-3xl font-bold mb-6 text-center">
         Terms and Conditions – Techmiya Edtech
       </h1>
-
-
 
       {/* Section 1: Fees and Payments */}
       <section className="mb-6">

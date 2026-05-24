@@ -191,16 +191,16 @@
       "namedRegex": "^/services/corporate\\-training(?:/)?$"
     },
     {
-      "page": "/services/csrprograms",
-      "regex": "^/services/csrprograms(?:/)?$",
+      "page": "/services/csr-programs",
+      "regex": "^/services/csr\\-programs(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/services/csrprograms(?:/)?$"
+      "namedRegex": "^/services/csr\\-programs(?:/)?$"
     },
     {
-      "page": "/services/fdpsdp",
-      "regex": "^/services/fdpsdp(?:/)?$",
+      "page": "/services/fdp-sdp",
+      "regex": "^/services/fdp\\-sdp(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/services/fdpsdp(?:/)?$"
+      "namedRegex": "^/services/fdp\\-sdp(?:/)?$"
     },
     {
       "page": "/services/hackathons",
@@ -221,10 +221,10 @@
       "namedRegex": "^/services/mentorship(?:/)?$"
     },
     {
-      "page": "/services/mo-u",
-      "regex": "^/services/mo\\-u(?:/)?$",
+      "page": "/services/mou",
+      "regex": "^/services/mou(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/services/mo\\-u(?:/)?$"
+      "namedRegex": "^/services/mou(?:/)?$"
     },
     {
       "page": "/services/partnerships",

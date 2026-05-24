@@ -1,8 +1,32 @@
-"use client";
+import { Metadata } from "next";
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SEOHead } from "@/components/SEOHead";
+export const metadata: Metadata = {
+  title: "Student Reviews & Success Stories | Techmiya EdTech",
+  description: "Read 200+ authentic reviews from Techmiya EdTech students. 4.9/5 rating, 85% job placement rate. Success stories from Google, Microsoft, Amazon, and top tech companies.",
+  keywords: "Techmiya reviews, IT training reviews Bangalore, student testimonials, success stories, job placement reviews, coding bootcamp reviews, tech training feedback",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/reviews",
+  },
+  openGraph: {
+    title: "Student Reviews & Success Stories | Techmiya EdTech",
+    description: "Read 200+ authentic reviews from Techmiya EdTech students. 4.9/5 rating, 85% job placement rate. Success stories from Google, Microsoft, Amazon, and top tech companies.",
+    url: "https://www.techmiyaedtech.com/reviews",
+    type: "website",
+    images: [
+      {
+        url: "https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Student Reviews & Success Stories | Techmiya EdTech",
+    description: "Read 200+ authentic reviews from Techmiya EdTech students. 4.9/5 rating, 85% job placement rate. Success stories from Google, Microsoft, Amazon, and top tech companies.",
+    images: ["https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png"],
+  },
+};
 
 const Reviews = () => {
   const reviewsSchema = {
@@ -116,12 +140,11 @@ const Reviews = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <SEOHead
-        title="Student Reviews & Success Stories"
-        description="Read 200+ authentic reviews from Techmiya EdTech students. 4.9/5 rating, 85% job placement rate. Success stories from Google, Microsoft, Amazon, and top tech companies."
-        keywords="Techmiya reviews, IT training reviews Bangalore, student testimonials, success stories, job placement reviews, coding bootcamp reviews, tech training feedback"
-        canonicalUrl="/reviews"
-        structuredData={reviewsSchema}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(reviewsSchema),
+        }}
       />
       {/* Header Section */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">

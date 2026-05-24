@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { SEOHead } from "@/components/SEOHead";
 
 interface ServicePageProps {
     title: string;
@@ -16,12 +15,7 @@ interface ServicePageProps {
 export const ServicePage = ({ title, subtitle, description, features, benefits, icon, images, youtubeVideoId }: ServicePageProps) => {
     return (
         <div className="min-h-screen">
-            <SEOHead
-                title={`${title} - Techmiya EdTech Services`}
-                description={`${description.substring(0, 150)}...`}
-                keywords={`${title}, Techmiya EdTech, IT training services Bangalore, corporate training, skill development`}
-                canonicalUrl={`/services/${title.toLowerCase().replace(/\s+/g, '-')}`}
-            />
+
 
             {/* Hero Section */}
             <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">

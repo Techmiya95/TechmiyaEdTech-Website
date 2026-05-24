@@ -1,5 +1,19 @@
-"use client";
+import { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+
+export const metadata: Metadata = {
+  title: "Partnerships Building - Techmiya EdTech",
+  description: "Strategic collaborations with academia and industry for mutual growth. Learn about Techmiya EdTech partnership programs.",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/services/partnerships",
+  },
+  openGraph: {
+    title: "Partnerships Building - Techmiya EdTech",
+    description: "Strategic collaborations with academia and industry for mutual growth. Learn about Techmiya EdTech partnership programs.",
+    url: "https://www.techmiyaedtech.com/services/partnerships",
+    type: "website",
+  },
+};
 
 const Partnerships = () => {
     return (

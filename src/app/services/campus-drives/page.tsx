@@ -1,5 +1,19 @@
-"use client";
+import { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+
+export const metadata: Metadata = {
+  title: "Campus Drives - Techmiya EdTech",
+  description: "Placement drives and recruitment readiness programs for colleges. Learn about Techmiya EdTech campus drives.",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/services/campus-drives",
+  },
+  openGraph: {
+    title: "Campus Drives - Techmiya EdTech",
+    description: "Placement drives and recruitment readiness programs for colleges. Learn about Techmiya EdTech campus drives.",
+    url: "https://www.techmiyaedtech.com/services/campus-drives",
+    type: "website",
+  },
+};
 
 const CampusDrives = () => {
     return (

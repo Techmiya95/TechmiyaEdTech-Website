@@ -1,5 +1,19 @@
-"use client";
+import { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+
+export const metadata: Metadata = {
+  title: "Industry Mentorship - Techmiya EdTech",
+  description: "One-on-one guidance from experienced industry experts. Learn about Techmiya EdTech mentorship programs.",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/services/mentorship",
+  },
+  openGraph: {
+    title: "Industry Mentorship - Techmiya EdTech",
+    description: "One-on-one guidance from experienced industry experts. Learn about Techmiya EdTech mentorship programs.",
+    url: "https://www.techmiyaedtech.com/services/mentorship",
+    type: "website",
+  },
+};
 
 const Mentorship = () => {
     return (

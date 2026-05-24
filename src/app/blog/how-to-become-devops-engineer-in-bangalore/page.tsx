@@ -1,6 +1,31 @@
-"use client";
+import { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
-import { SEOHead } from "@/components/SEOHead";
+
+export const metadata: Metadata = {
+  title: "How to Become a DevOps Engineer in Bangalore (2026 Guide) | Techmiya EdTech",
+  description: "A complete step-by-step guide on how to become a DevOps Engineer in Bangalore. Learn the roadmap, salary expectations, and top tools to master.",
+  keywords: "how to become a DevOps engineer in Bangalore, DevOps roadmap 2026, DevOps salary Bangalore, DevOps tools, AWS Jenkins Docker",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/blog/how-to-become-devops-engineer-in-bangalore",
+  },
+  openGraph: {
+    title: "How to Become a DevOps Engineer in Bangalore (2026 Guide) | Techmiya EdTech",
+    description: "A complete step-by-step guide on how to become a DevOps Engineer in Bangalore. Learn the roadmap, salary expectations, and top tools to master.",
+    url: "https://www.techmiyaedtech.com/blog/how-to-become-devops-engineer-in-bangalore",
+    type: "article",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=2000&auto=format&fit=crop",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Become a DevOps Engineer in Bangalore (2026 Guide) | Techmiya EdTech",
+    description: "A complete step-by-step guide on how to become a DevOps Engineer in Bangalore. Learn the roadmap, salary expectations, and top tools to master.",
+    images: ["https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=2000&auto=format&fit=crop"],
+  },
+};
 import { Clock, User, Calendar, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
@@ -28,12 +53,11 @@ const HowToBecomeDevOpsEngineer = () => {
 
   return (
     <div className="min-h-screen bg-slate-50 py-20">
-      <SEOHead
-        title="How to Become a DevOps Engineer in Bangalore (2026 Guide)"
-        description="A complete step-by-step guide on how to become a DevOps Engineer in Bangalore. Learn the roadmap, salary expectations, and top tools to master."
-        keywords="how to become a DevOps engineer in Bangalore, DevOps roadmap 2026, DevOps salary Bangalore, DevOps tools, AWS Jenkins Docker"
-        canonicalUrl="/blog/how-to-become-devops-engineer-in-bangalore"
-        structuredData={schema}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schema),
+        }}
       />
 
       <article className="container max-w-4xl px-4 mx-auto">

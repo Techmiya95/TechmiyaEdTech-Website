@@ -1,5 +1,19 @@
-"use client";
+import { Metadata } from "next";
 import ServicePage from "@/components/ServicePage";
+
+export const metadata: Metadata = {
+  title: "Corporate Training - Techmiya EdTech",
+  description: "Industry-focused upskilling programs for professionals and organizations. Learn about Techmiya EdTech corporate training.",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/services/corporate-training",
+  },
+  openGraph: {
+    title: "Corporate Training - Techmiya EdTech",
+    description: "Industry-focused upskilling programs for professionals and organizations. Learn about Techmiya EdTech corporate training.",
+    url: "https://www.techmiyaedtech.com/services/corporate-training",
+    type: "website",
+  },
+};
 
 const CorporateTraining = () => {
     return (

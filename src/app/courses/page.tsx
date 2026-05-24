@@ -1,10 +1,34 @@
-"use client";
-
+import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { SEOHead } from "@/components/SEOHead";
+
+export const metadata: Metadata = {
+  title: "IT Courses Bangalore - AI, DevOps & More | Techmiya EdTech",
+  description: "Explore 14+ IT courses in Jayanagar: Full Stack, Data Science, AI, DevOps & more. Expert training with 100% job placement at Techmiya EdTech. Enroll today!",
+  keywords: "IT courses Bangalore, Full Stack Development course, Data Science training, Generative AI course, Machine Learning classes, AWS DevOps training, Python programming, Java course, Cybersecurity training, coding bootcamp Jayanagar",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/courses",
+  },
+  openGraph: {
+    title: "IT Courses Bangalore - AI, DevOps & More | Techmiya EdTech",
+    description: "Explore 14+ IT courses in Jayanagar: Full Stack, Data Science, AI, DevOps & more. Expert training with 100% job placement at Techmiya EdTech. Enroll today!",
+    url: "https://www.techmiyaedtech.com/courses",
+    type: "website",
+    images: [
+      {
+        url: "https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IT Courses Bangalore - AI, DevOps & More | Techmiya EdTech",
+    description: "Explore 14+ IT courses in Jayanagar: Full Stack, Data Science, AI, DevOps & more. Expert training with 100% job placement at Techmiya EdTech. Enroll today!",
+    images: ["https://www.techmiyaedtech.com/techmiyaedtech_new_logo.png"],
+  },
+};
 
 const Courses = () => {
   const coursesSchema = {
@@ -178,12 +202,11 @@ const Courses = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <SEOHead
-        title="IT Courses Bangalore - AI, DevOps & More"
-        description="Explore 14+ IT courses in Jayanagar: Full Stack, Data Science, AI, DevOps & more. Expert training with 100% job placement at Techmiya EdTech. Enroll today!"
-        keywords="IT courses Bangalore, Full Stack Development course, Data Science training, Generative AI course, Machine Learning classes, AWS DevOps training, Python programming, Java course, Cybersecurity training, coding bootcamp Jayanagar"
-        canonicalUrl="/courses"
-        structuredData={coursesSchema}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(coursesSchema),
+        }}
       />
       {/* Header Section */}
       <section className="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-20">

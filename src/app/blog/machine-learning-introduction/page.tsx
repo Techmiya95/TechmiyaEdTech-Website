@@ -1,8 +1,33 @@
-"use client";
-
+import { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Introduction to Machine Learning: Types & Algorithms | Techmiya EdTech",
+  description: "Discover the fundamentals of Machine Learning, its types (Supervised, Unsupervised, Reinforcement), and key algorithms that power today's AI.",
+  keywords: "introduction to machine learning, machine learning types, machine learning algorithms, supervised unsupervised reinforcement learning, AI fundamentals",
+  alternates: {
+    canonical: "https://www.techmiyaedtech.com/blog/machine-learning-introduction",
+  },
+  openGraph: {
+    title: "Introduction to Machine Learning: Types & Algorithms | Techmiya EdTech",
+    description: "Discover the fundamentals of Machine Learning, its types (Supervised, Unsupervised, Reinforcement), and key algorithms that power today's AI.",
+    url: "https://www.techmiyaedtech.com/blog/machine-learning-introduction",
+    type: "article",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Introduction to Machine Learning: Types & Algorithms | Techmiya EdTech",
+    description: "Discover the fundamentals of Machine Learning, its types (Supervised, Unsupervised, Reinforcement), and key algorithms that power today's AI.",
+    images: ["https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400"],
+  },
+};
 
 const MachineLearningIntro = () => {
     return (
