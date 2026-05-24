@@ -79,7 +79,7 @@ const InstagramReelsSection = () => {
 
                 <div className="text-center mt-12">
                     <a
-                        href="https://www.instagram.com/techmiya_solutions.official/"
+                        href="https://www.instagram.com/techmiyaedtech/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 text-white font-bold px-8 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
