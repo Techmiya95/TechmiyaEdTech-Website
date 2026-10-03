@@ -15,6 +15,9 @@ import emailjs from "emailjs-com";
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_URL || "https://edtech-app-backend-262331763444.us-central1.run.app";
 
+// 👇 PASTE YOUR GOOGLE APPS SCRIPT WEB APP URL HERE:
+const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbwYzMb2-dAv_9VOG2ABKti_dgWaIkH3nA5CGkWCCEw_o90VTF0CQ_DEubv86JgPoe6y-w/exec";
+
 export const RegisterClient = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
@@ -50,7 +53,7 @@ export const RegisterClient = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const emailParams = {
+    const submissionData = {
       name: formData.name,
       email: formData.email,
       phone: formData.phone,
@@ -61,23 +64,33 @@ export const RegisterClient = () => {
     };
 
     try {
-      await emailjs.send(
-        "service_4ew07pp",     // replace with actual service ID
-        "template_0fjvnl8",    // replace with registration template ID
-        emailParams,
-        "fvK7lDFpyfz-0msvO"        // replace with your public API key
-      );
+      // 1. Submit to Google Sheets Web App
+      if (GOOGLE_SHEET_URL && GOOGLE_SHEET_URL !== "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+        await fetch(GOOGLE_SHEET_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(submissionData),
+        });
+      }
 
-      // Save to MongoDB
-      await fetch(`${API_BASE_URL}/register`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(emailParams),
-      });
+      // 2. EmailJS Notification (backup)
+      try {
+        await emailjs.send(
+          "service_4ew07pp",
+          "template_0fjvnl8",
+          submissionData,
+          "fvK7lDFpyfz-0msvO"
+        );
+      } catch (e) {
+        console.warn("EmailJS notification skipped/failed:", e);
+      }
 
       toast({
-        title: "Registration Successful! 🎉",
-        description: "Thank you for registering! Our team will contact you within 24 hours.",
+        title: "Enquiry Submitted Successfully! 🎉",
+        description: "Thank you! Our team will contact you within 24 hours.",
       });
 
       // Reset form
@@ -91,7 +104,7 @@ export const RegisterClient = () => {
       });
     } catch (error) {
       toast({
-        title: "Registration Failed",
+        title: "Submission Failed",
         description: "Something went wrong. Please try again.",
         variant: "destructive",
       });
