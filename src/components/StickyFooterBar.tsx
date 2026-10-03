@@ -17,21 +17,8 @@ export const StickyFooterBar = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (!name || !phone || !course) {
-            toast.error("Please fill in all fields");
-            return;
-        }
-
-        const message = `Hi, I am ${name}. My number is ${phone}. I am interested in ${course}. Please call me back.`;
-        const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/916363760275?text=${encodedMessage}`;
-
-        toast.success("Redirecting to WhatsApp...");
-
-        setTimeout(() => {
-            window.open(whatsappUrl, "_blank");
-            setIsOpen(false);
-        }, 1500);
+        window.open("https://enrollment.techmiyaedtech.com/", "_blank");
+        setIsOpen(false);
     };
 
     return (
