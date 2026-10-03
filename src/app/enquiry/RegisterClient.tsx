@@ -65,7 +65,7 @@ export const RegisterClient = () => {
 
     try {
       // 1. Submit to Google Sheets Web App
-      if (GOOGLE_SHEET_URL && GOOGLE_SHEET_URL !== "YOUR_GOOGLE_APPS_SCRIPT_URL_HERE") {
+      if (GOOGLE_SHEET_URL && GOOGLE_SHEET_URL !== "https://script.google.com/macros/s/AKfycbwYzMb2-dAv_9VOG2ABKti_dgWaIkH3nA5CGkWCCEw_o90VTF0CQ_DEubv86JgPoe6y-w/exec") {
         await fetch(GOOGLE_SHEET_URL, {
           method: "POST",
           mode: "no-cors",
