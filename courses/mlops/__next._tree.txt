@@ -1,4 +1,4 @@
 :HL["/_next/static/chunks/0cm4lpr85no2m.css","style"]
 :HL["/whatsapp-icon.png","image"]
 :HL["/techmiyaedtech_new_logo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"courses","param":null,"prefetchHints":0,"slots":{"children":{"name":"courseSlug","param":{"type":"d","key":"mlops","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"kiumkj8pK4Gj_cVnEePqB"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"courses","param":null,"prefetchHints":0,"slots":{"children":{"name":"courseSlug","param":{"type":"d","key":"mlops","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"u8zCdWhbGUX1H6HoKKkSN"}
