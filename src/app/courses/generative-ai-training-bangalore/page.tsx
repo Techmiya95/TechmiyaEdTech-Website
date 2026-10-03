@@ -57,7 +57,7 @@ const GenerativeAIBangalore = () => {
       <section className="relative pt-24 pb-16 overflow-hidden bg-[#0f172a]">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-10"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[100px]"></div>
-        
+
         <div className="container relative z-10 px-4 mx-auto lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="px-4 py-1 mb-6 text-sm font-semibold text-white uppercase bg-blue-600/80 rounded-full backdrop-blur-sm border border-blue-400/30">
@@ -67,12 +67,12 @@ const GenerativeAIBangalore = () => {
               Master the Future with <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Generative AI Training</span> in Bangalore
             </h1>
             <p className="mb-10 text-xl leading-relaxed text-slate-300">
-              Transform your career with Bangalore's most comprehensive offline Generative AI program. 
-              Learn directly from industry experts in Jayanagar. Master Large Language Models, LangChain, 
+              Transform your career with Bangalore's most comprehensive offline Generative AI program.
+              Learn directly from industry experts in Jayanagar. Master Large Language Models, LangChain,
               Agentic AI, and build real-world AI applications.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link href="/register">
+              <Link href="/enquiry">
                 <Button size="lg" className="w-full sm:w-auto px-8 py-6 text-lg font-bold bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 shadow-lg shadow-blue-500/30">
                   Book Free Demo Class
                 </Button>
@@ -136,7 +136,7 @@ const GenerativeAIBangalore = () => {
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">Comprehensive GenAI Curriculum</h2>
             <p className="text-xl text-slate-400">What you will learn in our Jayanagar classroom</p>
           </div>
-          
+
           <div className="space-y-6">
             {[
               { title: "Module 1: Foundations of Deep Learning & NLP", desc: "Start with the basics of Neural Networks, PyTorch basics, and classic Natural Language Processing techniques. Understand word embeddings and attention mechanisms." },

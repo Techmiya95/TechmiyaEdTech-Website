@@ -56,7 +56,7 @@ const DevOpsJayanagar = () => {
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-900">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[100px]"></div>
-        
+
         <div className="container relative z-10 px-4 mx-auto lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 text-center lg:text-left">
@@ -70,7 +70,7 @@ const DevOpsJayanagar = () => {
                 Join our premium offline DevOps training center in Jayanagar. Master Cloud Infrastructure, CI/CD, Containerization, and Automation with live production-grade projects.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Link href="/register">
+                <Link href="/enquiry">
                   <Button size="lg" className="px-8 py-6 text-lg font-bold bg-white text-indigo-900 hover:bg-slate-100 shadow-xl">
                     Enroll in Jayanagar Batch
                   </Button>
@@ -83,25 +83,25 @@ const DevOpsJayanagar = () => {
               </div>
             </div>
             <div className="flex-1 w-full max-w-lg hidden lg:block">
-               {/* Terminal illustration */}
-               <div className="bg-[#1e1e1e] rounded-xl shadow-2xl overflow-hidden border border-slate-700">
-                 <div className="flex items-center gap-2 px-4 py-3 bg-[#2d2d2d] border-b border-slate-700">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                    <span className="ml-2 text-xs font-mono text-slate-400">techmiya@devops: ~</span>
-                 </div>
-                 <div className="p-6 font-mono text-sm text-green-400 leading-relaxed space-y-2">
-                    <p><span className="text-blue-400">$</span> git clone infrastructure.git</p>
-                    <p className="text-slate-400">Cloning into 'infrastructure'...</p>
-                    <p><span className="text-blue-400">$</span> docker build -t techmiya-app .</p>
-                    <p className="text-slate-400">Step 1/10 : FROM node:18-alpine</p>
-                    <p className="text-slate-400">---&gt; Successfully built 8a9b7c6d5e4f</p>
-                    <p><span className="text-blue-400">$</span> kubectl apply -f deployment.yaml</p>
-                    <p className="text-cyan-400">deployment.apps/techmiya-app created</p>
-                    <p className="text-yellow-400 animate-pulse">Waiting for pods to be ready...</p>
-                 </div>
-               </div>
+              {/* Terminal illustration */}
+              <div className="bg-[#1e1e1e] rounded-xl shadow-2xl overflow-hidden border border-slate-700">
+                <div className="flex items-center gap-2 px-4 py-3 bg-[#2d2d2d] border-b border-slate-700">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                  <span className="ml-2 text-xs font-mono text-slate-400">techmiya@devops: ~</span>
+                </div>
+                <div className="p-6 font-mono text-sm text-green-400 leading-relaxed space-y-2">
+                  <p><span className="text-blue-400">$</span> git clone infrastructure.git</p>
+                  <p className="text-slate-400">Cloning into 'infrastructure'...</p>
+                  <p><span className="text-blue-400">$</span> docker build -t techmiya-app .</p>
+                  <p className="text-slate-400">Step 1/10 : FROM node:18-alpine</p>
+                  <p className="text-slate-400">---&gt; Successfully built 8a9b7c6d5e4f</p>
+                  <p><span className="text-blue-400">$</span> kubectl apply -f deployment.yaml</p>
+                  <p className="text-cyan-400">deployment.apps/techmiya-app created</p>
+                  <p className="text-yellow-400 animate-pulse">Waiting for pods to be ready...</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@ const DevOpsJayanagar = () => {
               Why Choose Offline DevOps Training in Jayanagar?
             </h2>
             <p className="text-lg text-slate-600">
-              DevOps is highly practical. Trying to learn complex Kubernetes clusters or AWS networking through recorded videos often leads to frustration. 
+              DevOps is highly practical. Trying to learn complex Kubernetes clusters or AWS networking through recorded videos often leads to frustration.
               Our <strong>Jayanagar facility</strong> provides you with a dedicated lab environment, face-to-face mentorship, and collaborative project building.
             </p>
           </div>

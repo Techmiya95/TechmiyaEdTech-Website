@@ -1,7 +1,7 @@
 {
   "version": 3,
   "pages404": true,
-  "appType": "hybrid",
+  "appType": "app",
   "caseSensitive": false,
   "basePath": "",
   "redirects": [
@@ -119,6 +119,12 @@
       "namedRegex": "^/data\\-deletion(?:/)?$"
     },
     {
+      "page": "/enquiry",
+      "regex": "^/enquiry(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/enquiry(?:/)?$"
+    },
+    {
       "page": "/get-voucher",
       "regex": "^/get\\-voucher(?:/)?$",
       "routeKeys": {},
@@ -165,12 +171,6 @@
       "regex": "^/psychometric\\-test(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/psychometric\\-test(?:/)?$"
-    },
-    {
-      "page": "/register",
-      "regex": "^/register(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/register(?:/)?$"
     },
     {
       "page": "/reviews",

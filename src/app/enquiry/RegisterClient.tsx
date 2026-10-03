@@ -104,17 +104,17 @@ export const RegisterClient = () => {
     <div className="min-h-screen bg-gray-50 py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header with animation */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
           <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Register Now
+            Enquiry Now
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Take the first step towards your tech career. Register for a free demo 
+            Take the first step towards your tech career. Enquire for a free demo
             session and discover how Techmiya can transform your future.
           </p>
         </motion.div>
@@ -128,7 +128,7 @@ export const RegisterClient = () => {
           >
             <Card className="bg-white shadow-xl hover:shadow-2xl transition-all duration-300">
               <CardHeader>
-                <CardTitle className="text-2xl">Registration</CardTitle>
+                <CardTitle className="text-2xl">Enquiry Now</CardTitle>
                 <CardDescription>
                   Fill out the form below and we'll contact you to schedule your personalized demo session.
                 </CardDescription>
@@ -253,7 +253,7 @@ export const RegisterClient = () => {
                       disabled={isSubmitting}
                       className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white py-3 text-lg transition-all duration-300"
                     >
-                      {isSubmitting ? "Submitting..." : "Register"}
+                      {isSubmitting ? "Submitting..." : "Enquire Now"}
                     </Button>
                   </motion.div>
                 </form>
@@ -279,7 +279,7 @@ export const RegisterClient = () => {
                     { icon: "🎯", title: "Learning Path Assessment", desc: "Get a customized learning plan based on your background" },
                     { icon: "📞", title: "One-on-One Consultation", desc: "Direct interaction with our expert counselors" }
                   ].map((item, index) => (
-                    <motion.div 
+                    <motion.div
                       key={item.title}
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
@@ -314,7 +314,7 @@ export const RegisterClient = () => {
                     { label: "Student Satisfaction", value: "4.9/5" },
                     { label: "Industry Partnerships", value: "50+" }
                   ].map((stat, index) => (
-                    <motion.div 
+                    <motion.div
                       key={stat.label}
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -342,7 +342,7 @@ export const RegisterClient = () => {
                     <div>
                       <h4 className="font-semibold text-yellow-800">Limited Time Offer</h4>
                       <p className="text-yellow-700">
-                        Register now and get <Badge className="ml-1 bg-yellow-500">20% off</Badge> on your course enrollment!
+                        Enroll now and get <Badge className="ml-1 bg-yellow-500">20% off</Badge> on your course enrollment!
                       </p>
                     </div>
                   </div>

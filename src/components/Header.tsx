@@ -76,6 +76,7 @@ export const Header = () => {
     { name: "Placements", path: "/placements" },
     { name: "Psychometric Test", path: "https://pt.techmiyaedtech.com/" },
     { name: "Contact", path: "/contact" },
+    { name: "Trainer", path: "https://trainers.techmiyaedtech.com" },
     { name: "Blog", path: "https://blogs.techmiyaedtech.com/" },
   ];
 
@@ -109,18 +110,18 @@ export const Header = () => {
         <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <img src="/techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-10 h-10 object-contain" />
-              <span className="text-xl font-bold text-amber-500">Techmiya Ed-Tech </span>
+            <Link href="/" className="flex items-center space-x-2 shrink-0 mr-2">
+              <img src="/techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0" />
+              <span className="text-lg sm:text-xl font-bold text-amber-500 whitespace-nowrap">Techmiya Ed-Tech</span>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-1 xl:space-x-3 items-center">
+            <nav className="hidden lg:flex space-x-0.5 xl:space-x-1.5 2xl:space-x-2 items-center">
               {navItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}
                   href={item.path}
-                  className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 ${isActive(item.path)
+                  className={`px-1.5 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm 2xl:text-base font-semibold transition-all duration-200 whitespace-nowrap ${isActive(item.path)
                     ? "text-amber-600 bg-amber-50"
                     : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                     }`}
@@ -136,13 +137,13 @@ export const Header = () => {
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
                 <button
-                  className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 flex items-center gap-1 ${isServiceActive
+                  className={`px-1.5 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm 2xl:text-base font-semibold transition-all duration-200 flex items-center gap-1 whitespace-nowrap ${isServiceActive
                     ? "text-amber-600 bg-amber-50"
                     : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                     }`}
                 >
                   Services
-                  <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-3.5 h-3.5 xl:w-4 xl:h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                 </button>
 
                 {isServicesOpen && (
@@ -182,7 +183,7 @@ export const Header = () => {
                     href={item.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-gray-50 whitespace-nowrap"
+                    className="px-1.5 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm 2xl:text-base font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-gray-50 whitespace-nowrap"
                   >
                     {item.name}
                   </a>
@@ -190,7 +191,7 @@ export const Header = () => {
                   <Link
                     key={item.name}
                     href={item.path}
-                    className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 whitespace-nowrap ${isActive(item.path)
+                    className={`px-1.5 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm 2xl:text-base font-semibold transition-all duration-200 whitespace-nowrap ${isActive(item.path)
                       ? "text-amber-600 bg-amber-50"
                       : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                       }`}
@@ -207,10 +208,10 @@ export const Header = () => {
                 onMouseLeave={() => setIsJobsOpen(false)}
               >
                 <button
-                  className={`px-2 xl:px-3 py-2 rounded-lg text-sm xl:text-base font-semibold transition-all duration-200 flex items-center gap-1 text-gray-700 hover:text-amber-600 hover:bg-gray-50`}
+                  className={`px-1.5 xl:px-2.5 py-1.5 rounded-lg text-xs xl:text-sm 2xl:text-base font-semibold transition-all duration-200 flex items-center gap-1 whitespace-nowrap text-gray-700 hover:text-amber-600 hover:bg-gray-50`}
                 >
                   Jobs
-                  <ChevronDown className={`w-4 h-4 transition-transform ${isJobsOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-3.5 h-3.5 xl:w-4 xl:h-4 transition-transform ${isJobsOpen ? 'rotate-180' : ''}`} />
                 </button>
 
                 {isJobsOpen && (
@@ -232,14 +233,14 @@ export const Header = () => {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden lg:flex gap-2 xl:gap-4">
+            <div className="hidden lg:flex gap-1.5 xl:gap-3 shrink-0 ml-1">
               <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white text-sm xl:text-base px-3 xl:px-4">
+                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white text-xs xl:text-sm px-2.5 xl:px-3.5 py-1.5 h-9 xl:h-10">
                   Access LMS
                 </Button>
               </a>
-              <Link href="/register">
-                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-sm xl:text-base px-3 xl:px-4">
+              <Link href="/enquiry">
+                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-xs xl:text-sm px-2.5 xl:px-3.5 py-1.5 h-9 xl:h-10">
                   Enquire Now
                 </Button>
               </Link>
@@ -359,12 +360,12 @@ export const Header = () => {
                   </Button>
                 </a>
                 <Link
-                  href="/register"
+                  href="/enquiry"
                   onClick={() => setIsMenuOpen(false)}
                   className="block w-full mt-2"
                 >
                   <Button className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white">
-                    Register Now
+                    Enquire Now
                   </Button>
                 </Link>
               </div>

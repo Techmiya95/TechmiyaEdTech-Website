@@ -265,15 +265,6 @@ const Index = () => {
         <div className="absolute inset-0 bg-blue-800/100"></div>
 
         <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-24 lg:pt-10 lg:pb-32">
-          {/* Top Tagline - Full Width */}
-          <div className="flex justify-center mb-6 w-full">
-            <div className="flex w-full items-center justify-center px-4 sm:px-6 py-4 rounded-full border border-yellow-500/20 bg-yellow-500/5 backdrop-blur-sm shadow-[0_0_15px_rgba(234,179,8,0.2)] hover:shadow-[0_0_25px_rgba(234,179,8,0.4)] transition-all duration-300">
-              <span className="mr-4 text-2xl animate-pulse hidden sm:block"></span>
-              <p className="text-lg sm:text-2xl md:text-3xl lg:text-4xl font-black text-white tracking-wide uppercase text-center drop-shadow-sm leading-tight">
-                "Learn What College Doesn't Teach You"
-              </p>
-            </div>
-          </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-2 w-full max-w-full">
             {/* Left Column - Rotating Tech Logos */}
@@ -359,7 +350,7 @@ const Index = () => {
                   </Button>
                 </a>
 
-                <Link href="/register">
+                <Link href="/enquiry">
                   <Button
                     size="lg"
                     className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold px-6 py-4 text-base lg:text-lg rounded-2xl shadow-md transition-transform hover:scale-105"

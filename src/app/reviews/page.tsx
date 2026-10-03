@@ -244,7 +244,7 @@ const Reviews = () => {
             Join thousands of students who have successfully transformed their careers with Tech Miya
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/register">
+            <a href="/enquiry">
               <button className="bg-white text-purple-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg transition-colors">
                 Start Your Journey
               </button>

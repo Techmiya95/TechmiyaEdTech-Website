@@ -105,7 +105,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "F:\\Techmiya-Latest-Website\\website",
+    "outputFileTracingRoot": "D:\\TechmiyaEdTech-Website",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -167,7 +167,7 @@
       "proxyPrefetch": "flexible",
       "optimisticClientCache": true,
       "manualClientBasePath": false,
-      "cpus": 11,
+      "cpus": 7,
       "memoryBasedWorkersCount": false,
       "imgOptConcurrency": null,
       "imgOptTimeoutInSeconds": 7,
@@ -305,11 +305,11 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "F:\\Techmiya-Latest-Website\\website"
+      "root": "D:\\TechmiyaEdTech-Website"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "F:\\Techmiya-Latest-Website\\website",
+  "appDir": "D:\\TechmiyaEdTech-Website",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",
