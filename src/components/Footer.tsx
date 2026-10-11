@@ -67,6 +67,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/tutorials/git-github" className="text-amber-400 font-semibold hover:text-white transition-colors">
+                  Git & GitHub Tutorial & Certification
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
                   Tech Blog
                 </Link>

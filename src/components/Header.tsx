@@ -64,6 +64,7 @@ const TopBar = () => {
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isTutorialsOpen, setIsTutorialsOpen] = useState(false);
   const [isJobsOpen, setIsJobsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -176,7 +177,59 @@ export const Header = () => {
               </div>
 
               {navItems.slice(2).map((item) => (
-                item.path.startsWith("http") ? (
+                item.name === "Tutorials" ? (
+                  <div
+                    key={item.name}
+                    className="relative"
+                    onMouseEnter={() => setIsTutorialsOpen(true)}
+                    onMouseLeave={() => setIsTutorialsOpen(false)}
+                  >
+                    <button
+                      className={`px-1.5 xl:px-2 py-1 rounded-md text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${pathname.startsWith("/tutorials")
+                        ? "text-amber-600 bg-amber-50"
+                        : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                        }`}
+                    >
+                      Tutorials
+                      <span className="ml-1 px-1 py-0.2 text-[9px] bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded font-bold leading-none">NEW</span>
+                      <ChevronDown className={`w-3 h-3 xl:w-3.5 xl:h-3.5 transition-transform ${isTutorialsOpen ? 'rotate-180' : ''}`} />
+                    </button>
+
+                    {isTutorialsOpen && (
+                      <div className="absolute top-full left-0 mt-1 w-72 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+                        <Link
+                          href="/tutorials/git-github"
+                          className="block px-4 py-2.5 hover:bg-amber-50 transition-colors group"
+                          onClick={() => setIsTutorialsOpen(false)}
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="text-sm font-bold text-gray-900 group-hover:text-amber-600 flex items-center gap-1.5">
+                              Git & GitHub
+                              <span className="text-[10px] bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded font-semibold">Certified</span>
+                            </span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5">100 Units, 15 Labs & 50-Mark Assessment</p>
+                        </Link>
+                        <div className="my-1 border-t border-gray-100" />
+                        <a
+                          href="https://tutorials.techmiyaedtech.com/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-4 py-2.5 hover:bg-gray-50 transition-colors group"
+                          onClick={() => setIsTutorialsOpen(false)}
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="text-sm font-semibold text-gray-800 group-hover:text-amber-600">
+                              All Techmiya Tutorials
+                            </span>
+                            <span className="text-[10px] text-gray-400">External ↗</span>
+                          </div>
+                          <p className="text-xs text-gray-500 mt-0.5">Python, Java, Golang, C, C++, Linux & more</p>
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                ) : item.path.startsWith("http") ? (
                   <a
                     key={item.name}
                     href={item.path}
@@ -308,7 +361,36 @@ export const Header = () => {
                   </div>
                 </div>
 
-                {navItems.slice(2).map((item) => (
+                {/* Mobile Tutorials Section */}
+                <div className="px-3 py-2">
+                  <p className="text-sm font-bold text-gray-900 mb-2 flex items-center justify-between">
+                    <span>Tutorials</span>
+                    <span className="text-[10px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded font-bold">New Module</span>
+                  </p>
+                  <div className="pl-2 space-y-1.5 border-l-2 border-amber-300">
+                    <Link
+                      href="/tutorials/git-github"
+                      onClick={() => setIsMenuOpen(false)}
+                      className={`block px-2 py-1.5 rounded text-sm font-semibold transition-colors ${pathname.startsWith("/tutorials/git-github")
+                        ? "text-amber-600 bg-amber-50"
+                        : "text-gray-800 hover:text-amber-600"
+                        }`}
+                    >
+                      🚀 Git & GitHub (Complete & Certified)
+                    </Link>
+                    <a
+                      href="https://tutorials.techmiyaedtech.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block px-2 py-1.5 rounded text-sm font-medium transition-colors text-gray-600 hover:text-amber-600"
+                    >
+                      🌐 Techmiya Tutorials Portal (All Courses)
+                    </a>
+                  </div>
+                </div>
+
+                {navItems.slice(2).filter((item) => item.name !== "Tutorials").map((item) => (
                   item.path.startsWith("http") ? (
                     <a
                       key={item.name}

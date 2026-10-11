@@ -35,5 +35,11 @@
   "/services/partnerships/page": "/services/partnerships",
   "/services/workshops/page": "/services/workshops",
   "/thankyou/page": "/thankyou",
+  "/tutorials/git-github/assessment/page": "/tutorials/git-github/assessment",
+  "/tutorials/git-github/assessment/result/page": "/tutorials/git-github/assessment/result",
+  "/tutorials/git-github/certificate/page": "/tutorials/git-github/certificate",
+  "/tutorials/git-github/labs/page": "/tutorials/git-github/labs",
+  "/tutorials/git-github/lesson/page": "/tutorials/git-github/lesson",
+  "/tutorials/git-github/page": "/tutorials/git-github",
   "/workshop-register/page": "/workshop-register"
 }

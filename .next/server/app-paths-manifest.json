@@ -35,5 +35,11 @@
   "/services/partnerships/page": "app/services/partnerships/page.js",
   "/services/workshops/page": "app/services/workshops/page.js",
   "/thankyou/page": "app/thankyou/page.js",
+  "/tutorials/git-github/assessment/page": "app/tutorials/git-github/assessment/page.js",
+  "/tutorials/git-github/assessment/result/page": "app/tutorials/git-github/assessment/result/page.js",
+  "/tutorials/git-github/certificate/page": "app/tutorials/git-github/certificate/page.js",
+  "/tutorials/git-github/labs/page": "app/tutorials/git-github/labs/page.js",
+  "/tutorials/git-github/lesson/page": "app/tutorials/git-github/lesson/page.js",
+  "/tutorials/git-github/page": "app/tutorials/git-github/page.js",
   "/workshop-register/page": "app/workshop-register/page.js"
 }

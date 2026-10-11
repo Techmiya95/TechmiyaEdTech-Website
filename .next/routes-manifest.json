@@ -245,6 +245,42 @@
       "namedRegex": "^/thankyou(?:/)?$"
     },
     {
+      "page": "/tutorials/git-github",
+      "regex": "^/tutorials/git\\-github(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tutorials/git\\-github(?:/)?$"
+    },
+    {
+      "page": "/tutorials/git-github/assessment",
+      "regex": "^/tutorials/git\\-github/assessment(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tutorials/git\\-github/assessment(?:/)?$"
+    },
+    {
+      "page": "/tutorials/git-github/assessment/result",
+      "regex": "^/tutorials/git\\-github/assessment/result(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tutorials/git\\-github/assessment/result(?:/)?$"
+    },
+    {
+      "page": "/tutorials/git-github/certificate",
+      "regex": "^/tutorials/git\\-github/certificate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tutorials/git\\-github/certificate(?:/)?$"
+    },
+    {
+      "page": "/tutorials/git-github/labs",
+      "regex": "^/tutorials/git\\-github/labs(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tutorials/git\\-github/labs(?:/)?$"
+    },
+    {
+      "page": "/tutorials/git-github/lesson",
+      "regex": "^/tutorials/git\\-github/lesson(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/tutorials/git\\-github/lesson(?:/)?$"
+    },
+    {
       "page": "/workshop-register",
       "regex": "^/workshop\\-register(?:/)?$",
       "routeKeys": {},
