@@ -1118,6 +1118,10 @@ body {
   height: 100svh;
 }
 
+.max-h-60 {
+  max-height: 15rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -1280,6 +1284,10 @@ body {
 
 .w-\[500px\] {
   width: 500px;
+}
+
+.w-\[620px\] {
+  width: 620px;
 }
 
 .w-auto {
@@ -1615,6 +1623,10 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
@@ -1865,6 +1877,12 @@ body {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .whitespace-normal {
@@ -3499,6 +3517,10 @@ body {
 
 .pl-9 {
   padding-left: 2.25rem;
+}
+
+.pr-1 {
+  padding-right: .25rem;
 }
 
 .pr-2 {
@@ -6578,6 +6600,10 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:left-0 {
+    left: 0;
+  }
+
   .xl\:mr-2 {
     margin-right: .5rem;
   }

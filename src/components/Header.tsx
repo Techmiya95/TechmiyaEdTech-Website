@@ -100,6 +100,41 @@ export const Header = () => {
     { name: "💻 Compiler", path: "/compiler" },
   ];
 
+  const tutorialItems = [
+    { name: "Python", path: "https://tutorials.techmiyaedtech.com/python" },
+    { name: "Java", path: "https://tutorials.techmiyaedtech.com/java" },
+    { name: "JavaScript", path: "https://tutorials.techmiyaedtech.com/javascript" },
+    { name: "C", path: "https://tutorials.techmiyaedtech.com/c" },
+    { name: "C++", path: "https://tutorials.techmiyaedtech.com/cpp" },
+    { name: "Golang", path: "https://tutorials.techmiyaedtech.com/golang" },
+    { name: "SQL", path: "https://tutorials.techmiyaedtech.com/sql" },
+    { name: "Linux", path: "https://tutorials.techmiyaedtech.com/linux" },
+    { name: "HTML", path: "https://tutorials.techmiyaedtech.com/html" },
+    { name: "CSS", path: "https://tutorials.techmiyaedtech.com/css" },
+    { name: "React", path: "https://tutorials.techmiyaedtech.com/react" },
+    { name: "FastAPI", path: "https://tutorials.techmiyaedtech.com/fastapi" },
+    { name: "Django", path: "https://tutorials.techmiyaedtech.com/django" },
+    { name: "Flask", path: "https://tutorials.techmiyaedtech.com/flask" },
+    { name: "Machine Learning", path: "https://tutorials.techmiyaedtech.com/machine-learning" },
+    { name: "Generative AI", path: "https://tutorials.techmiyaedtech.com/generative-ai" },
+    { name: "MLOps", path: "https://tutorials.techmiyaedtech.com/mlops" },
+    { name: "Cybersecurity", path: "https://tutorials.techmiyaedtech.com/cybersecurity" },
+    { name: "Data Analytics", path: "https://tutorials.techmiyaedtech.com/data-analytics" },
+    { name: "Power BI", path: "https://tutorials.techmiyaedtech.com/power-bi" },
+    { name: "Excel", path: "https://tutorials.techmiyaedtech.com/excel" },
+    { name: "DevOps", path: "https://tutorials.techmiyaedtech.com/devops" },
+    { name: "AWS", path: "https://tutorials.techmiyaedtech.com/aws" },
+    { name: "Docker", path: "https://tutorials.techmiyaedtech.com/docker" },
+    { name: "Kubernetes", path: "https://tutorials.techmiyaedtech.com/kubernetes" },
+    { name: "Jenkins", path: "https://tutorials.techmiyaedtech.com/jenkins" },
+    { name: "Terraform", path: "https://tutorials.techmiyaedtech.com/terraform" },
+    { name: "Ansible", path: "https://tutorials.techmiyaedtech.com/ansible" },
+    { name: "GitHub", path: "https://tutorials.techmiyaedtech.com/github" },
+    { name: "Jira", path: "https://tutorials.techmiyaedtech.com/jira" },
+    { name: "Shell", path: "https://tutorials.techmiyaedtech.com/shell" },
+    { name: "Monitoring", path: "https://tutorials.techmiyaedtech.com/monitoring" },
+  ];
+
   const isActive = (path: string) => pathname === path;
   const isServiceActive = serviceItems.some(item => pathname === item.path);
 
@@ -196,36 +231,21 @@ export const Header = () => {
                     </button>
 
                     {isTutorialsOpen && (
-                      <div className="absolute top-full left-0 mt-1 w-72 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
-                        <Link
-                          href="/tutorials/git-github"
-                          className="block px-4 py-2.5 hover:bg-amber-50 transition-colors group"
-                          onClick={() => setIsTutorialsOpen(false)}
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-sm font-bold text-gray-900 group-hover:text-amber-600 flex items-center gap-1.5">
-                              Git & GitHub
-                              <span className="text-[10px] bg-amber-100 text-amber-700 px-1.5 py-0.5 rounded font-semibold">Certified</span>
-                            </span>
-                          </div>
-                          <p className="text-xs text-gray-500 mt-0.5">100 Units, 15 Labs & 50-Mark Assessment</p>
-                        </Link>
-                        <div className="my-1 border-t border-gray-100" />
-                        <a
-                          href="https://tutorials.techmiyaedtech.com/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block px-4 py-2.5 hover:bg-gray-50 transition-colors group"
-                          onClick={() => setIsTutorialsOpen(false)}
-                        >
-                          <div className="flex items-center justify-between">
-                            <span className="text-sm font-semibold text-gray-800 group-hover:text-amber-600">
-                              All Techmiya Tutorials
-                            </span>
-                            <span className="text-[10px] text-gray-400">External ↗</span>
-                          </div>
-                          <p className="text-xs text-gray-500 mt-0.5">Python, Java, Golang, C, C++, Linux & more</p>
-                        </a>
+                      <div className="absolute top-full -left-12 xl:left-0 mt-1 w-[620px] bg-white rounded-xl shadow-2xl border border-gray-100 p-3 z-50">
+                        <div className="grid grid-cols-4 gap-1">
+                          {tutorialItems.map((tutorial) => (
+                            <a
+                              key={tutorial.name}
+                              href={tutorial.path}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block px-2.5 py-1.5 text-xs xl:text-[13px] font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50 rounded-md truncate"
+                              onClick={() => setIsTutorialsOpen(false)}
+                            >
+                              {tutorial.name}
+                            </a>
+                          ))}
+                        </div>
                       </div>
                     )}
                   </div>
@@ -365,28 +385,20 @@ export const Header = () => {
                 <div className="px-3 py-2">
                   <p className="text-sm font-bold text-gray-900 mb-2 flex items-center justify-between">
                     <span>Tutorials</span>
-                    <span className="text-[10px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded font-bold">New Module</span>
                   </p>
-                  <div className="pl-2 space-y-1.5 border-l-2 border-amber-300">
-                    <Link
-                      href="/tutorials/git-github"
-                      onClick={() => setIsMenuOpen(false)}
-                      className={`block px-2 py-1.5 rounded text-sm font-semibold transition-colors ${pathname.startsWith("/tutorials/git-github")
-                        ? "text-amber-600 bg-amber-50"
-                        : "text-gray-800 hover:text-amber-600"
-                        }`}
-                    >
-                      🚀 Git & GitHub (Complete & Certified)
-                    </Link>
-                    <a
-                      href="https://tutorials.techmiyaedtech.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={() => setIsMenuOpen(false)}
-                      className="block px-2 py-1.5 rounded text-sm font-medium transition-colors text-gray-600 hover:text-amber-600"
-                    >
-                      🌐 Techmiya Tutorials Portal (All Courses)
-                    </a>
+                  <div className="pl-2 grid grid-cols-2 gap-1 border-l-2 border-amber-300 max-h-60 overflow-y-auto pr-1">
+                    {tutorialItems.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.path}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setIsMenuOpen(false)}
+                        className="block px-2 py-1.5 rounded text-xs font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50 truncate"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
                   </div>
                 </div>
 
