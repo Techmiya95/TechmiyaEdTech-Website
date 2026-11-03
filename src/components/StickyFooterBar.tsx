@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -23,38 +22,24 @@ export const StickyFooterBar = () => {
 
     return (
         <>
-            {/* Sticky Footer Bar */}
-            <div className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-blue-900 via-purple-800 to-blue-900 shadow-[0_-4px_20px_rgba(0,0,0,0.3)]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col sm:flex-row justify-between items-center py-3 gap-3 sm:gap-0">
-                        {/* Tagline */}
-                        <div className="flex items-center gap-3">
-                            <Sparkles className="w-6 h-6 text-amber-400" />
-                            <span className="text-xl sm:text-2xl font-bold text-white">
+            {/* Sticky Footer Bar - Transparent & Responsive */}
+            <div className="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/40 backdrop-blur-md border-t border-white/10 shadow-[0_-4px_25px_rgba(0,0,0,0.2)]">
+                <div className="w-full max-w-[1600px] mx-auto px-3 sm:px-6 lg:px-8">
+                    <div className="flex flex-row justify-between items-center py-2 sm:py-3 gap-2">
+                        {/* Tagline - Left Side */}
+                        <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+                            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0" />
+                            <span className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-white tracking-tight whitespace-nowrap">
                                 Code with <span className="text-amber-400">Confidence</span>
                             </span>
-                            <Sparkles className="w-6 h-6 text-amber-400" />
+                            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-amber-400 shrink-0 hidden sm:inline" />
                         </div>
 
-                        {/* Action Buttons */}
-                        <div className="flex items-center gap-2 sm:gap-3 flex-wrap justify-center">
-                            {/* <Link href="/register">
-                                <Button
-                                    className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
-                                >
-                                    🎓 Attend Free Demo Class
-                                </Button>
-                            </Link> */}
-                            <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
-                                <Button
-                                    className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
-                                >
-                                    💻 Get Access to LMS
-                                </Button>
-                            </a>
+                        {/* Action Buttons - Right Side */}
+                        <div className="flex items-center shrink-0">
                             <Button
                                 onClick={() => setIsOpen(true)}
-                                className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold px-4 sm:px-6 py-3 text-sm sm:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 whitespace-nowrap"
+                                className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold px-3.5 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-sm md:text-base rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 whitespace-nowrap"
                             >
                                 🚀 Enroll Now
                             </Button>
@@ -135,4 +120,3 @@ export const StickyFooterBar = () => {
         </>
     );
 };
-

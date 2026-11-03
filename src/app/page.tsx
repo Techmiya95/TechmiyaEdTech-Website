@@ -264,7 +264,7 @@ const Index = () => {
       <section className="relative bg-background text-white overflow-hidden">
         <div className="absolute inset-0 bg-blue-800/100"></div>
 
-        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-24 lg:pt-10 lg:pb-32">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-2 lg:pt-8 lg:pb-3">
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-2 w-full max-w-full">
             {/* Left Column - Rotating Tech Logos */}
@@ -313,7 +313,7 @@ const Index = () => {
 
               <h1 className="text-2xl lg:text-3xl xl:text-4xl font-extrabold mb-4 leading-tight w-full">
                 <span className="bg-gradient-to-r from-amber-500 via-yellow-500 to-amber-600 bg-clip-text text-transparent drop-shadow-sm">
-                  Best IT Training Institute in Jayanagar, Bangalore — Techmiya EdTech Courses
+                  Best IT Training Institute in India — Techmiya EdTech Courses
                 </span>
               </h1>
 

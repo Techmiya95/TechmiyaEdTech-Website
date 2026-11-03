@@ -75,9 +75,9 @@ const RecruitmentPartners = () => {
   );
 
   return (
-    <div className="relative bg-white/10 py-8">
+    <div className="relative bg-white/10 pt-2 pb-6 sm:pt-3 sm:pb-7">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h3 className="text-center text-blue-200 text-sm font-semibold mb-6 uppercase tracking-wider">
+        <h3 className="text-center text-blue-200 text-sm font-semibold mb-3 uppercase tracking-wider">
           🤝 Our Recruitment Partners
         </h3>
         <div className="flex overflow-hidden">

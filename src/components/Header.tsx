@@ -8,56 +8,60 @@ import { Button } from "@/components/ui/button";
 import logo from "@/logo.jpeg";
 
 const TopBar = () => {
+  const branchesItems = (
+    <div className="flex items-center gap-x-5 text-[11px] sm:text-xs font-medium px-4 shrink-0">
+      <span className="flex items-center gap-1 text-amber-300 font-semibold">
+        <MapPin className="w-3 h-3 text-amber-300" />
+        <span>Branches:</span>
+      </span>
+      <a href="tel:+916363760275" className="flex items-center gap-1 hover:text-amber-300 transition-colors">
+        <Phone className="w-3 h-3 text-amber-300" />
+        <span>Jayanagar: +91-6363760275</span>
+      </a>
+      <span className="text-blue-300/40">|</span>
+      <a href="tel:+919206798097" className="flex items-center gap-1 hover:text-amber-300 transition-colors">
+        <Phone className="w-3 h-3 text-amber-300" />
+        <span>RR Nagar: +91-9206798097</span>
+      </a>
+      <span className="text-blue-300/40">|</span>
+      <a href="tel:+919591745792" className="flex items-center gap-1 hover:text-amber-300 transition-colors">
+        <Phone className="w-3 h-3 text-amber-300" />
+        <span>Vijaynagar: +91-9591745792</span>
+      </a>
+      <span className="text-blue-300/40">|</span>
+      <a href="tel:+919591745792" className="flex items-center gap-1 hover:text-amber-300 transition-colors">
+        <Phone className="w-3 h-3 text-amber-300" />
+        <span>Davangere: +91-9591745792</span>
+      </a>
+      <span className="text-amber-300 font-bold ml-2">✦</span>
+    </div>
+  );
+
   return (
-    <>
-      {/* First Row - Job Guarantee Message */}
-      <div className="bg-blue-800 text-white">
-        <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6">
-          <div className="flex justify-center items-center py-2 text-xs sm:text-base">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 font-semibold text-center leading-tight">
-              <span className="text-yellow-200 hidden sm:inline">✨</span>
-              <span>We do offer 100% Job Guarantee Programs and Courses</span>
-              <span className="sm:hidden text-yellow-200 text-[10px]">(Any degree/Gap/Non-IT)</span>
-              <span className="hidden sm:inline text-yellow-200">(Irrespective of any degree/Year Gap/Non-IT)</span>
-              <span className="text-yellow-200 hidden sm:inline">✨</span>
-            </div>
-          </div>
+    <div className="relative bg-blue-800 text-white overflow-hidden py-1.5 sm:py-2">
+      {/* Background Marquee: Branches moving from Left to Right behind the content */}
+      <div className="absolute inset-0 flex items-center z-0 pointer-events-auto">
+        <div className="animate-marquee-ltr flex items-center opacity-85 hover:opacity-100 transition-opacity">
+          {branchesItems}
+          {branchesItems}
+          {branchesItems}
+          {branchesItems}
         </div>
       </div>
 
-      {/* Second Row - Branch Contact Details */}
-      <div className="bg-gray-900 text-white">
-        <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6">
-          <div className="flex justify-center items-center py-2 text-[11px] sm:text-sm">
-            <div className="flex flex-wrap justify-center items-center gap-x-3 gap-y-1 text-center">
-              <span className="flex items-center gap-1 text-amber-400 w-full sm:w-auto justify-center mb-1 sm:mb-0">
-                <MapPin className="w-3 h-3" />
-                <span className="font-semibold">Branches:</span>
-              </span>
-              <a href="tel:+916363760275" className="flex items-center gap-1 hover:text-amber-400 transition-colors">
-                <Phone className="w-3 h-3" />
-                <span>Jayanagar: +91-6363760275</span>
-              </a>
-              <span className="hidden sm:inline text-gray-600">|</span>
-              <a href="tel:+919206798097" className="flex items-center gap-1 hover:text-amber-400 transition-colors">
-                <Phone className="w-3 h-3" />
-                <span>RR Nagar: +91-9206798097</span>
-              </a>
-              <span className="hidden sm:inline text-gray-600">|</span>
-              <a href="tel:+919591745792" className="flex items-center gap-1 hover:text-amber-400 transition-colors">
-                <Phone className="w-3 h-3" />
-                <span>Vijaynagar: +91-9591745792</span>
-              </a>
-              <span className="hidden sm:inline text-gray-600">|</span>
-              <a href="tel:+919591745792" className="flex items-center gap-1 hover:text-amber-400 transition-colors">
-                <Phone className="w-3 h-3" />
-                <span>Davangere: +91-9591745792</span>
-              </a>
-            </div>
+      {/* Foreground: Job Guarantee Message in the Middle */}
+      <div className="relative z-10 mx-auto px-4 max-w-fit pointer-events-none">
+        <div className="bg-blue-800/95 backdrop-blur-[2px] shadow-[0_0_24px_16px_rgba(30,64,175,0.95)] px-4 py-0.5 rounded-full border border-blue-400/30 pointer-events-auto">
+          <div className="flex items-center justify-center gap-1 sm:gap-2 font-semibold text-center text-xs sm:text-sm whitespace-nowrap leading-tight">
+            <span className="text-yellow-200 hidden sm:inline mr-0.5">✨</span>
+            <span>We do offer 100% Job Guarantee Programs and Courses</span>
+            <span className="sm:hidden text-yellow-200 text-[10px] ml-1">(Any degree/Gap/Non-IT)</span>
+            <span className="hidden sm:inline text-yellow-200 ml-1">(Irrespective of any degree/Year Gap/Non-IT)</span>
+            <span className="text-yellow-200 hidden sm:inline ml-0.5">✨</span>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
@@ -141,13 +145,19 @@ export const Header = () => {
   return (
     <div className="md:sticky md:top-0 z-50">
       <TopBar />
-      <header className="bg-white/95 backdrop-blur-sm border-b border-gray-100">
+      <header className="bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xs">
         <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6">
-          <div className="flex justify-between items-center h-16 xl:h-20 gap-1 xl:gap-2">
+          <div className="flex justify-between items-center h-16 xl:h-[72px] gap-1 xl:gap-2.5">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-1.5 shrink-0 mr-1 xl:mr-2">
-              <img src="/techmiyaedtech_new_logo.png" alt="Tech Miya Logo" className="w-7 h-7 sm:w-8 sm:h-8 xl:w-9 xl:h-9 object-contain shrink-0" />
-              <span className="text-sm sm:text-base xl:text-lg font-bold text-amber-500 whitespace-nowrap">Techmiya Ed-Tech</span>
+            <Link href="/" className="flex items-center space-x-2 shrink-0 mr-1 xl:mr-2.5 group">
+              <img
+                src="/techmiyaedtech_new_logo.png"
+                alt="Tech Miya Logo"
+                className="w-9 h-9 sm:w-10 sm:h-10 xl:w-12 xl:h-12 object-contain shrink-0 group-hover:scale-105 transition-transform duration-200 drop-shadow-xs"
+              />
+              <span className="text-base sm:text-lg xl:text-xl font-extrabold text-amber-500 group-hover:text-amber-600 transition-colors whitespace-nowrap tracking-tight">
+                Techmiya Ed-Tech
+              </span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -156,10 +166,11 @@ export const Header = () => {
                 <Link
                   key={item.name}
                   href={item.path}
-                  className={`px-1.5 xl:px-2 py-1 rounded-md text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-all duration-200 whitespace-nowrap ${isActive(item.path)
-                    ? "text-amber-600 bg-amber-50"
-                    : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                    }`}
+                  className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 whitespace-nowrap ${
+                    isActive(item.path)
+                      ? "text-amber-600 bg-amber-50 shadow-xs"
+                      : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
+                  }`}
                 >
                   {item.name}
                 </Link>
@@ -172,17 +183,18 @@ export const Header = () => {
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
                 <button
-                  className={`px-1.5 xl:px-2 py-1 rounded-md text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${isServiceActive
-                    ? "text-amber-600 bg-amber-50"
-                    : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                    }`}
+                  className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
+                    isServiceActive
+                      ? "text-amber-600 bg-amber-50 shadow-xs"
+                      : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
+                  }`}
                 >
                   Services
-                  <ChevronDown className={`w-3 h-3 xl:w-3.5 xl:h-3.5 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isServicesOpen ? "rotate-180 text-amber-600" : ""}`} />
                 </button>
 
                 {isServicesOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white/98 backdrop-blur-md rounded-xl shadow-xl border border-gray-100 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
                     {serviceItems.map((item) => (
                       item.path.startsWith("http") ? (
                         <a
@@ -190,7 +202,7 @@ export const Header = () => {
                           href={item.path}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                          className="block px-3.5 py-2 mx-1 rounded-lg text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50"
                         >
                           {item.name}
                         </a>
@@ -198,10 +210,11 @@ export const Header = () => {
                         <Link
                           key={item.name}
                           href={item.path}
-                          className={`block px-4 py-2 text-sm font-medium transition-colors ${isActive(item.path)
-                            ? "text-amber-600 bg-amber-50"
-                            : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                            }`}
+                          className={`block px-3.5 py-2 mx-1 rounded-lg text-sm font-medium transition-colors ${
+                            isActive(item.path)
+                              ? "text-amber-600 bg-amber-50 font-semibold"
+                              : "text-gray-700 hover:text-amber-600 hover:bg-amber-50"
+                          }`}
                         >
                           {item.name}
                         </Link>
@@ -220,18 +233,19 @@ export const Header = () => {
                     onMouseLeave={() => setIsTutorialsOpen(false)}
                   >
                     <button
-                      className={`px-1.5 xl:px-2 py-1 rounded-md text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${pathname.startsWith("/tutorials")
-                        ? "text-amber-600 bg-amber-50"
-                        : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                        }`}
+                      className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
+                        pathname.startsWith("/tutorials")
+                          ? "text-amber-600 bg-amber-50 shadow-xs"
+                          : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
+                      }`}
                     >
                       Tutorials
-                      <span className="ml-1 px-1 py-0.2 text-[9px] bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded font-bold leading-none">NEW</span>
-                      <ChevronDown className={`w-3 h-3 xl:w-3.5 xl:h-3.5 transition-transform ${isTutorialsOpen ? 'rotate-180' : ''}`} />
+                      <span className="ml-1 px-1.5 py-0.2 text-[9px] bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-full font-bold leading-none shadow-xs">NEW</span>
+                      <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isTutorialsOpen ? "rotate-180 text-amber-600" : ""}`} />
                     </button>
 
                     {isTutorialsOpen && (
-                      <div className="absolute top-full -left-12 xl:left-0 mt-1 w-[620px] bg-white rounded-xl shadow-2xl border border-gray-100 p-3 z-50">
+                      <div className="absolute top-full -left-12 xl:left-0 mt-1 w-[640px] bg-white/98 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-100 p-3.5 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
                         <div className="grid grid-cols-4 gap-1">
                           {tutorialItems.map((tutorial) => (
                             <a
@@ -239,7 +253,7 @@ export const Header = () => {
                               href={tutorial.path}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="block px-2.5 py-1.5 text-xs xl:text-[13px] font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50 rounded-md truncate"
+                              className="block px-2.5 py-1.5 text-xs xl:text-[13px] font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50 rounded-lg truncate"
                               onClick={() => setIsTutorialsOpen(false)}
                             >
                               {tutorial.name}
@@ -255,7 +269,7 @@ export const Header = () => {
                     href={item.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-1.5 xl:px-2 py-1 rounded-md text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-gray-50 whitespace-nowrap"
+                    className="px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-amber-50/70 whitespace-nowrap"
                   >
                     {item.name}
                   </a>
@@ -263,10 +277,11 @@ export const Header = () => {
                   <Link
                     key={item.name}
                     href={item.path}
-                    className={`px-1.5 xl:px-2 py-1 rounded-md text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-all duration-200 whitespace-nowrap ${isActive(item.path)
-                      ? "text-amber-600 bg-amber-50"
-                      : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
-                      }`}
+                    className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 whitespace-nowrap ${
+                      isActive(item.path)
+                        ? "text-amber-600 bg-amber-50 shadow-xs"
+                        : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
+                    }`}
                   >
                     {item.name}
                   </Link>
@@ -280,21 +295,21 @@ export const Header = () => {
                 onMouseLeave={() => setIsJobsOpen(false)}
               >
                 <button
-                  className={`px-1.5 xl:px-2 py-1 rounded-md text-xs xl:text-[13px] 2xl:text-sm font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap text-gray-700 hover:text-amber-600 hover:bg-gray-50`}
+                  className="px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
                 >
                   Jobs
-                  <ChevronDown className={`w-3 h-3 xl:w-3.5 xl:h-3.5 transition-transform ${isJobsOpen ? 'rotate-180' : ''}`} />
+                  <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isJobsOpen ? "rotate-180 text-amber-600" : ""}`} />
                 </button>
 
                 {isJobsOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-white/98 backdrop-blur-md rounded-xl shadow-xl border border-gray-100 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
                     {jobItems.map((item) => (
                       <a
                         key={item.name}
                         href={item.path}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                        className="block px-3.5 py-2 mx-1 rounded-lg text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50"
                       >
                         {item.name}
                       </a>
@@ -305,14 +320,14 @@ export const Header = () => {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden lg:flex gap-1 xl:gap-2 shrink-0 ml-1">
+            <div className="hidden lg:flex items-center gap-1.5 xl:gap-2.5 shrink-0 ml-1">
               <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white text-xs xl:text-xs 2xl:text-sm px-2 xl:px-3 py-1 h-8 xl:h-8.5 rounded-md">
+                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold text-xs xl:text-[13px] 2xl:text-sm px-3 xl:px-4 py-1.5 h-9 xl:h-9.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
                   Access LMS
                 </Button>
               </a>
               <Link href="/enquiry">
-                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-xs xl:text-xs 2xl:text-sm px-2 xl:px-3 py-1 h-8 xl:h-8.5 rounded-md">
+                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold text-xs xl:text-[13px] 2xl:text-sm px-3 xl:px-4 py-1.5 h-9 xl:h-9.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
                   Enquire Now
                 </Button>
               </Link>
@@ -322,7 +337,7 @@ export const Header = () => {
             <div className="lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100"
+                className="inline-flex items-center justify-center p-2 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors"
                 aria-label="Toggle menu"
               >
                 {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
