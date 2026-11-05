@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0-z_ijyr2uugf.css","style"]
+:HL["/_next/static/chunks/0vu_23~897mpj.css","style"]
 :HL["/whatsapp-icon.png","image"]
 :HL["/techmiyaedtech_new_logo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"courses","param":null,"prefetchHints":0,"slots":{"children":{"name":"courseSlug","param":{"type":"d","key":"cybersecurity","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"LugY4pZ5J9BBvoEMp2KGs"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"courses","param":null,"prefetchHints":0,"slots":{"children":{"name":"courseSlug","param":{"type":"d","key":"cybersecurity","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"AVc7obN27fFiuax92pi-G"}
