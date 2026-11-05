@@ -23,6 +23,7 @@
   "/psychometric/psychometric-engineering/page": "app/psychometric/psychometric-engineering/page.js",
   "/psychometric/psychometric-generic/page": "app/psychometric/psychometric-generic/page.js",
   "/psychometric/psychometric-management/page": "app/psychometric/psychometric-management/page.js",
+  "/register/page": "app/register/page.js",
   "/reviews/page": "app/reviews/page.js",
   "/services/campus-drives/page": "app/services/campus-drives/page.js",
   "/services/corporate-training/page": "app/services/corporate-training/page.js",

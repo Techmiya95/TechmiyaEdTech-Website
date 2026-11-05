@@ -3,9 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { CallBackCTA } from "@/components/CallBackCTA";
-import { CTAPopup } from "@/components/CTAPopup";
-import { LeadGenVoucher } from "@/components/LeadGenVoucher";
+import dynamic from "next/dynamic";
+
+const CallBackCTA = dynamic(() => import("@/components/CallBackCTA").then((mod) => mod.CallBackCTA));
+const CTAPopup = dynamic(() => import("@/components/CTAPopup").then((mod) => mod.CTAPopup));
+const LeadGenVoucher = dynamic(() => import("@/components/LeadGenVoucher").then((mod) => mod.LeadGenVoucher));
 
 export const metadata: Metadata = {
   title: "Best IT Training Institute in Jayanagar Bangalore | 100% Placement | Techmiya EdTech",
@@ -37,8 +39,8 @@ export const metadata: Metadata = {
 };
 import CollegeVsIndustrySection from "@/components/CollegeVsIndustrySection";
 import { HeroLeadGenForm } from "@/components/HeroLeadGenForm";
-import YouTubeShortsSection from "@/components/YouTubeShortsSection";
-import InstagramReelsSection from "@/components/InstagramReelsSection";
+const YouTubeShortsSection = dynamic(() => import("@/components/YouTubeShortsSection"));
+const InstagramReelsSection = dynamic(() => import("@/components/InstagramReelsSection"));
 import RecruitmentPartners from "@/components/RecruitmentPartners";
 
 const Index = () => {
@@ -615,6 +617,7 @@ const Index = () => {
                     alt={`${course.title} Training in Jayanagar, Bangalore`}
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <CardHeader>
@@ -669,6 +672,10 @@ const Index = () => {
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.name}
+                      width={48}
+                      height={48}
+                      loading="lazy"
+                      decoding="async"
                       className="w-12 h-12 rounded-full object-cover"
                     />
                     <div>

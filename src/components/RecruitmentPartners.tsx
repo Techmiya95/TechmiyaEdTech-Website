@@ -48,6 +48,10 @@ const RecruitmentPartners = () => {
           <img
             src={`https://www.google.com/s2/favicons?domain=${p.domain}&sz=128`}
             alt={p.name}
+            width={36}
+            height={36}
+            loading="lazy"
+            decoding="async"
             className="w-9 h-9 object-contain rounded"
             onError={(e) => {
               const img = e.currentTarget as HTMLImageElement;

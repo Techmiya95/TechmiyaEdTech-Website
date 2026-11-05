@@ -175,7 +175,7 @@ const GenerativeAIBangalore = () => {
             <Badge variant="outline" className="px-4 py-2 text-lg border-blue-200 bg-white text-blue-800">Direct Referrals</Badge>
             <Badge variant="outline" className="px-4 py-2 text-lg border-blue-200 bg-white text-blue-800">Portfolio Creation</Badge>
           </div>
-          <Link href="/register">
+          <Link href="/enquiry">
             <Button size="lg" className="px-10 py-6 text-xl bg-blue-600 hover:bg-blue-700 shadow-xl">
               Start Your AI Journey Today <ArrowRight className="ml-2" />
             </Button>

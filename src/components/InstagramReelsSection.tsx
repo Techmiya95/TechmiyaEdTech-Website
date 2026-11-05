@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const InstagramReelsSection = () => {
     const reelUrls = [
@@ -10,7 +10,38 @@ const InstagramReelsSection = () => {
         "https://www.instagram.com/reel/DRE9ecojaXJ/",
     ];
 
+    const sectionRef = useRef<HTMLElement>(null);
+    const [isVisible, setIsVisible] = useState(false);
+
     useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect();
+                }
+            },
+            { rootMargin: "300px" }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        if (!isVisible) return;
+
+        const existingScript = document.querySelector('script[src="https://www.instagram.com/embed.js"]');
+        if (existingScript) {
+            if ((window as any).instgrm) {
+                (window as any).instgrm.Embeds.process();
+            }
+            return;
+        }
+
         const script = document.createElement("script");
         script.src = "https://www.instagram.com/embed.js";
         script.async = true;
@@ -21,25 +52,10 @@ const InstagramReelsSection = () => {
                 (window as any).instgrm.Embeds.process();
             }
         };
-
-        return () => {
-            if (document.body.contains(script)) {
-                document.body.removeChild(script);
-            }
-        };
-    }, []);
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            if ((window as any).instgrm) {
-                (window as any).instgrm.Embeds.process();
-            }
-        }, 100);
-        return () => clearTimeout(timer);
-    }, [reelUrls]);
+    }, [isVisible, reelUrls]);
 
     return (
-        <section className="py-20 bg-white">
+        <section ref={sectionRef} className="py-20 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
@@ -50,29 +66,36 @@ const InstagramReelsSection = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8 justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8 justify-items-center min-h-[580px]">
                     {reelUrls.map((url, index) => (
                         <div
                             key={index}
-                            className="w-full max-w-[300px] h-[580px] overflow-hidden rounded-2xl shadow-lg border border-gray-200"
+                            className="w-full max-w-[300px] h-[580px] overflow-hidden rounded-2xl shadow-lg border border-gray-200 bg-gray-50 flex items-center justify-center"
                         >
-                            <blockquote
-                                className="instagram-media"
-                                data-instgrm-permalink={`${url}?utm_source=ig_embed&utm_campaign=loading`}
-                                data-instgrm-version="14"
-                                style={{
-                                    background: "#FFF",
-                                    border: 0,
-                                    borderRadius: 0,
-                                    boxShadow: "none",
-                                    margin: 0,
-                                    maxWidth: "300px",
-                                    minWidth: "300px",
-                                    padding: 0,
-                                    width: "300px",
-                                }}
-                            >
-                            </blockquote>
+                            {isVisible ? (
+                                <blockquote
+                                    className="instagram-media"
+                                    data-instgrm-permalink={`${url}?utm_source=ig_embed&utm_campaign=loading`}
+                                    data-instgrm-version="14"
+                                    style={{
+                                        background: "#FFF",
+                                        border: 0,
+                                        borderRadius: 0,
+                                        boxShadow: "none",
+                                        margin: 0,
+                                        maxWidth: "300px",
+                                        minWidth: "300px",
+                                        padding: 0,
+                                        width: "300px",
+                                    }}
+                                >
+                                </blockquote>
+                            ) : (
+                                <div className="text-gray-400 text-sm flex flex-col items-center gap-2">
+                                    <span className="text-2xl">📸</span>
+                                    <span>Instagram Reel</span>
+                                </div>
+                            )}
                         </div>
                     ))}
                 </div>
@@ -96,4 +119,3 @@ const InstagramReelsSection = () => {
 };
 
 export default InstagramReelsSection;
-

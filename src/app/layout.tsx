@@ -30,8 +30,8 @@ export default function RootLayout({
         </Script>
         
         {/* Google Analytics */}
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DXSCN0G1RZ" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-DXSCN0G1RZ" strategy="lazyOnload" />
+        <Script id="google-analytics" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -42,7 +42,7 @@ export default function RootLayout({
         </Script>
 
         {/* Facebook Pixel Placeholder */}
-        <Script id="fb-pixel" strategy="afterInteractive">
+        <Script id="fb-pixel" strategy="lazyOnload">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -55,9 +55,15 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Preconnects */}
+        {/* Preconnects & DNS Prefetches */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="https://www.google.com" />
+        <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
       </head>
       <body>
         <ClientProviders>

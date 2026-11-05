@@ -223,6 +223,9 @@ self.__SERVER_FILES_MANIFEST={
       "turbopackPluginRuntimeStrategy": "childProcesses",
       "optimizePackageImports": [
         "lucide-react",
+        "@radix-ui/react-dialog",
+        "@radix-ui/react-select",
+        "@radix-ui/react-tooltip",
         "date-fns",
         "lodash-es",
         "ramda",

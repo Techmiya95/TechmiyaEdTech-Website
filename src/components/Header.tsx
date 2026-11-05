@@ -194,7 +194,7 @@ export const Header = () => {
                 </button>
 
                 {isServicesOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-64 bg-white/98 backdrop-blur-md rounded-xl shadow-xl border border-gray-100 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
                     {serviceItems.map((item) => (
                       item.path.startsWith("http") ? (
                         <a
@@ -202,7 +202,7 @@ export const Header = () => {
                           href={item.path}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="block px-3.5 py-2 mx-1 rounded-lg text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50"
+                          className="block px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                         >
                           {item.name}
                         </a>
@@ -210,11 +210,10 @@ export const Header = () => {
                         <Link
                           key={item.name}
                           href={item.path}
-                          className={`block px-3.5 py-2 mx-1 rounded-lg text-sm font-medium transition-colors ${
-                            isActive(item.path)
-                              ? "text-amber-600 bg-amber-50 font-semibold"
-                              : "text-gray-700 hover:text-amber-600 hover:bg-amber-50"
-                          }`}
+                          className={`block px-4 py-2 text-sm font-medium transition-colors ${isActive(item.path)
+                            ? "text-amber-600 bg-amber-50"
+                            : "text-gray-700 hover:text-amber-600 hover:bg-gray-50"
+                            }`}
                         >
                           {item.name}
                         </Link>
@@ -245,7 +244,7 @@ export const Header = () => {
                     </button>
 
                     {isTutorialsOpen && (
-                      <div className="absolute top-full -left-12 xl:left-0 mt-1 w-[640px] bg-white/98 backdrop-blur-md rounded-2xl shadow-2xl border border-gray-100 p-3.5 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                      <div className="absolute top-full -left-12 xl:left-0 mt-1 w-[620px] bg-white rounded-xl shadow-2xl border border-gray-100 p-3 z-50">
                         <div className="grid grid-cols-4 gap-1">
                           {tutorialItems.map((tutorial) => (
                             <a
@@ -253,7 +252,7 @@ export const Header = () => {
                               href={tutorial.path}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="block px-2.5 py-1.5 text-xs xl:text-[13px] font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50 rounded-lg truncate"
+                              className="block px-2.5 py-1.5 text-xs xl:text-[13px] font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50 rounded-md truncate"
                               onClick={() => setIsTutorialsOpen(false)}
                             >
                               {tutorial.name}
@@ -302,14 +301,14 @@ export const Header = () => {
                 </button>
 
                 {isJobsOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-white/98 backdrop-blur-md rounded-xl shadow-xl border border-gray-100 py-2 z-50 animate-in fade-in slide-in-from-top-2 duration-150">
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
                     {jobItems.map((item) => (
                       <a
                         key={item.name}
                         href={item.path}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="block px-3.5 py-2 mx-1 rounded-lg text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-amber-50"
+                        className="block px-4 py-2 text-sm font-medium transition-colors text-gray-700 hover:text-amber-600 hover:bg-gray-50"
                       >
                         {item.name}
                       </a>

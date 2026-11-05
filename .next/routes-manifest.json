@@ -173,6 +173,12 @@
       "namedRegex": "^/psychometric\\-test(?:/)?$"
     },
     {
+      "page": "/register",
+      "regex": "^/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/register(?:/)?$"
+    },
+    {
       "page": "/reviews",
       "regex": "^/reviews(?:/)?$",
       "routeKeys": {},
