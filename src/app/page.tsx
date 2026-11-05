@@ -263,43 +263,45 @@ const Index = () => {
         }}
       />
       {/* Hero Section */}
-      <section className="relative bg-background text-white overflow-hidden">
+      <section className="relative bg-background text-white overflow-hidden w-full max-w-full">
         <div className="absolute inset-0 bg-blue-800/100"></div>
 
-        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-2 lg:pt-8 lg:pb-3">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-10 pt-6 pb-2 lg:pt-8 lg:pb-3 overflow-hidden">
 
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-2 w-full max-w-full">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-3 xl:gap-6 w-full max-w-full">
             {/* Left Column - Rotating Tech Logos */}
-            <div className="relative h-48 w-48 lg:h-52 lg:w-52 xl:h-64 xl:w-64 flex-shrink-0 order-2 lg:order-1 hidden lg:block scale-75 lg:scale-80 xl:scale-100 origin-center lg:origin-left">
-              {/* Circle Container */}
-              <div className="absolute inset-0 rounded-full border-4 border-blue-300/30 flex items-center justify-center">
-                <div className="absolute inset-0 rounded-full border-2 border-blue-200/20 animate-ping"></div>
-              </div>
+            <div className="relative p-6 xl:p-8 flex-shrink-0 order-2 lg:order-1 hidden xl:flex items-center justify-center">
+              <div className="relative h-44 w-44 2xl:h-52 2xl:w-52">
+                {/* Circle Container */}
+                <div className="absolute inset-0 rounded-full border-4 border-blue-300/30 flex items-center justify-center">
+                  <div className="absolute inset-0 rounded-full border-2 border-blue-200/20 animate-ping"></div>
+                </div>
 
-              {/* Rotating Logos Wrapper */}
-              <div className="absolute inset-0 animate-[spin_20s_linear_infinite]">
-                {/* HTML5 - Top */}
-                <div className="absolute top-0 left-1/2 -mt-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-10 h-10" />
+                {/* Rotating Logos Wrapper */}
+                <div className="absolute inset-0 animate-[spin_20s_linear_infinite]">
+                  {/* HTML5 - Top */}
+                  <div className="absolute top-0 left-1/2 -mt-6 -ml-6 w-12 h-12 2xl:w-14 2xl:h-14 2xl:-mt-7 2xl:-ml-7 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-7 h-7 2xl:w-8 2xl:h-8 object-contain" />
+                  </div>
+                  {/* CSS3 - Right */}
+                  <div className="absolute top-1/2 right-0 -mr-6 -mt-6 w-12 h-12 2xl:w-14 2xl:h-14 2xl:-mr-7 2xl:-mt-7 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-7 h-7 2xl:w-8 2xl:h-8 object-contain" />
+                  </div>
+                  {/* JS - Bottom */}
+                  <div className="absolute bottom-0 left-1/2 -mb-6 -ml-6 w-12 h-12 2xl:w-14 2xl:h-14 2xl:-mb-7 2xl:-ml-7 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-7 h-7 2xl:w-8 2xl:h-8 object-contain" />
+                  </div>
+                  {/* React - Left */}
+                  <div className="absolute top-1/2 left-0 -ml-6 -mt-6 w-12 h-12 2xl:w-14 2xl:h-14 2xl:-ml-7 2xl:-mt-7 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-7 h-7 2xl:w-8 2xl:h-8 object-contain" />
+                  </div>
                 </div>
-                {/* CSS3 - Right */}
-                <div className="absolute top-1/2 right-0 -mr-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-10 h-10" />
-                </div>
-                {/* JS - Bottom */}
-                <div className="absolute bottom-0 left-1/2 -mb-8 -ml-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-10 h-10" />
-                </div>
-                {/* React - Left */}
-                <div className="absolute top-1/2 left-0 -ml-8 -mt-8 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg animate-[spin_20s_linear_infinite_reverse]">
-                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-10 h-10" />
-                </div>
-              </div>
 
-              {/* Center Logo */}
-              <div className="absolute inset-0 flex items-center justify-center z-10">
-                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-xl overflow-hidden">
-                  <img src="/edtech-logo.png" alt="Techmiya EdTech Logo" className="w-16 h-16 object-contain" />
+                {/* Center Logo */}
+                <div className="absolute inset-0 flex items-center justify-center z-10">
+                  <div className="w-16 h-16 2xl:w-20 2xl:h-20 bg-white rounded-full flex items-center justify-center shadow-xl overflow-hidden p-2">
+                    <img src="/edtech-logo.png" alt="Techmiya EdTech Logo" className="w-full h-full object-contain" />
+                  </div>
                 </div>
               </div>
             </div>
@@ -373,7 +375,7 @@ const Index = () => {
             </div>
 
             {/* Right Column - Lead Gen Voucher Form */}
-            <div className="flex justify-end flex-shrink-0 order-3 w-full sm:w-auto lg:w-[260px] xl:w-[300px] mt-6 lg:mt-0 z-10">
+            <div className="flex justify-center xl:justify-end flex-shrink-0 order-3 w-full sm:w-auto lg:w-[280px] xl:w-[300px] mt-6 lg:mt-0 z-10">
               <HeroLeadGenForm />
             </div>
           </div>

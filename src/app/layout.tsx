@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <head>
         <Script id="force-https" strategy="beforeInteractive">
           {`
@@ -65,12 +65,12 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
       </head>
-      <body>
+      <body className="overflow-x-clip max-w-[100vw] w-full">
         <ClientProviders>
-          <div className="min-h-screen flex flex-col">
+          <div className="min-h-screen flex flex-col max-w-[100vw] w-full">
             <Header />
             <SocialSidebar />
-            <main className="flex-1">
+            <main className="flex-1 overflow-x-clip max-w-[100vw] w-full">
               {children}
             </main>
             <Footer />

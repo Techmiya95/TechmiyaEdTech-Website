@@ -38,7 +38,7 @@ const TopBar = () => {
   );
 
   return (
-    <div className="relative bg-blue-800 text-white overflow-hidden py-1.5 sm:py-2">
+    <div className="relative bg-blue-800 text-white overflow-hidden py-1.5 sm:py-2 w-full max-w-full">
       {/* Background Marquee: Branches moving from Left to Right behind the content */}
       <div className="absolute inset-0 flex items-center z-0 pointer-events-auto">
         <div className="animate-marquee-ltr flex items-center opacity-85 hover:opacity-100 transition-opacity">
@@ -143,9 +143,9 @@ export const Header = () => {
   const isServiceActive = serviceItems.some(item => pathname === item.path);
 
   return (
-    <div className="md:sticky md:top-0 z-50">
+    <div className="md:sticky md:top-0 z-50 w-full">
       <TopBar />
-      <header className="bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xs">
+      <header className="bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xs w-full">
         <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6">
           <div className="flex justify-between items-center h-16 xl:h-[72px] gap-1 xl:gap-2.5">
             {/* Logo */}
@@ -153,7 +153,7 @@ export const Header = () => {
               <img
                 src="/techmiyaedtech_new_logo.png"
                 alt="Tech Miya Logo"
-                className="w-9 h-9 sm:w-10 sm:h-10 xl:w-12 xl:h-12 object-contain shrink-0 group-hover:scale-105 transition-transform duration-200 drop-shadow-xs"
+                className="w-8 h-8 sm:w-10 sm:h-10 xl:w-11 xl:h-11 object-contain shrink-0 group-hover:scale-105 transition-transform duration-200 drop-shadow-xs"
               />
               <span className="text-base sm:text-lg xl:text-xl font-extrabold text-amber-500 group-hover:text-amber-600 transition-colors whitespace-nowrap tracking-tight">
                 Techmiya Ed-Tech
@@ -161,7 +161,7 @@ export const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex space-x-0.5 xl:space-x-1 items-center">
+            <nav className="hidden xl:flex space-x-0.5 2xl:space-x-1 items-center">
               {navItems.slice(0, 2).map((item) => (
                 <Link
                   key={item.name}
@@ -183,6 +183,8 @@ export const Header = () => {
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
                 <button
+                  type="button"
+                  onClick={() => setIsServicesOpen(!isServicesOpen)}
                   className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
                     isServiceActive
                       ? "text-amber-600 bg-amber-50 shadow-xs"
@@ -194,7 +196,7 @@ export const Header = () => {
                 </button>
 
                 {isServicesOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-1 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 z-[100]">
                     {serviceItems.map((item) => (
                       item.path.startsWith("http") ? (
                         <a
@@ -232,6 +234,8 @@ export const Header = () => {
                     onMouseLeave={() => setIsTutorialsOpen(false)}
                   >
                     <button
+                      type="button"
+                      onClick={() => setIsTutorialsOpen(!isTutorialsOpen)}
                       className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
                         pathname.startsWith("/tutorials")
                           ? "text-amber-600 bg-amber-50 shadow-xs"
@@ -244,7 +248,7 @@ export const Header = () => {
                     </button>
 
                     {isTutorialsOpen && (
-                      <div className="absolute top-full -left-12 xl:left-0 mt-1 w-[620px] bg-white rounded-xl shadow-2xl border border-gray-100 p-3 z-50">
+                      <div className="absolute top-full -left-12 xl:left-0 mt-1 w-[620px] bg-white rounded-xl shadow-2xl border border-gray-100 p-3 z-[100]">
                         <div className="grid grid-cols-4 gap-1">
                           {tutorialItems.map((tutorial) => (
                             <a
@@ -294,6 +298,8 @@ export const Header = () => {
                 onMouseLeave={() => setIsJobsOpen(false)}
               >
                 <button
+                  type="button"
+                  onClick={() => setIsJobsOpen(!isJobsOpen)}
                   className="px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
                 >
                   Jobs
@@ -301,7 +307,7 @@ export const Header = () => {
                 </button>
 
                 {isJobsOpen && (
-                  <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                  <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-2xl border border-gray-100 py-2 z-[100]">
                     {jobItems.map((item) => (
                       <a
                         key={item.name}
@@ -319,7 +325,7 @@ export const Header = () => {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden lg:flex items-center gap-1.5 xl:gap-2.5 shrink-0 ml-1">
+            <div className="hidden xl:flex items-center gap-1.5 2xl:gap-2.5 shrink-0 ml-1">
               <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold text-xs xl:text-[13px] 2xl:text-sm px-3 xl:px-4 py-1.5 h-9 xl:h-9.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
                   Access LMS
@@ -332,8 +338,13 @@ export const Header = () => {
               </Link>
             </div>
 
-            {/* Mobile menu button */}
-            <div className="lg:hidden">
+            {/* Mobile / Tablet menu button */}
+            <div className="flex xl:hidden items-center space-x-2">
+              <Link href="/enquiry" className="hidden sm:inline-flex">
+                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold text-xs px-3 py-1.5 h-8.5 rounded-lg shadow-sm whitespace-nowrap">
+                  Enquire Now
+                </Button>
+              </Link>
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="inline-flex items-center justify-center p-2 rounded-lg text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors"
@@ -346,7 +357,7 @@ export const Header = () => {
 
           {/* Mobile menu */}
           {isMenuOpen && (
-            <div className="lg:hidden">
+            <div className="xl:hidden">
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
                 {navItems.slice(0, 2).map((item) => (
                   <Link
