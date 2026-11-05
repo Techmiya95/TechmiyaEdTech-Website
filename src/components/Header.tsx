@@ -146,16 +146,16 @@ export const Header = () => {
     <div className="md:sticky md:top-0 z-50 w-full">
       <TopBar />
       <header className="bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-xs w-full">
-        <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 lg:px-6">
-          <div className="flex justify-between items-center h-16 xl:h-[72px] gap-1 xl:gap-2.5">
+        <div className="w-full max-w-[1600px] mx-auto px-2 sm:px-4 xl:px-4 2xl:px-6">
+          <div className="flex justify-between items-center h-16 xl:h-[70px] 2xl:h-[72px] gap-1 xl:gap-2">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 shrink-0 mr-1 xl:mr-2.5 group">
+            <Link href="/" className="flex items-center space-x-1.5 xl:space-x-2 shrink-0 mr-1 xl:mr-2 group">
               <img
                 src="/techmiyaedtech_new_logo.png"
                 alt="Tech Miya Logo"
-                className="w-8 h-8 sm:w-10 sm:h-10 xl:w-11 xl:h-11 object-contain shrink-0 group-hover:scale-105 transition-transform duration-200 drop-shadow-xs"
+                className="w-8 h-8 sm:w-10 sm:h-10 xl:w-10 xl:h-10 2xl:w-11 2xl:h-11 object-contain shrink-0 group-hover:scale-105 transition-transform duration-200 drop-shadow-xs"
               />
-              <span className="text-base sm:text-lg xl:text-xl font-extrabold text-amber-500 group-hover:text-amber-600 transition-colors whitespace-nowrap tracking-tight">
+              <span className="text-sm sm:text-base xl:text-[17px] 2xl:text-xl font-extrabold text-amber-500 group-hover:text-amber-600 transition-colors whitespace-nowrap tracking-tight">
                 Techmiya Ed-Tech
               </span>
             </Link>
@@ -166,7 +166,7 @@ export const Header = () => {
                 <Link
                   key={item.name}
                   href={item.path}
-                  className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 whitespace-nowrap ${
+                  className={`px-1.5 xl:px-2 2xl:px-2.5 py-1 xl:py-1.5 rounded-lg text-xs xl:text-[12.5px] 2xl:text-[14px] font-semibold transition-all duration-200 whitespace-nowrap ${
                     isActive(item.path)
                       ? "text-amber-600 bg-amber-50 shadow-xs"
                       : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
@@ -185,7 +185,7 @@ export const Header = () => {
                 <button
                   type="button"
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
+                  className={`px-1.5 xl:px-2 2xl:px-2.5 py-1 xl:py-1.5 rounded-lg text-xs xl:text-[12.5px] 2xl:text-[14px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
                     isServiceActive
                       ? "text-amber-600 bg-amber-50 shadow-xs"
                       : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
@@ -236,7 +236,7 @@ export const Header = () => {
                     <button
                       type="button"
                       onClick={() => setIsTutorialsOpen(!isTutorialsOpen)}
-                      className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
+                      className={`px-1.5 xl:px-2 2xl:px-2.5 py-1 xl:py-1.5 rounded-lg text-xs xl:text-[12.5px] 2xl:text-[14px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap ${
                         pathname.startsWith("/tutorials")
                           ? "text-amber-600 bg-amber-50 shadow-xs"
                           : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
@@ -272,7 +272,7 @@ export const Header = () => {
                     href={item.path}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-amber-50/70 whitespace-nowrap"
+                    className="px-1.5 xl:px-2 2xl:px-2.5 py-1 xl:py-1.5 rounded-lg text-xs xl:text-[12.5px] 2xl:text-[14px] font-semibold transition-all duration-200 text-gray-700 hover:text-amber-600 hover:bg-amber-50/70 whitespace-nowrap"
                   >
                     {item.name}
                   </a>
@@ -280,7 +280,7 @@ export const Header = () => {
                   <Link
                     key={item.name}
                     href={item.path}
-                    className={`px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 whitespace-nowrap ${
+                    className={`px-1.5 xl:px-2 2xl:px-2.5 py-1 xl:py-1.5 rounded-lg text-xs xl:text-[12.5px] 2xl:text-[14px] font-semibold transition-all duration-200 whitespace-nowrap ${
                       isActive(item.path)
                         ? "text-amber-600 bg-amber-50 shadow-xs"
                         : "text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
@@ -300,7 +300,7 @@ export const Header = () => {
                 <button
                   type="button"
                   onClick={() => setIsJobsOpen(!isJobsOpen)}
-                  className="px-2 xl:px-2.5 py-1.5 rounded-lg text-[13px] xl:text-[14px] 2xl:text-[15px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
+                  className="px-1.5 xl:px-2 2xl:px-2.5 py-1 xl:py-1.5 rounded-lg text-xs xl:text-[12.5px] 2xl:text-[14px] font-semibold transition-all duration-200 flex items-center gap-0.5 whitespace-nowrap text-gray-700 hover:text-amber-600 hover:bg-amber-50/70"
                 >
                   Jobs
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${isJobsOpen ? "rotate-180 text-amber-600" : ""}`} />
@@ -325,14 +325,14 @@ export const Header = () => {
             </nav>
 
             {/* CTA Buttons */}
-            <div className="hidden xl:flex items-center gap-1.5 2xl:gap-2.5 shrink-0 ml-1">
+            <div className="hidden xl:flex items-center gap-1.5 2xl:gap-2.5 shrink-0 ml-1 pr-1">
               <a href="https://lms.techmiyaedtech.com/" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold text-xs xl:text-[13px] 2xl:text-sm px-3 xl:px-4 py-1.5 h-9 xl:h-9.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
+                <Button className="bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-bold text-xs 2xl:text-sm px-2.5 xl:px-3 2xl:px-4 py-1.5 h-8.5 xl:h-9 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
                   Access LMS
                 </Button>
               </a>
               <Link href="/enquiry">
-                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold text-xs xl:text-[13px] 2xl:text-sm px-3 xl:px-4 py-1.5 h-9 xl:h-9.5 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
+                <Button className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:from-purple-700 hover:via-indigo-700 hover:to-blue-700 text-white font-extrabold text-xs xl:text-[13px] 2xl:text-sm px-3.5 xl:px-4.5 2xl:px-5 py-1.5 h-8.5 xl:h-9 rounded-lg shadow-md hover:shadow-lg ring-1 ring-purple-400/40 transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
                   Enquire Now
                 </Button>
               </Link>
@@ -341,7 +341,7 @@ export const Header = () => {
             {/* Mobile / Tablet menu button */}
             <div className="flex xl:hidden items-center space-x-2">
               <Link href="/enquiry" className="hidden sm:inline-flex">
-                <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold text-xs px-3 py-1.5 h-8.5 rounded-lg shadow-sm whitespace-nowrap">
+                <Button className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 hover:from-purple-700 hover:via-indigo-700 hover:to-blue-700 text-white font-extrabold text-xs px-3.5 py-1.5 h-8.5 rounded-lg shadow-md ring-1 ring-purple-400/40 whitespace-nowrap">
                   Enquire Now
                 </Button>
               </Link>
