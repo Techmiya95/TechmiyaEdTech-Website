@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0vu_23~897mpj.css","style"]
+:HL["/_next/static/chunks/0_gaezo9bqipn.css","style"]
 :HL["/whatsapp-icon.png","image"]
 :HL["/techmiyaedtech_new_logo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"jobs","param":null,"prefetchHints":0,"slots":{"children":{"name":"jobId","param":{"type":"d","key":"mock-9","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"AVc7obN27fFiuax92pi-G"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"jobs","param":null,"prefetchHints":0,"slots":{"children":{"name":"jobId","param":{"type":"d","key":"mock-9","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"vlipjFiz49gy0GU5u38nl"}
