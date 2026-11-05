@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/0_gaezo9bqipn.css","style"]
+:HL["/_next/static/chunks/06dgh_eqf_so2.css","style"]
 :HL["/whatsapp-icon.png","image"]
 :HL["/techmiyaedtech_new_logo.png","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"courses","param":null,"prefetchHints":0,"slots":{"children":{"name":"courseSlug","param":{"type":"d","key":"android-development","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"vlipjFiz49gy0GU5u38nl"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"courses","param":null,"prefetchHints":0,"slots":{"children":{"name":"courseSlug","param":{"type":"d","key":"android-development","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"FSc9PmNbEugBqNtyLF5o4"}
